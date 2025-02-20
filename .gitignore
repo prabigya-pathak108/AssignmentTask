@@ -1,0 +1,12 @@
+flight_sql_venv/
+.env
+kaggle_dataset/
+ipynb_codes/
+__pycache__
+__pycache__/
+
+.vscode
+automatic_testing/
+HackGpt/
+TeamTalent/
+db_qa_models

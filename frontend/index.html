@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <script src="https://cdn.plot.ly/plotly-3.0.0.min.js" charset="utf-8"></script>
+        <script src="plotly-3.0.0.min.js" charset="utf-8"></script>
+</head>
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .chat-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 400px;
+            overflow-y: auto;
+            overflow-x: hidden; /* Allows horizontal scrolling if text overflows */
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            background: #fff;
+        }
+        .message {
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 8px;
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            min-height: fit-content;
+        }
+        .user {
+            background-color: #0078ff;
+            color: white;
+            align-self: flex-end;
+        }
+        .bot {
+            background-color: #e0e0e0;
+            color: black;
+            align-self: flex-start;
+        }
+        .form-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #0078ff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #005ecb;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #0078ff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center; color: #333;">ChatGPT Clone</h2>
+        <div class="chat-container" id="chatbox"></div>
+        <form class="form-container" hx-post="/send_message" hx-target="#chatbox" hx-swap="beforeend">
+            <input type="text" name="message" required placeholder="Type your message..." />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

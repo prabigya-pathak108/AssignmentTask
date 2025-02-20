@@ -1,0 +1,262 @@
+table_name: airlines
+table_description: "Airlines information including IATA codes and airline names."
+constraints:
+  - primary_key: "iata_code"
+
+columns:
+  - name: "iata_code"
+    nullable_value_present: false
+    data_type: "VARCHAR(10)"
+    function: "ILIKE for comparison"
+    description: "The IATA code of the airline, used as a unique identifier."
+
+  - name: "airline"
+    nullable_value_present: false
+    data_type: "VARCHAR(255)"
+    function: "ILIKE for comparison"
+    description: "The name of the airline."
+  
+table_name: airports
+table_description: "Airports information including IATA codes, airport names, and location details."
+constraints:
+  - primary_key: "iata_code"
+
+columns:
+  - name: "iata_code"
+    nullable_value_present: false
+    data_type: "VARCHAR(10)"
+    function: "ILIKE for comparison"
+    description: "The IATA code of the airport, used as a unique identifier."
+
+  - name: "airport"
+    nullable_value_present: false
+    data_type: "VARCHAR(255)"
+    function: "ILIKE for comparison"
+    description: "The name of the airport."
+
+  - name: "city"
+    nullable_value_present: false
+    data_type: "VARCHAR(255)"
+    function: "ILIKE for comparison"
+    description: "The city where the airport is located."
+
+  - name: "state"
+    nullable_value_present: false
+    data_type: "VARCHAR(50)"
+    function: "ILIKE for comparison"
+    description: "The state where the airport is located."
+
+  - name: "country"
+    nullable_value_present: false
+    data_type: "VARCHAR(50)"
+    function: "ILIKE for comparison"
+    description: "The country where the airport is located."
+
+  - name: "latitude"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "The latitude coordinate of the airport."
+
+  - name: "longitude"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    description: "The longitude coordinate of the airport."
+
+table_name: flights
+table_description: "Flight information including details about flights, delays, and cancellations."
+constraints:
+  - primary_key: "id"
+
+columns:
+  - name: "id"
+    nullable_value_present: false
+    data_type: "INTEGER"
+    
+    description: "Unique identifier for each flight record."
+
+  - name: "year"
+    nullable_value_present: false
+    data_type: "INTEGER"
+    
+    description: "Year of the flight."
+
+  - name: "month"
+    nullable_value_present: false
+    data_type: "INTEGER"
+    
+    description: "Month of the flight."
+
+  - name: "day"
+    nullable_value_present: false
+    data_type: "INTEGER"
+    
+    description: "Day of the month of the flight."
+
+  - name: "day_of_week"
+    nullable_value_present: false
+    data_type: "INTEGER"
+    
+    description: "Day of the week (0=Sunday, 6=Saturday)."
+
+  - name: "airline"
+    nullable_value_present: false
+    data_type: "VARCHAR(10)"
+    function: "ILIKE for comparison"
+    description: "IATA code of the airline."
+
+  - name: "flight_number"
+    nullable_value_present: false
+    data_type: "INTEGER"
+    
+    description: "Flight number assigned by the airline."
+
+  - name: "tail_number"
+    nullable_value_present: true
+    data_type: "VARCHAR(50)"
+    function: "ILIKE for comparison"
+    description: "Tail number of the aircraft."
+
+  - name: "origin_airport"
+    nullable_value_present: false
+    data_type: "VARCHAR(10)"
+    function: "ILIKE for comparison"
+    description: "IATA code of the origin airport."
+
+  - name: "destination_airport"
+    nullable_value_present: false
+    data_type: "VARCHAR(10)"
+    function: "ILIKE for comparison"
+    description: "IATA code of the destination airport."
+
+  - name: "scheduled_departure"
+    nullable_value_present: false
+    data_type: "INTEGER"
+    
+    description: "Scheduled departure time in minutes after midnight."
+
+  - name: "departure_time"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Actual departure time in minutes after midnight."
+
+  - name: "departure_delay"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Delay in departure time in minutes."
+
+  - name: "taxi_out"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Time spent taxiing out in minutes."
+
+  - name: "wheels_off"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Time when the aircraft's wheels leave the ground."
+
+  - name: "scheduled_time"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Scheduled flight time in minutes."
+
+  - name: "elapsed_time"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Total elapsed time of the flight in minutes."
+
+  - name: "air_time"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Actual time spent in the air in minutes."
+
+  - name: "distance"
+    nullable_value_present: true
+    data_type: "INTEGER"
+    
+    description: "Distance of the flight in miles."
+
+  - name: "wheels_on"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Time when the aircraft's wheels touch the ground."
+
+  - name: "taxi_in"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Time spent taxiing in minutes."
+
+  - name: "scheduled_arrival"
+    nullable_value_present: false
+    data_type: "INTEGER"
+    
+    description: "Scheduled arrival time in minutes after midnight."
+
+  - name: "arrival_time"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Actual arrival time in minutes after midnight."
+
+  - name: "arrival_delay"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Delay in arrival time in minutes."
+
+  - name: "diverted"
+    nullable_value_present: false
+    data_type: "INTEGER"
+    
+    description: "Indicates if the flight was diverted (1) or not (0)."
+
+  - name: "cancelled"
+    nullable_value_present: false
+    data_type: "INTEGER"
+    
+    description: "Indicates if the flight was cancelled (1) or not (0)."
+
+  - name: "cancellation_reason"
+    nullable_value_present: true
+    data_type: "VARCHAR(255)"
+    function: "ILIKE for comparison"
+    description: "Reason for flight cancellation."
+
+  - name: "air_system_delay"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Delay caused by the airline's system."
+
+  - name: "security_delay"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Delay caused by security issues."
+
+  - name: "airline_delay"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Delay caused by the airline."
+
+  - name: "late_aircraft_delay"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Delay caused by a late arriving aircraft."
+
+  - name: "weather_delay"
+    nullable_value_present: true
+    data_type: "FLOAT"
+    
+    description: "Delay caused by weather conditions."

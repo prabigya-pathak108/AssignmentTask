@@ -1,0 +1,27 @@
+
+[
+    {
+    "question": "Find the top 5 airlines with the most canceled flights in 2015.",
+    "sql_generated": "SELECT a.airline, COUNT(f.id) AS total_cancellations\nFROM flights f\nJOIN airlines a ON f.airline = a.iata_code\nWHERE f.year = 2015 AND f.cancelled = 1\nGROUP BY a.airline\nORDER BY total_cancellations DESC\nLIMIT 5;"
+    },
+    {
+    "question": "Find the top 3 airports with the highest number of departing flights in 2015.",
+    "sql_generated": "SELECT ap.airport, COUNT(f.id) AS total_departures\nFROM flights f\nJOIN airports ap ON f.origin_airport = ap.iata_code\nWHERE f.year = 2015\nGROUP BY ap.airport\nORDER BY total_departures DESC\nLIMIT 3;"
+    },
+    {
+    "question": "Get all flights that were diverted.",
+    "sql_generated": "SELECT * \nFROM flights \nWHERE diverted = 1;"
+    },
+    {
+    "question": "Find the total number of flights for each airline in January 2015, and sort by the highest number of flights.",
+    "sql_generated": "SELECT a.airline, COUNT(f.id) AS total_flights\nFROM flights f\nJOIN airlines a ON f.airline = a.iata_code\nWHERE f.year = 2015 AND f.month = 1\nGROUP BY a.airline\nORDER BY total_flights DESC;"
+    },
+    {
+    "question": "Get all flights scheduled on January 1, 2015.",
+    "sql_generated": "SELECT * \nFROM flights \nWHERE year = 2015 AND month = 1 AND day = 1;"
+    },
+    {
+    "question": "Find the total distance traveled by all flights from LAX in March 2015.",
+    "sql_generated": "SELECT SUM(f.distance) AS total_distance\nFROM flights f\nWHERE f.year = 2015 AND f.month = 3 AND f.origin_airport = 'LAX';"
+    }
+]

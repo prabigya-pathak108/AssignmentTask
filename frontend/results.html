@@ -1,0 +1,27 @@
+<div>
+    <div id="loading" style="display:none;"></div>
+
+    {% if results %}
+        <h2>Results:</h2>
+        <table>
+            <thead>
+                <tr>
+                    {% for column in results[0] %}
+                        <th>{{ column }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in results %}
+                    <tr>
+                        {% for value in row %}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No results found or invalid query.</p>
+    {% endif %}
+</div>
