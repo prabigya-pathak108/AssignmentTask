@@ -9,8 +9,7 @@ class SingletonClass(object):
 
 
 class SecretManager(SingletonClass):
-    def get_from_env(self, key: str, cast=str, default=None):
-        return (
-            config(key) if default is None else config(key, cast=cast, default=default)
-        )
+    def get_from_env(self, key: str, default=None, cast=str):
+        value = config(key, default=default, cast=cast)
+        return value if value is not None else default
     

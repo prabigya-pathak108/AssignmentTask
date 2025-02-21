@@ -11,8 +11,9 @@ from sqlalchemy import text
 from sqlalchemy.orm import Session
 import logging
 from db_qa_models.QA_model import QueryRequest
-from database_work_model.database import get_db
-
+from helpers.database_work_model.database import get_db
+from helpers.celery_tasks.tasks import process_user_query
+from celery.result import AsyncResult
 import requests
 
 
@@ -43,3 +44,19 @@ def run_sql(query_data:QueryRequest,db:Session=Depends(get_db)):
     
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+@router.post("/test_sql_gen/")
+def submit_query(query: str):
+    task = process_user_query.apply_async(args=[query])
+    return {"task_id": task.id}
+
+
+@router.get("/result/{task_id}")
+def get_result(task_id: str):
+    task_result = AsyncResult(task_id)
+    if task_result.state == "PENDING":
+        return {"status": "Processing..."}
+    elif task_result.state == "SUCCESS":
+        return task_result.result
+    else:
+        return {"status": task_result.state}
