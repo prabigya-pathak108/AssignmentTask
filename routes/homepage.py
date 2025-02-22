@@ -4,9 +4,8 @@ from starlette.templating import Jinja2Templates
 from starlette.requests import Request
 import pandas as pd
 from typing import List, Dict
-from logging_mechanism.logger import logger
 
-
+import asyncio
 import httpx
 import plotly.tools as tls  # For converting matplotlib to plotly
 import json
@@ -41,7 +40,7 @@ def get_table_data() -> List[Dict]:
     # Convert to a list of dictionaries for API response
     return data.to_dict(orient="records")
 
-@router.post("/send_message", response_class=HTMLResponse)
+@router.post("/send_message_n", response_class=HTMLResponse)
 async def send_message(message: str = Form(...)):
     """Simulated chatbot response with explanation and table"""
     print("Message is:",message)
@@ -59,10 +58,8 @@ async def send_message(message: str = Form(...)):
             if response.status_code == 200:
                 # Try to parse the response as JSON
                 api_response = response.json()
-                logger.info("Function One executed")
             else:
                 api_response = {"data": []}  # Default to empty table if response is not 200
-                logger.warning("Function Not executed")
     except Exception as e:
         api_response = {"data": []}  # Handle any potential errors (e.g., connection issues)
 

@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
-        <script src="https://cdn.plot.ly/plotly-3.0.0.min.js" charset="utf-8"></script>
-        <script src="plotly-3.0.0.min.js" charset="utf-8"></script>
-</head>
     <script src="https://unpkg.com/htmx.org@1.9.6"></script>
     <style>
         body {
@@ -103,12 +99,102 @@
 </head>
 <body>
     <div class="container">
-        <h2 style="text-align: center; color: #333;">ChatGPT Clone</h2>
+        <h2 style="text-align: center; color: #333;">Simple ChatBot</h2>
         <div class="chat-container" id="chatbox"></div>
-        <form class="form-container" hx-post="/send_message" hx-target="#chatbox" hx-swap="beforeend">
-            <input type="text" name="message" required placeholder="Type your message..." />
+        <form class="form-container" id="chat-form">
+            <input type="text" id="user-message" required placeholder="Type your message..." />
             <button type="submit">Send</button>
         </form>
     </div>
+
+    <script>
+        document.getElementById("chat-form").addEventListener("submit", async function (event) {
+            event.preventDefault(); // Prevent page reload
+
+            const userMessage = document.getElementById("user-message").value;
+            if (!userMessage.trim()) return;
+
+            const chatbox = document.getElementById("chatbox");
+            chatbox.innerHTML += `<div class="message user">You: ${userMessage}</div>`;
+            console.log(userMessage);
+            // Send query to FastAPI
+            try {
+        // Initial request to generate SQL or non-SQL task
+        const response = await fetch("http://127.0.0.1:8000/api/test_sql_gen/", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ query: userMessage }),
+        });
+
+        const data = await response.json();
+        const taskId = data.task_id;
+
+        chatbox.innerHTML += `<div class="message bot" id="status-${taskId}">Bot: Processing...</div>`;
+
+        let attempts = 0;
+        const interval = setInterval(async () => {
+            const resultResponse = await fetch(`http://127.0.0.1:8000/api/result/${taskId}`);
+            const resultData = await resultResponse.json();
+
+            if (!resultData.processing) {
+                const statusElement = document.getElementById(`status-${taskId}`);
+                
+                // Basic bot response
+                statusElement.innerHTML = `Bot: ${resultData.result.data || "No data available."}`;
+                
+                // If is_sql is true, fetch and render the table
+                if (resultData.result.is_sql) {
+                    try {
+                        const queryResponse = await fetch("http://localhost:8000/api/generate_table_from_sql", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ query: userMessage }),
+                        });
+
+                        const queryData = await queryResponse.json();
+                        const tableData = queryData.data;
+
+                        if (tableData && tableData.length) {
+                            let tableHTML = `<div class="message bot"><table border="1"><thead><tr>`;
+                            
+                            // Add table headers
+                            Object.keys(tableData[0]).forEach(col => {
+                                tableHTML += `<th>${col}</th>`;
+                            });
+
+                            tableHTML += `</tr></thead><tbody>`;
+
+                            // Add table rows
+                            tableData.forEach(row => {
+                                tableHTML += `<tr>${Object.values(row).map(val => `<td>${val}</td>`).join('')}</tr>`;
+                            });
+
+                            tableHTML += `</tbody></table></div>`;
+                            chatbox.innerHTML += tableHTML;
+                        } else {
+                            chatbox.innerHTML += `<div class="message bot">Bot: No data found for the query.</div>`;
+                        }
+                    } catch (error) {
+                        console.error("Error fetching SQL data:", error);
+                        chatbox.innerHTML += `<div class="message bot">Bot: Error fetching data.</div>`;
+                    }
+                }
+
+                clearInterval(interval);
+            } else if (resultData.status === "Failed" || attempts >= 6) {
+                document.getElementById(`status-${taskId}`).innerHTML = "Bot: Error processing your request.";
+                clearInterval(interval);
+            }
+
+            attempts++;
+        }, 5000);
+    } catch (err) {
+        console.error("Error:", err);
+        chatbox.innerHTML += `<div class="message bot">Bot: An error occurred. Please try again.</div>`;
+    }
+
+            document.getElementById("user-message").value = ""; // Clear input
+        });
+    </script>
 </body>
 </html>

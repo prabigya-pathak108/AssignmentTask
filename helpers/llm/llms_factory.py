@@ -1,4 +1,4 @@
-from secret_manager.secrets import SecretManager
+from helpers.secret_manager.secrets import SecretManager
 from .base import BaseLLM
 
 

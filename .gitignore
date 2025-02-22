@@ -10,3 +10,5 @@ automatic_testing/
 HackGpt/
 TeamTalent/
 db_qa_models
+
+*.ipynb

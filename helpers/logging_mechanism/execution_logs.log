@@ -1,0 +1,273 @@
+2025-02-22 21:59:02 - INFO - app_logger - 06ffdae5-0b09-4fbb-ab05-218c88a0be76 - hello
+2025-02-22 23:09:39 - INFO - app_logger - 4c513844-0ec6-4152-becb-bb5e933f6fc7 - hello
+2025-02-22 23:09:39 - INFO - app_logger - 4c513844-0ec6-4152-becb-bb5e933f6fc7 - Chat Handler Initiated
+2025-02-22 23:09:39 - INFO - app_logger - 4c513844-0ec6-4152-becb-bb5e933f6fc7 - Error Occured while Finding Intent
+2025-02-22 23:09:42 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-a10d4e2a-2303-427c-abbf-a9fa5b3c5e7b-0' usage_metadata={'input_tokens': 1668, 'output_tokens': 6, 'total_tokens': 1674, 'input_token_details': {'cache_read': 0}}
+2025-02-22 23:09:42 - INFO - app_logger - 4c513844-0ec6-4152-becb-bb5e933f6fc7 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-22 23:09:42 - INFO - app_logger - 4c513844-0ec6-4152-becb-bb5e933f6fc7 - Database instance created successfully
+2025-02-22 23:09:42 - INFO - app_logger - 4c513844-0ec6-4152-becb-bb5e933f6fc7 - SQL execution success
+2025-02-22 23:09:42 - INFO - app_logger - 4c513844-0ec6-4152-becb-bb5e933f6fc7 - SQL Generation Success. Returning Final SQl
+2025-02-22 23:09:42 - INFO - app_logger - 4c513844-0ec6-4152-becb-bb5e933f6fc7 - SELECT * FROM flights;
+2025-02-22 23:14:06 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:14:06 - INFO - app_logger - gghh-3dded - Error Occured while Finding Intent
+2025-02-22 23:14:08 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-5c535d1e-8ec2-4a04-97e0-256a6ac9adf6-0' usage_metadata={'input_tokens': 1614, 'output_tokens': 6, 'total_tokens': 1620, 'input_token_details': {'cache_read': 0}}
+2025-02-22 23:14:08 - INFO - app_logger - gghh-3dded - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-22 23:14:08 - INFO - app_logger - gghh-3dded - Database instance created successfully
+2025-02-22 23:14:09 - INFO - app_logger - gghh-3dded - SQL execution success
+2025-02-22 23:14:09 - INFO - app_logger - gghh-3dded - SQL Generation Success. Returning Final SQl
+2025-02-22 23:14:09 - INFO - app_logger - gghh-3dded - SELECT * FROM flights;
+2025-02-22 23:17:11 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:17:11 - INFO - app_logger - gghh-3dded - Error Occured while Finding Intent
+2025-02-22 23:17:12 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-8346eebd-796b-4fbb-81ff-f4c68f0cc282-0' usage_metadata={'input_tokens': 1635, 'output_tokens': 6, 'total_tokens': 1641, 'input_token_details': {'cache_read': 0}}
+2025-02-22 23:17:12 - INFO - app_logger - gghh-3dded - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-22 23:17:12 - INFO - app_logger - gghh-3dded - Database instance created successfully
+2025-02-22 23:17:12 - INFO - app_logger - gghh-3dded - SQL execution success
+2025-02-22 23:17:12 - INFO - app_logger - gghh-3dded - SQL Generation Success. Returning Final SQl
+2025-02-22 23:17:12 - INFO - app_logger - gghh-3dded - SELECT * FROM flights;
+2025-02-22 23:18:33 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:18:33 - INFO - app_logger - gghh-3dded - Error Occured while Finding Intent
+2025-02-22 23:21:32 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:21:32 - INFO - app_logger - gghh-3dded - Error Occured while Finding Intent
+2025-02-22 23:22:21 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:22:21 - INFO - app_logger - gghh-3dded - Error Occured while Finding Intent
+2025-02-22 23:23:45 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:23:45 - INFO - app_logger - gghh-3dded - Error Occured while Finding Intent
+2025-02-22 23:33:18 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:33:21 - INFO - app_logger - gghh-3dded - Error Occured while Finding Intent
+2025-02-22 23:33:22 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT 'Hello'" additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-1e0eb609-60b2-4353-af1a-3feb5406aeed-0' usage_metadata={'input_tokens': 1745, 'output_tokens': 5, 'total_tokens': 1750, 'input_token_details': {'cache_read': 0}}
+2025-02-22 23:33:22 - INFO - app_logger - gghh-3dded - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-22 23:33:22 - INFO - app_logger - gghh-3dded - Database instance created successfully
+2025-02-22 23:33:22 - INFO - app_logger - gghh-3dded - SQL execution success
+2025-02-22 23:33:22 - INFO - app_logger - gghh-3dded - SQL Generation Success. Returning Final SQl
+2025-02-22 23:33:22 - INFO - app_logger - gghh-3dded - SELECT 'Hello'
+2025-02-22 23:35:52 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:35:54 - INFO - app_logger - gghh-3dded - Error Occured while Finding Intent
+2025-02-22 23:37:45 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:37:47 - INFO - app_logger - gghh-3dded - Intent Finding Success
+2025-02-22 23:38:23 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:38:25 - INFO - app_logger - gghh-3dded - Intent Finding Success
+2025-02-22 23:39:53 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:39:54 - INFO - app_logger - gghh-3dded - Intent Finding Success
+2025-02-22 23:39:55 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights WHERE departure_delay > 30;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-6f6473b9-2397-4fc8-b0c4-b79c96ffb4eb-0' usage_metadata={'input_tokens': 1684, 'output_tokens': 14, 'total_tokens': 1698, 'input_token_details': {'cache_read': 0}}
+2025-02-22 23:39:55 - INFO - app_logger - gghh-3dded - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-22 23:39:55 - INFO - app_logger - gghh-3dded - Database instance created successfully
+2025-02-22 23:39:55 - INFO - app_logger - gghh-3dded - SQL execution success
+2025-02-22 23:39:55 - INFO - app_logger - gghh-3dded - SQL Generation Success. Returning Final SQl
+2025-02-22 23:39:55 - INFO - app_logger - gghh-3dded - SELECT * FROM flights WHERE departure_delay > 30;
+2025-02-22 23:40:38 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-22 23:40:40 - INFO - app_logger - gghh-3dded - Intent Finding Success
+2025-02-22 23:41:00 - INFO - app_logger - e113702e-14d6-4079-b2f9-09bee187d81d - How do you get flights that were delayed for more than 30 minutes?
+2025-02-22 23:41:00 - INFO - app_logger - e113702e-14d6-4079-b2f9-09bee187d81d - Chat Handler Initiated
+2025-02-22 23:41:00 - INFO - app_logger - e113702e-14d6-4079-b2f9-09bee187d81d - Error Occured while Finding Intent
+2025-02-22 23:41:02 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights WHERE departure_delay > 30' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-65835d4f-e14b-4d05-ae0f-0dbfe205b5e9-0' usage_metadata={'input_tokens': 1727, 'output_tokens': 13, 'total_tokens': 1740, 'input_token_details': {'cache_read': 0}}
+2025-02-22 23:41:02 - INFO - app_logger - e113702e-14d6-4079-b2f9-09bee187d81d - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-22 23:41:02 - INFO - app_logger - e113702e-14d6-4079-b2f9-09bee187d81d - Database instance created successfully
+2025-02-22 23:41:02 - INFO - app_logger - e113702e-14d6-4079-b2f9-09bee187d81d - SQL execution success
+2025-02-22 23:41:02 - INFO - app_logger - e113702e-14d6-4079-b2f9-09bee187d81d - SQL Generation Success. Returning Final SQl
+2025-02-22 23:41:02 - INFO - app_logger - e113702e-14d6-4079-b2f9-09bee187d81d - SELECT * FROM flights WHERE departure_delay > 30
+2025-02-22 23:41:18 - INFO - app_logger - 9f464ec4-58f8-4509-a49f-31a23155d2e6 - hello
+2025-02-22 23:41:18 - INFO - app_logger - 9f464ec4-58f8-4509-a49f-31a23155d2e6 - Chat Handler Initiated
+2025-02-22 23:41:18 - INFO - app_logger - 9f464ec4-58f8-4509-a49f-31a23155d2e6 - Error Occured while Finding Intent
+2025-02-22 23:41:19 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-270ba9a7-9279-4776-aa95-173ae88f5067-0' usage_metadata={'input_tokens': 1685, 'output_tokens': 6, 'total_tokens': 1691, 'input_token_details': {'cache_read': 0}}
+2025-02-22 23:41:19 - INFO - app_logger - 9f464ec4-58f8-4509-a49f-31a23155d2e6 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-22 23:41:19 - INFO - app_logger - 9f464ec4-58f8-4509-a49f-31a23155d2e6 - Database instance created successfully
+2025-02-22 23:41:20 - INFO - app_logger - 9f464ec4-58f8-4509-a49f-31a23155d2e6 - SQL execution success
+2025-02-22 23:41:20 - INFO - app_logger - 9f464ec4-58f8-4509-a49f-31a23155d2e6 - SQL Generation Success. Returning Final SQl
+2025-02-22 23:41:20 - INFO - app_logger - 9f464ec4-58f8-4509-a49f-31a23155d2e6 - SELECT * FROM flights;
+2025-02-22 23:41:44 - INFO - app_logger - ce05f8c5-7a77-47d4-ac71-aa49ce4af611 - hi
+2025-02-22 23:41:44 - INFO - app_logger - ce05f8c5-7a77-47d4-ac71-aa49ce4af611 - Chat Handler Initiated
+2025-02-22 23:41:44 - INFO - app_logger - ce05f8c5-7a77-47d4-ac71-aa49ce4af611 - Error Occured while Finding Intent
+2025-02-22 23:41:45 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-78aa9c7a-c374-4785-9a81-0e67ce9c3095-0' usage_metadata={'input_tokens': 1668, 'output_tokens': 6, 'total_tokens': 1674, 'input_token_details': {'cache_read': 0}}
+2025-02-22 23:41:45 - INFO - app_logger - ce05f8c5-7a77-47d4-ac71-aa49ce4af611 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-22 23:41:45 - INFO - app_logger - ce05f8c5-7a77-47d4-ac71-aa49ce4af611 - Database instance created successfully
+2025-02-22 23:41:45 - INFO - app_logger - ce05f8c5-7a77-47d4-ac71-aa49ce4af611 - SQL execution success
+2025-02-22 23:41:45 - INFO - app_logger - ce05f8c5-7a77-47d4-ac71-aa49ce4af611 - SQL Generation Success. Returning Final SQl
+2025-02-22 23:41:45 - INFO - app_logger - ce05f8c5-7a77-47d4-ac71-aa49ce4af611 - SELECT * FROM flights;
+2025-02-22 23:45:05 - INFO - app_logger - 7d5c6ca8-1e28-419f-81f4-51c522343edc - what is airline
+2025-02-22 23:45:05 - INFO - app_logger - 7d5c6ca8-1e28-419f-81f4-51c522343edc - Chat Handler Initiated
+2025-02-22 23:45:05 - INFO - app_logger - 7d5c6ca8-1e28-419f-81f4-51c522343edc - Error Occured while Finding Intent
+2025-02-22 23:45:06 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT DISTINCT airline FROM flights' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-6958dc25-169d-4a2a-9d29-4166cb331d16-0' usage_metadata={'input_tokens': 1713, 'output_tokens': 6, 'total_tokens': 1719, 'input_token_details': {'cache_read': 0}}
+2025-02-22 23:45:06 - INFO - app_logger - 7d5c6ca8-1e28-419f-81f4-51c522343edc - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-22 23:45:06 - INFO - app_logger - 7d5c6ca8-1e28-419f-81f4-51c522343edc - Database instance created successfully
+2025-02-22 23:45:06 - INFO - app_logger - 7d5c6ca8-1e28-419f-81f4-51c522343edc - SQL execution success
+2025-02-22 23:45:06 - INFO - app_logger - 7d5c6ca8-1e28-419f-81f4-51c522343edc - SQL Generation Success. Returning Final SQl
+2025-02-22 23:45:06 - INFO - app_logger - 7d5c6ca8-1e28-419f-81f4-51c522343edc - SELECT DISTINCT airline FROM flights
+2025-02-22 23:47:04 - INFO - app_logger - 2c0341f6-43a5-46d4-95e8-0da857e201fe - see you tomorrow
+2025-02-22 23:47:04 - INFO - app_logger - 2c0341f6-43a5-46d4-95e8-0da857e201fe - Chat Handler Initiated
+2025-02-22 23:47:04 - INFO - app_logger - 2c0341f6-43a5-46d4-95e8-0da857e201fe - Error Occured while Finding Intent
+2025-02-22 23:47:06 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-3eca3cc1-f983-42d0-891c-a6203fb23f44-0' usage_metadata={'input_tokens': 1616, 'output_tokens': 6, 'total_tokens': 1622, 'input_token_details': {'cache_read': 0}}
+2025-02-22 23:47:06 - INFO - app_logger - 2c0341f6-43a5-46d4-95e8-0da857e201fe - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-22 23:47:06 - INFO - app_logger - 2c0341f6-43a5-46d4-95e8-0da857e201fe - Database instance created successfully
+2025-02-22 23:47:06 - INFO - app_logger - 2c0341f6-43a5-46d4-95e8-0da857e201fe - SQL execution success
+2025-02-22 23:47:06 - INFO - app_logger - 2c0341f6-43a5-46d4-95e8-0da857e201fe - SQL Generation Success. Returning Final SQl
+2025-02-22 23:47:06 - INFO - app_logger - 2c0341f6-43a5-46d4-95e8-0da857e201fe - SELECT * FROM flights;
+2025-02-22 23:48:42 - INFO - app_logger - 20a07530-509f-48e6-b573-87f164397e70 - see you tomorrow
+2025-02-22 23:48:42 - INFO - app_logger - 20a07530-509f-48e6-b573-87f164397e70 - Chat Handler Initiated
+2025-02-22 23:48:43 - INFO - app_logger - 20a07530-509f-48e6-b573-87f164397e70 - Intent Finding Success
+2025-02-23 00:06:22 - INFO - app_logger - a1456394-69e6-4242-8052-5d029d4ab26e - sachin sapkota
+2025-02-23 00:06:22 - INFO - app_logger - a1456394-69e6-4242-8052-5d029d4ab26e - Chat Handler Initiated
+2025-02-23 00:06:24 - INFO - app_logger - a1456394-69e6-4242-8052-5d029d4ab26e - Intent Finding Success
+2025-02-23 00:10:30 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-23 00:10:31 - INFO - app_logger - gghh-3dded - Intent Finding Success
+2025-02-23 00:10:43 - INFO - app_logger - a476b917-cc57-4658-b1a7-e08a1ae6424e - hello
+2025-02-23 00:10:43 - INFO - app_logger - a476b917-cc57-4658-b1a7-e08a1ae6424e - Chat Handler Initiated
+2025-02-23 00:10:47 - INFO - app_logger - a476b917-cc57-4658-b1a7-e08a1ae6424e - Intent Finding Success
+2025-02-23 00:22:48 - INFO - app_logger - 6ad90251-25e9-4a02-b830-c0c4cd17ac96 - hello
+2025-02-23 00:22:48 - INFO - app_logger - 6ad90251-25e9-4a02-b830-c0c4cd17ac96 - Chat Handler Initiated
+2025-02-23 00:22:50 - INFO - app_logger - 6ad90251-25e9-4a02-b830-c0c4cd17ac96 - Intent Finding Success
+2025-02-23 00:31:35 - INFO - app_logger - 13914098-c6a9-4be3-b52e-3ce2fb4be6a9 - How are you?
+2025-02-23 00:31:35 - INFO - app_logger - 13914098-c6a9-4be3-b52e-3ce2fb4be6a9 - Chat Handler Initiated
+2025-02-23 00:31:37 - INFO - app_logger - 13914098-c6a9-4be3-b52e-3ce2fb4be6a9 - Intent Finding Success
+2025-02-23 00:32:03 - INFO - app_logger - d71ef755-9fa1-468a-a623-a443fb49fee8 - hello
+2025-02-23 00:32:03 - INFO - app_logger - d71ef755-9fa1-468a-a623-a443fb49fee8 - Chat Handler Initiated
+2025-02-23 00:32:05 - INFO - app_logger - d71ef755-9fa1-468a-a623-a443fb49fee8 - Intent Finding Success
+2025-02-23 00:39:48 - INFO - app_logger - ce772da5-9847-4534-930f-a369c04cc757 - hello John
+2025-02-23 00:39:48 - INFO - app_logger - ce772da5-9847-4534-930f-a369c04cc757 - Chat Handler Initiated
+2025-02-23 00:39:50 - INFO - app_logger - ce772da5-9847-4534-930f-a369c04cc757 - Intent Finding Success
+2025-02-23 00:41:19 - INFO - app_logger - 18944f93-e96d-4bd6-a2bd-d9bd3ccc0080 - hello
+2025-02-23 00:41:19 - INFO - app_logger - 18944f93-e96d-4bd6-a2bd-d9bd3ccc0080 - Chat Handler Initiated
+2025-02-23 00:41:21 - INFO - app_logger - 18944f93-e96d-4bd6-a2bd-d9bd3ccc0080 - Intent Finding Success
+2025-02-23 00:42:07 - INFO - app_logger - 41be8c8f-5975-405c-8434-d6de424e6bf1 - hi
+2025-02-23 00:42:07 - INFO - app_logger - 41be8c8f-5975-405c-8434-d6de424e6bf1 - Chat Handler Initiated
+2025-02-23 00:42:09 - INFO - app_logger - 41be8c8f-5975-405c-8434-d6de424e6bf1 - Intent Finding Success
+2025-02-23 00:42:25 - INFO - app_logger - e3613fd3-195c-4e30-af19-c018bf083cb7 - How do you find the average delay for each airline?
+2025-02-23 00:42:25 - INFO - app_logger - e3613fd3-195c-4e30-af19-c018bf083cb7 - Chat Handler Initiated
+2025-02-23 00:42:26 - INFO - app_logger - e3613fd3-195c-4e30-af19-c018bf083cb7 - Intent Finding Success
+2025-02-23 00:42:27 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, AVG(arrival_delay) AS average_delay FROM flights GROUP BY airline;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-c6ce49a7-e296-461c-8c51-9008883c4812-0' usage_metadata={'input_tokens': 1699, 'output_tokens': 20, 'total_tokens': 1719, 'input_token_details': {'cache_read': 0}}
+2025-02-23 00:42:27 - INFO - app_logger - e3613fd3-195c-4e30-af19-c018bf083cb7 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 00:42:27 - INFO - app_logger - e3613fd3-195c-4e30-af19-c018bf083cb7 - Database instance created successfully
+2025-02-23 00:42:28 - INFO - app_logger - e3613fd3-195c-4e30-af19-c018bf083cb7 - SQL execution success
+2025-02-23 00:42:28 - INFO - app_logger - e3613fd3-195c-4e30-af19-c018bf083cb7 - SQL Generation Success. Returning Final SQl
+2025-02-23 00:42:28 - INFO - app_logger - e3613fd3-195c-4e30-af19-c018bf083cb7 - SELECT airline, AVG(arrival_delay) AS average_delay FROM flights GROUP BY airline;
+2025-02-23 00:46:19 - INFO - app_logger - c1ba2eeb-778d-48f9-8f0b-1228aa6acf34 - hello
+2025-02-23 00:46:19 - INFO - app_logger - c1ba2eeb-778d-48f9-8f0b-1228aa6acf34 - Chat Handler Initiated
+2025-02-23 00:46:21 - INFO - app_logger - c1ba2eeb-778d-48f9-8f0b-1228aa6acf34 - Intent Finding Success
+2025-02-23 00:46:34 - INFO - app_logger - 29191f1d-5aa9-4ad3-a5d2-805a4deb59a4 - How do you find the average delay for each airline?
+2025-02-23 00:46:34 - INFO - app_logger - 29191f1d-5aa9-4ad3-a5d2-805a4deb59a4 - Chat Handler Initiated
+2025-02-23 00:46:36 - INFO - app_logger - 29191f1d-5aa9-4ad3-a5d2-805a4deb59a4 - Intent Finding Success
+2025-02-23 00:46:37 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, AVG(arrival_delay) AS average_delay FROM flights GROUP BY airline;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-5ae601ef-6f41-46f1-9bce-ca908e86df7d-0' usage_metadata={'input_tokens': 1755, 'output_tokens': 20, 'total_tokens': 1775, 'input_token_details': {'cache_read': 0}}
+2025-02-23 00:46:37 - INFO - app_logger - 29191f1d-5aa9-4ad3-a5d2-805a4deb59a4 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 00:46:37 - INFO - app_logger - 29191f1d-5aa9-4ad3-a5d2-805a4deb59a4 - Database instance created successfully
+2025-02-23 00:46:37 - INFO - app_logger - 29191f1d-5aa9-4ad3-a5d2-805a4deb59a4 - SQL execution success
+2025-02-23 00:46:37 - INFO - app_logger - 29191f1d-5aa9-4ad3-a5d2-805a4deb59a4 - SQL Generation Success. Returning Final SQl
+2025-02-23 00:46:37 - INFO - app_logger - 29191f1d-5aa9-4ad3-a5d2-805a4deb59a4 - SELECT airline, AVG(arrival_delay) AS average_delay FROM flights GROUP BY airline;
+2025-02-23 00:47:33 - INFO - app_logger - e907b35e-4b09-4c1b-b6e0-9908a7858946 - hello
+2025-02-23 00:47:33 - INFO - app_logger - e907b35e-4b09-4c1b-b6e0-9908a7858946 - Chat Handler Initiated
+2025-02-23 00:47:36 - INFO - app_logger - e907b35e-4b09-4c1b-b6e0-9908a7858946 - Error Occured while Finding Intent: 'NoneType' object has no attribute 'content'
+2025-02-23 00:47:48 - INFO - app_logger - a0c88fc4-5cc6-45b1-a347-b567fd69ec9d - How do you find the average delay for each airline?
+2025-02-23 00:47:48 - INFO - app_logger - a0c88fc4-5cc6-45b1-a347-b567fd69ec9d - Chat Handler Initiated
+2025-02-23 00:47:52 - INFO - app_logger - a0c88fc4-5cc6-45b1-a347-b567fd69ec9d - Error Occured while Finding Intent: 'NoneType' object has no attribute 'content'
+2025-02-23 00:53:49 - INFO - app_logger - d460d61a-7ad8-47ca-b592-e2ccdbf6165e - hello
+2025-02-23 00:53:49 - INFO - app_logger - d460d61a-7ad8-47ca-b592-e2ccdbf6165e - Chat Handler Initiated
+2025-02-23 00:53:53 - INFO - app_logger - d460d61a-7ad8-47ca-b592-e2ccdbf6165e - Error Occured while Finding Intent: 'NoneType' object has no attribute 'content'
+2025-02-23 00:53:58 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-f3f36ee6-ad05-4ddf-b8f8-733ff7f32bdd-0' usage_metadata={'input_tokens': 1664, 'output_tokens': 6, 'total_tokens': 1670, 'input_token_details': {'cache_read': 0}}
+2025-02-23 00:53:58 - INFO - app_logger - d460d61a-7ad8-47ca-b592-e2ccdbf6165e - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 00:53:58 - INFO - app_logger - d460d61a-7ad8-47ca-b592-e2ccdbf6165e - Database instance created successfully
+2025-02-23 00:53:58 - INFO - app_logger - d460d61a-7ad8-47ca-b592-e2ccdbf6165e - SQL execution success
+2025-02-23 00:53:58 - INFO - app_logger - d460d61a-7ad8-47ca-b592-e2ccdbf6165e - SQL Generation Success. Returning Final SQl
+2025-02-23 00:53:58 - INFO - app_logger - d460d61a-7ad8-47ca-b592-e2ccdbf6165e - SELECT * FROM flights;
+2025-02-23 00:55:28 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-23 00:55:32 - INFO - app_logger - gghh-3dded - Error Occured while Finding Intent: 'NoneType' object has no attribute 'content'
+2025-02-23 00:57:08 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-23 00:57:09 - INFO - app_logger - gghh-3dded - Error Occured while Finding Intent: 'NoneType' object has no attribute 'group'
+2025-02-23 00:57:10 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * \nFROM flights \nWHERE year = 2015 AND month = 1 AND day = 1;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 30, 'prompt_tokens': 1804, 'total_tokens': 1834, 'completion_time': 0.045185358, 'prompt_time': 0.114326658, 'queue_time': 0.01945828999999999, 'total_time': 0.159512016}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-f42542ec-9415-418a-acac-c9a32bd8a269-0' usage_metadata={'input_tokens': 1804, 'output_tokens': 30, 'total_tokens': 1834}
+2025-02-23 00:57:10 - INFO - app_logger - gghh-3dded - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 00:57:10 - INFO - app_logger - gghh-3dded - Database instance created successfully
+2025-02-23 00:57:10 - INFO - app_logger - gghh-3dded - SQL execution success
+2025-02-23 00:57:10 - INFO - app_logger - gghh-3dded - SQL Generation Success. Returning Final SQl
+2025-02-23 00:57:10 - INFO - app_logger - gghh-3dded - SELECT * 
+FROM flights 
+WHERE year = 2015 AND month = 1 AND day = 1;
+2025-02-23 01:07:44 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-23 01:07:47 - INFO - app_logger - gghh-3dded - Intent Finding Success
+2025-02-23 01:10:13 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-23 01:10:14 - INFO - app_logger - gghh-3dded - Intent Finding Success
+2025-02-23 01:10:27 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-23 01:10:29 - INFO - app_logger - gghh-3dded - Intent Finding Success
+2025-02-23 01:10:39 - INFO - app_logger - gghh-3dded - Chat Handler Initiated
+2025-02-23 01:10:41 - INFO - app_logger - gghh-3dded - Intent Finding Success
+2025-02-23 01:10:58 - INFO - app_logger - ce4b0b17-29c8-490b-9593-76d74a0219bf - hello
+2025-02-23 01:10:58 - INFO - app_logger - ce4b0b17-29c8-490b-9593-76d74a0219bf - Chat Handler Initiated
+2025-02-23 01:11:00 - INFO - app_logger - ce4b0b17-29c8-490b-9593-76d74a0219bf - Intent Finding Success
+2025-02-23 01:12:03 - INFO - app_logger - b67a03fa-684b-456d-98dc-8e536eaea7c6 - hello
+2025-02-23 01:12:03 - INFO - app_logger - b67a03fa-684b-456d-98dc-8e536eaea7c6 - Chat Handler Initiated
+2025-02-23 01:12:06 - INFO - app_logger - b67a03fa-684b-456d-98dc-8e536eaea7c6 - Error Occured while Finding Intent: 'NoneType' object has no attribute 'content'
+2025-02-23 01:15:01 - INFO - app_logger - 42c12538-4e7e-4ec4-9be1-0d83cb40a97f - hello
+2025-02-23 01:15:01 - INFO - app_logger - 42c12538-4e7e-4ec4-9be1-0d83cb40a97f - Chat Handler Initiated
+2025-02-23 01:15:04 - INFO - app_logger - 42c12538-4e7e-4ec4-9be1-0d83cb40a97f - Error Occured while Finding Intent: 'NoneType' object has no attribute 'content'
+2025-02-23 01:15:50 - INFO - app_logger - d3420463-d0b3-4447-ad63-5d83a604141a - hello
+2025-02-23 01:15:50 - INFO - app_logger - d3420463-d0b3-4447-ad63-5d83a604141a - Chat Handler Initiated
+2025-02-23 01:15:55 - INFO - app_logger - d3420463-d0b3-4447-ad63-5d83a604141a - Error Occured while Finding Intent: 'NoneType' object has no attribute 'content'
+2025-02-23 01:16:57 - INFO - app_logger - ae99cb95-0ed8-40f6-a857-01933ef04a6e - hello
+2025-02-23 01:16:57 - INFO - app_logger - ae99cb95-0ed8-40f6-a857-01933ef04a6e - Chat Handler Initiated
+2025-02-23 01:17:02 - INFO - app_logger - ae99cb95-0ed8-40f6-a857-01933ef04a6e - Error Occured while Finding Intent: 'NoneType' object has no attribute 'content'
+2025-02-23 01:17:05 - INFO - app_logger -  - Successfully Invoked llmNone
+2025-02-23 01:17:05 - INFO - app_logger - ae99cb95-0ed8-40f6-a857-01933ef04a6e - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 01:18:41 - INFO - app_logger - 90504d32-cc9f-4921-b627-172d93b95925 - hello
+2025-02-23 01:18:41 - INFO - app_logger - 90504d32-cc9f-4921-b627-172d93b95925 - Chat Handler Initiated
+2025-02-23 01:18:43 - INFO - app_logger - 90504d32-cc9f-4921-b627-172d93b95925 - Intent Finding Success
+2025-02-23 01:19:01 - INFO - app_logger - 8ef5de9a-e227-4ca6-a4e1-bacf2e59f723 - How do you get flights that were delayed for more than 30 minutes?
+2025-02-23 01:19:01 - INFO - app_logger - 8ef5de9a-e227-4ca6-a4e1-bacf2e59f723 - Chat Handler Initiated
+2025-02-23 01:19:02 - INFO - app_logger - 8ef5de9a-e227-4ca6-a4e1-bacf2e59f723 - Intent Finding Success
+2025-02-23 01:19:03 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights WHERE departure_delay > 30' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-29cc4c9d-b488-481a-9341-3f7f84794f8d-0' usage_metadata={'input_tokens': 1742, 'output_tokens': 13, 'total_tokens': 1755, 'input_token_details': {'cache_read': 0}}
+2025-02-23 01:19:03 - INFO - app_logger - 8ef5de9a-e227-4ca6-a4e1-bacf2e59f723 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 01:19:03 - INFO - app_logger - 8ef5de9a-e227-4ca6-a4e1-bacf2e59f723 - Database instance created successfully
+2025-02-23 01:19:04 - INFO - app_logger - 8ef5de9a-e227-4ca6-a4e1-bacf2e59f723 - SQL execution success
+2025-02-23 01:19:04 - INFO - app_logger - 8ef5de9a-e227-4ca6-a4e1-bacf2e59f723 - SQL Generation Success. Returning Final SQl
+2025-02-23 01:19:04 - INFO - app_logger - 8ef5de9a-e227-4ca6-a4e1-bacf2e59f723 - SELECT * FROM flights WHERE departure_delay > 30
+2025-02-23 01:19:30 - INFO - app_logger - 58db8bdf-0751-4219-ba08-a32be69bf8be - who is kp sharma oli
+2025-02-23 01:19:30 - INFO - app_logger - 58db8bdf-0751-4219-ba08-a32be69bf8be - Chat Handler Initiated
+2025-02-23 01:19:33 - INFO - app_logger - 58db8bdf-0751-4219-ba08-a32be69bf8be - Error Occured while Finding Intent: 'NoneType' object has no attribute 'content'
+2025-02-23 01:19:34 - INFO - app_logger -  - Successfully Invoked llmcontent='Sorry, I cannot help to answer your question. Ask me question about flight and cancellation details.' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-7fe8ed01-16f9-463a-a852-8a3865495dba-0' usage_metadata={'input_tokens': 1793, 'output_tokens': 20, 'total_tokens': 1813, 'input_token_details': {'cache_read': 0}}
+2025-02-23 01:19:34 - INFO - app_logger - 58db8bdf-0751-4219-ba08-a32be69bf8be - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 01:19:34 - WARNING - app_logger - 58db8bdf-0751-4219-ba08-a32be69bf8be - SQL method Not Allowed
+2025-02-23 01:20:15 - INFO - app_logger - 1e181e18-9d10-44f2-8f6b-32bd34194bac - who is kp sharma oli
+2025-02-23 01:20:15 - INFO - app_logger - 1e181e18-9d10-44f2-8f6b-32bd34194bac - Chat Handler Initiated
+2025-02-23 01:20:18 - INFO - app_logger - 1e181e18-9d10-44f2-8f6b-32bd34194bac - Intent Finding Success
+2025-02-23 01:38:06 - INFO - app_logger - c529e01d-ca3a-4d53-8916-59a4d1ba28fd - hello
+2025-02-23 01:38:06 - INFO - app_logger - c529e01d-ca3a-4d53-8916-59a4d1ba28fd - Chat Handler Initiated
+2025-02-23 01:38:09 - INFO - app_logger - c529e01d-ca3a-4d53-8916-59a4d1ba28fd - Intent Finding Success
+2025-02-23 01:38:46 - INFO - app_logger - 9da990d4-5096-4da2-bdff-b141e722c7e3 - How do you get flights that were delayed for more than 30 minutes? Get the 30 results only
+2025-02-23 01:38:46 - INFO - app_logger - 9da990d4-5096-4da2-bdff-b141e722c7e3 - Chat Handler Initiated
+2025-02-23 01:38:49 - INFO - app_logger - 9da990d4-5096-4da2-bdff-b141e722c7e3 - Intent Finding Success
+2025-02-23 01:38:50 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights WHERE departure_delay > 30 LIMIT 30;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-39650c10-d672-42d9-845e-0281e4232ebe-0' usage_metadata={'input_tokens': 1761, 'output_tokens': 18, 'total_tokens': 1779, 'input_token_details': {'cache_read': 0}}
+2025-02-23 01:38:50 - INFO - app_logger - 9da990d4-5096-4da2-bdff-b141e722c7e3 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 01:38:50 - INFO - app_logger - 9da990d4-5096-4da2-bdff-b141e722c7e3 - Database instance created successfully
+2025-02-23 01:38:50 - INFO - app_logger - 9da990d4-5096-4da2-bdff-b141e722c7e3 - SQL execution success
+2025-02-23 01:38:50 - INFO - app_logger - 9da990d4-5096-4da2-bdff-b141e722c7e3 - SQL Generation Success. Returning Final SQl
+2025-02-23 01:38:50 - INFO - app_logger - 9da990d4-5096-4da2-bdff-b141e722c7e3 - SELECT * FROM flights WHERE departure_delay > 30 LIMIT 30;
+2025-02-23 01:44:56 - INFO - app_logger - 0e98bfa9-f5a0-4963-9430-591cc5aef75c - How do you get flights that were delayed for more than 30 minutes? Get the 30 results only
+2025-02-23 01:44:56 - INFO - app_logger - 0e98bfa9-f5a0-4963-9430-591cc5aef75c - Chat Handler Initiated
+2025-02-23 01:44:58 - INFO - app_logger - 0e98bfa9-f5a0-4963-9430-591cc5aef75c - Intent Finding Success
+2025-02-23 01:45:01 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights WHERE departure_delay > 30 LIMIT 30;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-929acc7e-18ff-45dc-88e3-6a9f1d5e9e13-0' usage_metadata={'input_tokens': 1782, 'output_tokens': 18, 'total_tokens': 1800, 'input_token_details': {'cache_read': 0}}
+2025-02-23 01:45:01 - INFO - app_logger - 0e98bfa9-f5a0-4963-9430-591cc5aef75c - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 01:45:01 - INFO - app_logger - 0e98bfa9-f5a0-4963-9430-591cc5aef75c - Database instance created successfully
+2025-02-23 01:45:01 - INFO - app_logger - 0e98bfa9-f5a0-4963-9430-591cc5aef75c - SQL execution success
+2025-02-23 01:45:01 - INFO - app_logger - 0e98bfa9-f5a0-4963-9430-591cc5aef75c - SQL Generation Success. Returning Final SQl
+2025-02-23 01:45:01 - INFO - app_logger - 0e98bfa9-f5a0-4963-9430-591cc5aef75c - SELECT * FROM flights WHERE departure_delay > 30 LIMIT 30;
+2025-02-23 01:46:36 - INFO - app_logger - c653268f-7720-4011-aff3-15ceae5633c3 - How do you get flights that were delayed for more than 30 minutes? Get the 30 results only
+2025-02-23 01:46:36 - INFO - app_logger - c653268f-7720-4011-aff3-15ceae5633c3 - Chat Handler Initiated
+2025-02-23 01:46:38 - INFO - app_logger - c653268f-7720-4011-aff3-15ceae5633c3 - Intent Finding Success
+2025-02-23 01:46:39 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights WHERE departure_delay > 30 LIMIT 30;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-4db7e7d8-e25d-43e0-8572-5b6cf3daa33e-0' usage_metadata={'input_tokens': 1727, 'output_tokens': 18, 'total_tokens': 1745, 'input_token_details': {'cache_read': 0}}
+2025-02-23 01:46:39 - INFO - app_logger - c653268f-7720-4011-aff3-15ceae5633c3 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 01:46:39 - INFO - app_logger - c653268f-7720-4011-aff3-15ceae5633c3 - Database instance created successfully
+2025-02-23 01:46:39 - INFO - app_logger - c653268f-7720-4011-aff3-15ceae5633c3 - SQL execution success
+2025-02-23 01:46:39 - INFO - app_logger - c653268f-7720-4011-aff3-15ceae5633c3 - SQL Generation Success. Returning Final SQl
+2025-02-23 01:46:39 - INFO - app_logger - c653268f-7720-4011-aff3-15ceae5633c3 - SELECT * FROM flights WHERE departure_delay > 30 LIMIT 30;
+2025-02-23 01:46:43 - INFO - app_logger - 232a897f-8d00-4599-a276-37b8af1dfa32 - How do you get flights that were delayed for more than 30 minutes? Get the 30 results only
+2025-02-23 01:46:43 - INFO - app_logger - 232a897f-8d00-4599-a276-37b8af1dfa32 - Chat Handler Initiated
+2025-02-23 01:46:46 - INFO - app_logger - 232a897f-8d00-4599-a276-37b8af1dfa32 - Intent Finding Success
+2025-02-23 01:46:49 - INFO - app_logger -  - Successfully Invoked llmNone
+2025-02-23 01:46:49 - INFO - app_logger - 232a897f-8d00-4599-a276-37b8af1dfa32 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 01:49:49 - INFO - app_logger - 77ce707c-992e-44a9-9e08-17cf75818c83 - hello
+2025-02-23 01:49:49 - INFO - app_logger - 77ce707c-992e-44a9-9e08-17cf75818c83 - Chat Handler Initiated
+2025-02-23 01:49:51 - INFO - app_logger - 77ce707c-992e-44a9-9e08-17cf75818c83 - Intent Finding Success
+2025-02-23 01:50:29 - INFO - app_logger - f63e8ad3-d714-4965-8b6f-8da8b06b83f2 - give me the most delayed flights (top 10 by arrival delay)?
+2025-02-23 01:50:29 - INFO - app_logger - f63e8ad3-d714-4965-8b6f-8da8b06b83f2 - Chat Handler Initiated
+2025-02-23 01:50:32 - INFO - app_logger - f63e8ad3-d714-4965-8b6f-8da8b06b83f2 - Intent Finding Success
+2025-02-23 01:50:34 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights ORDER BY arrival_delay DESC LIMIT 10;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-38832fa4-445a-4a36-b364-a61cda7c20e4-0' usage_metadata={'input_tokens': 1798, 'output_tokens': 16, 'total_tokens': 1814, 'input_token_details': {'cache_read': 0}}
+2025-02-23 01:50:34 - INFO - app_logger - f63e8ad3-d714-4965-8b6f-8da8b06b83f2 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 01:50:34 - INFO - app_logger - f63e8ad3-d714-4965-8b6f-8da8b06b83f2 - Database instance created successfully
+2025-02-23 01:50:34 - INFO - app_logger - f63e8ad3-d714-4965-8b6f-8da8b06b83f2 - SQL execution success
+2025-02-23 01:50:34 - INFO - app_logger - f63e8ad3-d714-4965-8b6f-8da8b06b83f2 - SQL Generation Success. Returning Final SQl
+2025-02-23 01:50:34 - INFO - app_logger - f63e8ad3-d714-4965-8b6f-8da8b06b83f2 - SELECT * FROM flights ORDER BY arrival_delay DESC LIMIT 10;

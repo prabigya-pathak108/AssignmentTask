@@ -1,13 +1,14 @@
 from .base import SQLBaseClass
-from prompts.prompt_generation import PromptGenerationClass
-from llm.llms_factory import initialize_llm_from_factory
+from helpers.prompts.prompt_generation import PromptGenerationClass
+from helpers.llm.llms_factory import initialize_llm_from_factory
 import random
 import os
 import json
 import yaml
 from sqlalchemy.exc import SQLAlchemyError
-from database_work_model import database as db
+from helpers.database_work_model import database as db
 from sqlalchemy import text
+from helpers.logging_mechanism.logger import log_message
 
 
 class SQLGenAndRetry(SQLBaseClass):
@@ -31,14 +32,18 @@ class SQLGenAndRetry(SQLBaseClass):
         return schema_data
 
     
-    def sql_execution(self, generated_sql):
+    def sql_execution(self, generated_sql,unique_id):
         extracted_sql= self.extract_sql_from_llm_response(generated_sql)
         if self.validating_sql_and_select_only(extracted_sql)=="Not allowed":
+            log_message(str(unique_id),f"SQL method Not Allowed",level="warning")
             return {"success":False,"retry":False,"data":"Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...","error_msg":None}
-        db_s = next(db.get_db())  # Get DB session
+        
         try:
+            db_s = next(db.get_db())  # Get DB session
+            log_message(str(unique_id),f"Database instance created successfully")
             result = db_s.execute(text(extracted_sql))  # Wrap SQL query with text()
             data = result.fetchall()  # Fetch results
+            log_message(str(unique_id),f"SQL execution success")
 
             if data:  # If data is retrieved, exit loop
                 return {"success":True,"retry":False,"data":data}
@@ -47,6 +52,7 @@ class SQLGenAndRetry(SQLBaseClass):
 
         except SQLAlchemyError as e:
             error_message = "\n".join(x for x in str(e).split("\n")[:-2])
+            log_message(str(unique_id),f"SQL execution unsuccess {error_message}")
             return {"success":False,"retry":True,"data":None,"error_msg":error_message}
         finally:
             db_s.close()
@@ -66,6 +72,7 @@ class SQLGenAndRetry(SQLBaseClass):
             "schemas": str(self.schema),
             "few_shot_examples": str(few_shots_questions)
         }
+        unique_id=kwargs.get("unique_id",'')
 
         if prompt_type == "error_handle_prompt":
             query["errors_encountered"] = str(kwargs.get("list_of_errors", []))
@@ -76,8 +83,10 @@ class SQLGenAndRetry(SQLBaseClass):
 
         try:
             response = llm.invoke_llm(formatted_prompt)
+            log_message(str(unique_id),f"Successfully Invoked llm{str(response)}")
             return {"success":True,"sql_generated":response.content if response else None,"error":None}
         except Exception as e:
+            log_message(str(unique_id),f"Failure in LLM invoke: {str(response)}")
             return {"success":False,"sql_generated":None,"error":str(e)}
 
     def sql_generation(self, llm, **kwargs):
@@ -88,7 +97,7 @@ class SQLGenAndRetry(SQLBaseClass):
 
     def sql_generation_and_execution(self, **kwargs):
         llm = initialize_llm_from_factory(provider=kwargs.get("kwargs",{}).get("provider", "gemini"))
-
+        unique_id=kwargs.get("kwargs",{}).get("unique_id", "")
         max_retries = 3
         list_of_errors = []  # Store errors for retry mechanism
 
@@ -102,17 +111,20 @@ class SQLGenAndRetry(SQLBaseClass):
             if not generated_sql["success"]:
                 return {"data": generated_sql["error"]}
             
-
-            execution_result = self.sql_execution(generated_sql["sql_generated"])
+            log_message(str(unique_id),f"SQL Generation Successful: Attempting Execution: Attempt{attempt}")
+            execution_result = self.sql_execution(generated_sql["sql_generated"],unique_id)
 
             if execution_result["success"]:
-                return {"data": execution_result["data"],"generated_sql":generated_sql["sql_generated"]}
+                # return {"data": execution_result["data"],"generated_sql":generated_sql["sql_generated"]}
+                log_message(str(unique_id),f"SQL Generation Success. Returning Final SQl")
+                log_message(str(unique_id),str(generated_sql["sql_generated"]))
+                return {"data":generated_sql["sql_generated"],"is_sql":True}
 
             # Store error for retry prompt
-            list_of_errors.append(str(generated_sql["sql_generated"]+"\n"+execution_result["error_msg"]+"\n\n"))
+            list_of_errors.append(str(generated_sql["sql_generated"]+"\n"+str(execution_result["error_msg"])+"\n\n"))
             # print(f"Retrying SQL execution... Attempt {attempt + 1}/{max_retries}")
             
-
+        log_message(str(unique_id),f"SQL Generation Unsuccessful: Maximum Retries Acheived")
         return {"success": False, "retry": False, "data": "Sorry The data could not be retrieved", "error_msg": "Max retries reached."}
 
 

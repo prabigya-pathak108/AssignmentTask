@@ -1,5 +1,5 @@
-from llm.llms_factory import initialize_llm_from_factory
-from prompts.prompt_generation import PromptGenerationClass
+from helpers.llm.llms_factory import initialize_llm_from_factory
+from helpers.prompts.prompt_generation import PromptGenerationClass
 
 from typing import List,Generic, Optional
 from pydantic import BaseModel, Field
@@ -12,8 +12,6 @@ class IntentIdentificationMgmt(BaseModel):
         default=None, 
         description="The response message related to the conversational query like hello, hi, etc,."
     )
-
-    
 
 
 class UtilFunctionalities:
@@ -35,7 +33,6 @@ class UtilFunctionalities:
             "format_instructions":intent_generation_parser.get_format_instructions()
         }
         formatted_prompt = self.prompt_factory.set_var(prompt_template, query)
-        # print(formatted_prompt)
         print("********************************************************")
         response=llm.invoke_llm(formatted_prompt)
         print(response)

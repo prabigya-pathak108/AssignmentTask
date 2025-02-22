@@ -6,7 +6,7 @@ import traceback
 from abc import ABC, abstractmethod
 from typing import List, Tuple, Union
 from urllib.parse import urlparse
-from secret_manager.secrets import SecretManager
+from helpers.secret_manager.secrets import SecretManager
 
 import pandas as pd
 import plotly
