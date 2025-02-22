@@ -27,24 +27,24 @@ graph TD
     K -->|Count < 2| L[Add Error Context]
     L --> G
     
-    K -->|Count >= 2| M[Error Response]
+    K -->|Count >= 2| O[Store in Redis Cache]
     
     J -->|Success| N[Query Results]
     N --> O[Store in Redis Cache]
     
     O --> P[Final Response]
-    M --> P
+   
     
     P --> Q[Frontend Polling]
     Q -->|Every 5s, Max 6 Times| R[Check Redis]
     R --> S[Return Results/Error]
     
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style D fill:#bbf,stroke:#333,stroke-width:2px
-    style H fill:#bbf,stroke:#333,stroke-width:2px
-    style K fill:#bbf,stroke:#333,stroke-width:2px
-    style O fill:#ffa,stroke:#333,stroke-width:2px
-    style Q fill:#bfb,stroke:#333,stroke-width:2px
+    style A fill:#f11,stroke:#333,stroke-width:2px
+    style D fill:#d11,stroke:#333,stroke-width:2px
+    style H fill:#f11,stroke:#000,stroke-width:2px
+    style K fill:#a11,stroke:#333,stroke-width:2px
+    style O fill:#a1d,stroke:#333,stroke-width:2px
+    style Q fill:#f11,stroke:#333,stroke-width:2px
 ```
 
 
