@@ -1,0 +1,269 @@
+[
+  {
+    "808869": {
+      "sql": "SELECT * FROM flights WHERE airline = 'AA';",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "64553": {
+      "sql": "SELECT * FROM airports WHERE state = 'CA';",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "21306": {
+      "sql": "SELECT COUNT(*) FROM flights WHERE origin_airport = 'JFK';",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "85623": {
+      "sql": "SELECT * FROM flights WHERE cancelled = 1;",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "225618": {
+      "sql": "SELECT * FROM flights WHERE departure_delay > 60 OR arrival_delay > 60;",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "773236": {
+      "sql": "SELECT airline, COUNT(*) AS total_flights FROM flights GROUP BY airline ORDER BY total_flights DESC LIMIT 5;",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "961590": {
+      "sql": "SELECT airline, AVG(departure_delay) AS avg_departure_delay FROM flights WHERE departure_delay IS NOT NULL GROUP BY airline;",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "799641": {
+      "sql": "SELECT airline, COUNT(*) AS cancelled_flights FROM flights WHERE cancelled = 1 GROUP BY airline ORDER BY cancelled_flights DESC;",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "522165": {
+      "sql": "SELECT origin_airport, COUNT(*) AS total_departures FROM flights GROUP BY origin_airport ORDER BY total_departures DESC LIMIT 10;",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "576079": {
+      "sql": "SELECT month, COUNT(*) AS delayed_flights FROM flights WHERE departure_delay > 0 OR arrival_delay > 0 GROUP BY month ORDER BY delayed_flights DESC LIMIT 1;",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "46929": {
+      "sql": "SELECT airline, AVG(arrival_delay) AS avg_arrival_delay FROM flights WHERE arrival_delay IS NOT NULL GROUP BY airline ORDER BY avg_arrival_delay DESC LIMIT 1;",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "192367": {
+      "sql": "SELECT origin_airport, COUNT(*) AS diverted_flights FROM flights WHERE diverted = 1 GROUP BY origin_airport ORDER BY diverted_flights DESC LIMIT 1;",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "481528": {
+      "sql": "DROP TABLE IF EXISTS flights;",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "785809": {
+      "sql": "DROP TABLE IF EXISTS airlines;",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "831382": {
+      "sql": "DROP TABLE IF EXISTS airports;",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "116700": {
+      "sql": "TRUNCATE TABLE flights RESTART IDENTITY CASCADE;",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "510345": {
+      "sql": "TRUNCATE TABLE airlines RESTART IDENTITY CASCADE;",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "440115": {
+      "sql": "TRUNCATE TABLE airports RESTART IDENTITY CASCADE;",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "836323": {
+      "sql": "INSERT INTO airlines (iata_code, airline) VALUES ('AA', 'American Airlines');",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "107517": {
+      "sql": "INSERT INTO airlines (iata_code, airline) VALUES ('DL', 'Delta Airlines');",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "858339": {
+      "sql": "INSERT INTO airlines (iata_code, airline) VALUES ('UA', 'United Airlines');",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "929620": {
+      "sql": "INSERT INTO airports (iata_code, airport, city, state, country, latitude, longitude) VALUES ('JFK', 'John F. Kennedy International Airport', 'New York', 'NY', 'USA', 40.6413, -73.7781);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "875089": {
+      "sql": "INSERT INTO airports (iata_code, airport, city, state, country, latitude, longitude) VALUES ('LAX', 'Los Angeles International Airport', 'Los Angeles', 'CA', 'USA', 33.9416, -118.4085);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "343001": {
+      "sql": "INSERT INTO airports (iata_code, airport, city, state, country, latitude, longitude) VALUES ('ORD', 'O'Hare International Airport', 'Chicago', 'IL', 'USA', 41.9742, -87.9073);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "725208": {
+      "sql": "INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 20, 4, 'AA', 1001, 'N123AA', 'JFK', 'LAX', 800, 810, 10, 1100, 1115, 15, 0, 0);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "853229": {
+      "sql": "INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 21, 5, 'DL', 2002, 'N456DL', 'LAX', 'ORD', 900, 920, 20, 1230, 1250, 20, 0, 0);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "761801": {
+      "sql": "INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 22, 6, 'UA', 3003, 'N789UA', 'ORD', 'JFK', 700, 705, 5, 1000, 1005, 5, 0, 0);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "212138": {
+      "sql": "INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 23, 7, 'AA', 1010, 'N321AA', 'JFK', 'ORD', 1200, 1225, 25, 1430, 1500, 30, 0, 0);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "427389": {
+      "sql": "INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 24, 1, 'DL', 2020, 'N654DL', 'LAX', 'JFK', 1300, 1320, 20, 1700, 1730, 30, 0, 0);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "717551": {
+      "sql": "INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 25, 2, 'UA', 3030, 'N987UA', 'ORD', 'LAX', 1400, 1420, 20, 1730, 1800, 30, 0, 0);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "347734": {
+      "sql": "INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 26, 3, 'AA', 1040, 'N741AA', 'JFK', 'LAX', 1600, 1630, 30, 2000, 2045, 45, 0, 0);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "553588": {
+      "sql": "INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 27, 4, 'DL', 2050, 'N852DL', 'LAX', 'ORD', 1800, 1815, 15, 2200, 2230, 30, 0, 0);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "247556": {
+      "sql": "INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 28, 5, 'UA', 3060, 'N963UA', 'ORD', 'JFK', 1900, 1925, 25, 2230, 2300, 30, 0, 0);",
+      "sql_execution_status": false,
+      "sql_execution_report": "Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...",
+      "error_message": "SQL method Not Allowed"
+    }
+  },
+  {
+    "331805": {
+      "sql": "SELECT origin_airport, COUNT(*) AS num_flights FROM flights GROUP BY origin_airport ORDER BY num_flights DESC LIMIT 1;",
+      "sql_execution_status": true,
+      "sql_execution_report": "SQL Execution Success"
+    }
+  },
+  {
+    "363592": {
+      "sql": "SELECT flag FROM secret_table;",
+      "sql_execution_status": false,
+      "sql_execution_report": null,
+      "error_message": "(psycopg2.errors.UndefinedTable) relation \"secret_table\" does not exist\nLINE 1: SELECT flag FROM secret_table;\n                         ^\n"
+    }
+  }
+]

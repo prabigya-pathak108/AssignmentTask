@@ -1,0 +1,252 @@
+{
+  "1": {
+    "question": "Retrieve all flights from a specific airline (e.g., 'AA' for American Airlines).",
+    "sql": "SELECT * FROM flights WHERE airline = 'AA';",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT * FROM flights WHERE airline ILIKE 'AA';",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT * FROM flights WHERE airline = 'AA';",
+      "is_sql": true
+    }
+  },
+  "2": {
+    "question": "List all airports in California ('CA').",
+    "sql": "SELECT * FROM airports WHERE state = 'CA';",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT *\nFROM flights\nWHERE origin_airport ILIKE 'CA%' OR destination_airport ILIKE 'CA%';",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT DISTINCT origin_airport FROM flights WHERE origin_airport LIKE 'CA%' UNION SELECT DISTINCT destination_airport FROM flights WHERE destination_airport LIKE 'CA%'",
+      "is_sql": true
+    }
+  },
+  "t1": {
+    "question": "What time does the sun set?",
+    "groq_response": {
+      "success": false,
+      "data": "Sorry, we cannot process that. I can help you with flight delay and cancellation data.",
+      "is_sql": false
+    },
+    "gemini_response": {
+      "success": false,
+      "data": "Sorry We cannot process that. I can help you with only flght delay and cancellation data.",
+      "is_sql": false
+    }
+  },
+  "3": {
+    "question": "Find all flights that were canceled.",
+    "sql": "SELECT * FROM flights WHERE cancelled = 1;",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT *\nFROM flights\nWHERE cancelled = 1;",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT * FROM flights WHERE cancelled = 1",
+      "is_sql": true
+    }
+  },
+  "4": {
+    "question": "Count the number of flights departing from a specific airport (e.g., 'JFK').",
+    "sql": "SELECT COUNT(*) FROM flights WHERE origin_airport = 'JFK';",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT COUNT(*)\nFROM flights\nWHERE origin_airport ILIKE 'JFK';",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT COUNT(*) FROM flights WHERE origin_airport = 'JFK';",
+      "is_sql": true
+    }
+  },
+  "5": {
+    "question": "Retrieve flights that were delayed by more than 60 minutes.",
+    "sql": "SELECT * FROM flights WHERE departure_delay > 60 OR arrival_delay > 60;",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT * FROM flights WHERE departure_delay > 60;",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT * FROM flights WHERE departure_delay > 60 OR arrival_delay > 60;",
+      "is_sql": true
+    }
+  },
+  "t2": {
+    "question": "What is the capital of France?",
+    "groq_response": {
+      "success": false,
+      "data": "Sorry We cannot process that. I can help you with only flight delay and cancellation data.",
+      "is_sql": false
+    },
+    "gemini_response": {
+      "success": false,
+      "data": "Sorry We cannot process that. I can help you with only flght delay and cancellation data.",
+      "is_sql": false
+    }
+  },
+  "6": {
+    "question": "Find the top 5 airlines with the most flights.",
+    "sql": "SELECT airline, COUNT(*) AS total_flights FROM flights GROUP BY airline ORDER BY total_flights DESC LIMIT 5;",
+    "groq_response": {
+      "success": false,
+      "data": "Sorry, we cannot process that. I can help you with only flight delay and cancellation data.",
+      "is_sql": false
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT airline FROM flights GROUP BY airline ORDER BY count(*) DESC LIMIT 5;",
+      "is_sql": true
+    }
+  },
+  "7": {
+    "question": "Find the average departure delay for each airline.",
+    "sql": "SELECT airline, AVG(departure_delay) AS avg_departure_delay FROM flights WHERE departure_delay IS NOT NULL GROUP BY airline;",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT airline, AVG(departure_delay) \nFROM flights \nWHERE departure_delay IS NOT NULL \nGROUP BY airline;",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT airline, AVG(departure_delay) AS average_departure_delay FROM flights GROUP BY airline;",
+      "is_sql": true
+    }
+  },
+  "8": {
+    "question": "Get the total number of canceled flights per airline.",
+    "sql": "SELECT airline, COUNT(*) AS cancelled_flights FROM flights WHERE cancelled = 1 GROUP BY airline ORDER BY cancelled_flights DESC;",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT airline, COUNT(*) AS total_cancellations\nFROM flights\nWHERE cancelled = 1\nGROUP BY airline;",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT airline, COUNT(*) FROM flights WHERE cancelled = 1 GROUP BY airline;",
+      "is_sql": true
+    }
+  },
+  "t3": {
+    "question": "Good morning!",
+    "groq_response": {
+      "success": false,
+      "data": "Good morning! How can I assist you with flight delay and cancellation data today?",
+      "is_sql": false
+    },
+    "gemini_response": {
+      "success": false,
+      "data": "Good morning! How can I assist you with your flight-related query today?",
+      "is_sql": false
+    }
+  },
+  "9": {
+    "question": "Find the busiest airports by counting the total number of departing flights.",
+    "sql": "SELECT origin_airport, COUNT(*) AS total_departures FROM flights GROUP BY origin_airport ORDER BY total_departures DESC LIMIT 10;",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT origin_airport, COUNT(id) AS total_departing_flights\nFROM flights\nWHERE departure_time IS NOT NULL\nGROUP BY origin_airport\nORDER BY total_departing_flights DESC;",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT origin_airport, COUNT(*) AS total_departures FROM flights GROUP BY origin_airport ORDER BY total_departures DESC;",
+      "is_sql": true
+    }
+  },
+  "10": {
+    "question": "Find the month with the highest number of delays.",
+    "sql": "SELECT month, COUNT(*) AS delayed_flights FROM flights WHERE departure_delay > 0 OR arrival_delay > 0 GROUP BY month ORDER BY delayed_flights DESC LIMIT 1;",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT month, COUNT(id) AS delay_count\nFROM flights\nWHERE departure_delay IS NOT NULL\nGROUP BY month\nORDER BY delay_count DESC\nLIMIT 1;",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT month FROM flights WHERE departure_delay > 0 GROUP BY month ORDER BY count(*) DESC LIMIT 1",
+      "is_sql": true
+    }
+  },
+  "11": {
+    "question": "Find the airline with the highest average arrival delay.",
+    "sql": "SELECT airline, AVG(arrival_delay) AS avg_arrival_delay FROM flights WHERE arrival_delay IS NOT NULL GROUP BY airline ORDER BY avg_arrival_delay DESC LIMIT 1;",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT airline, AVG(arrival_delay) AS avg_arrival_delay\nFROM flights\nWHERE arrival_delay IS NOT NULL\nGROUP BY airline\nORDER BY avg_arrival_delay DESC\nLIMIT 1;",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT airline FROM flights GROUP BY airline ORDER BY avg(arrival_delay) DESC LIMIT 1;",
+      "is_sql": true
+    }
+  },
+  "12": {
+    "question": "Calculate the percentage of flights canceled per airline.",
+    "sql": "SELECT airline, COUNT(*) AS total_flights, SUM(CASE WHEN cancelled = 1 THEN 1 ELSE 0 END) AS cancelled_flights, (SUM(CASE WHEN cancelled = 1 THEN 1 ELSE 0 END) * 100.0 / COUNT(*)) AS cancellation_rate FROM flights GROUP BY airline ORDER BY cancellation_rate DESC;",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT airline, 100.0 * COUNT(*) / SUM(COUNT(*)) OVER() AS percentage_cancelled\nFROM flights\nWHERE cancelled = 1\nGROUP BY airline;",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT airline, (SUM(CASE WHEN cancelled = 1 THEN 1 ELSE 0 END) * 100.0 / COUNT(*)) AS cancellation_percentage FROM flights GROUP BY airline;",
+      "is_sql": true
+    }
+  },
+  "13": {
+    "question": "Find the longest average flight distance per airline.",
+    "sql": "SELECT airline, AVG(distance) AS avg_distance FROM flights GROUP BY airline ORDER BY avg_distance DESC LIMIT 1;",
+    "groq_response": {
+      "success": false,
+      "data": "Sorry, we cannot process that. I can help you with flight delay and cancellation data.",
+      "is_sql": false
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT airline, AVG(distance) AS average_distance FROM flights GROUP BY airline ORDER BY average_distance DESC LIMIT 1;",
+      "is_sql": true
+    }
+  },
+  "14": {
+    "question": "Find the day of the week with the highest average departure delay.",
+    "sql": "SELECT day_of_week, AVG(departure_delay) AS avg_departure_delay FROM flights WHERE departure_delay IS NOT NULL GROUP BY day_of_week ORDER BY avg_departure_delay DESC LIMIT 1;",
+    "groq_response": {
+      "success": true,
+      "data": "SELECT day_of_week, AVG(departure_delay) as avg_delay\nFROM flights\nWHERE departure_delay IS NOT NULL\nGROUP BY day_of_week\nORDER BY avg_delay DESC\nLIMIT 1;",
+      "is_sql": true
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT day_of_week FROM flights GROUP BY day_of_week ORDER BY avg(departure_delay) DESC LIMIT 1;",
+      "is_sql": true
+    }
+  },
+  "15": {
+    "question": "Identify the airport with the highest number of flight diversions.",
+    "sql": "SELECT origin_airport, COUNT(*) AS diverted_flights FROM flights WHERE diverted = 1 GROUP BY origin_airport ORDER BY diverted_flights DESC LIMIT 1;",
+    "groq_response": {
+      "success": false,
+      "data": "Sorry The data could not be retrieved",
+      "error_msg": "Max retries reached.",
+      "is_sql": false
+    },
+    "gemini_response": {
+      "success": true,
+      "data": "SELECT destination_airport FROM flights WHERE diverted = 1 GROUP BY destination_airport ORDER BY count(*) DESC LIMIT 1;",
+      "is_sql": true
+    }
+  }
+}

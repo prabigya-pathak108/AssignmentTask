@@ -24,7 +24,10 @@ class UtilFunctionalities:
         question = str(kwargs.get("kwargs",{}).get("user_question", ""))
         print("provider is: ",provider)
         print("kwargs: ",kwargs)
-        llm = initialize_llm_from_factory(provider=provider)
+        try:
+            llm = initialize_llm_from_factory(provider=provider,api_key=kwargs.get("kwargs",{}).get("api_key", None),model=kwargs.get("kwargs",{}).get("model", None),temperature=kwargs.get("kwargs",{}).get("temperature", None))
+        except ValueError as e:
+            raise ValueError(f"{e}")  
         intent_generation_parser = PydanticOutputParser(pydantic_object=IntentIdentificationMgmt)
 
         
@@ -34,6 +37,10 @@ class UtilFunctionalities:
         }
         formatted_prompt = self.prompt_factory.set_var(prompt_template, query)
         print("********************************************************")
-        response=llm.invoke_llm(formatted_prompt)
-        print(response)
-        return response
+        try:
+            response = llm.invoke_llm(formatted_prompt)
+            print(response)
+            return response
+        except ValueError as e:
+            raise ValueError(f"Invalid API key or model name. Please check and retry.")  
+        

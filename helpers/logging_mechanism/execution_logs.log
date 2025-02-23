@@ -359,3 +359,840 @@ WHERE year = 2015 AND month = 1 AND day = 1;
 2025-02-23 15:01:16 - INFO - app_logger - gghh-3dded - SQL execution success
 2025-02-23 15:01:16 - INFO - app_logger - gghh-3dded - SQL Generation Success. Returning Final SQl
 2025-02-23 15:01:16 - INFO - app_logger - gghh-3dded - SELECT scheduled_departure, AVG(departure_delay) AS avg_delay FROM flights GROUP BY scheduled_departure ORDER BY scheduled_departure;
+2025-02-23 15:46:14 - INFO - app_logger - 78f2be37-baf0-4e92-ab9e-a1dad89d8ff4 - Chat Handler Initiated
+2025-02-23 15:46:16 - INFO - app_logger - 78f2be37-baf0-4e92-ab9e-a1dad89d8ff4 - Intent Finding Success
+2025-02-23 15:51:28 - INFO - app_logger - 2a23bad8-62fe-4a36-b0a8-36459c4f7521 - Chat Handler Initiated
+2025-02-23 15:51:31 - INFO - app_logger - 2a23bad8-62fe-4a36-b0a8-36459c4f7521 - Intent Finding Success
+2025-02-23 15:52:43 - INFO - app_logger - 057bcccb-7d2d-4a94-97ec-60ea8f8c2cfa - Chat Handler Initiated
+2025-02-23 15:52:43 - INFO - app_logger - 057bcccb-7d2d-4a94-97ec-60ea8f8c2cfa - Error Occured while Finding Intent: Temperature must be a number between 0 and 1.
+2025-02-23 16:04:12 - INFO - app_logger - 950231a1-8554-472b-930e-def454fdc30d - Chat Handler Initiated
+2025-02-23 16:04:32 - INFO - app_logger - e96789ce-5f72-441a-9a27-4e71d4d5018e - Chat Handler Initiated
+2025-02-23 16:05:33 - INFO - app_logger - 6cf67c52-91bf-461c-8252-4a4cca07004d - Chat Handler Initiated
+2025-02-23 16:06:00 - INFO - app_logger - 03f703c2-55f3-4c8b-a049-1dcc75c68c31 - Chat Handler Initiated
+2025-02-23 16:06:50 - INFO - app_logger - 7fe3c88b-9fbe-47a0-9702-15c072f019b9 - Chat Handler Initiated
+2025-02-23 16:07:47 - INFO - app_logger - a5ffde31-3d94-412f-aaa6-3d7a0c3222e9 - Chat Handler Initiated
+2025-02-23 16:08:23 - INFO - app_logger - 3f14415d-aae6-4ae0-aab7-af1dacf2c914 - Chat Handler Initiated
+2025-02-23 16:10:08 - INFO - app_logger - 7a7e2cab-1d4e-4e7f-a42c-f24b28196e95 - Chat Handler Initiated
+2025-02-23 16:22:04 - INFO - app_logger - bb22c715-23f0-4168-bc05-97977d81b19d - Chat Handler Initiated
+2025-02-23 16:24:17 - INFO - app_logger - 75eb9bb2-8922-41b6-98fb-2bcd3737f87f - Chat Handler Initiated
+2025-02-23 16:24:51 - INFO - app_logger - 3cf09587-4063-4252-902a-2800ab2b23bb - Chat Handler Initiated
+2025-02-23 16:25:31 - INFO - app_logger - 8cbf8626-10b4-48bf-b2b0-7eddfed4be8c - Chat Handler Initiated
+2025-02-23 16:25:33 - INFO - app_logger - 8cbf8626-10b4-48bf-b2b0-7eddfed4be8c - Intent Finding Success
+2025-02-23 16:25:48 - INFO - app_logger - 76c3bb54-2a30-4455-be2e-476d6ac126a3 - Chat Handler Initiated
+2025-02-23 16:25:50 - INFO - app_logger - 76c3bb54-2a30-4455-be2e-476d6ac126a3 - Error Occured while Finding Intent: 'NoneType' object has no attribute 'content'
+2025-02-23 16:28:54 - INFO - app_logger - f5544898-fbff-42f1-a0aa-092f7b4423df - Chat Handler Initiated
+2025-02-23 16:28:56 - INFO - app_logger - f5544898-fbff-42f1-a0aa-092f7b4423df - Error Occured while Finding Intent: 'NoneType' object has no attribute 'content'
+2025-02-23 16:31:08 - INFO - app_logger - 4b463da6-3270-4584-8026-28367fd5e979 - Chat Handler Initiated
+2025-02-23 16:31:56 - INFO - app_logger - dff3b1a3-863e-4c80-a6f7-5094e47cbfea - Chat Handler Initiated
+2025-02-23 16:35:46 - INFO - app_logger - 585dc566-77e1-4417-98db-e7359f23077f - Chat Handler Initiated
+2025-02-23 16:37:01 - INFO - app_logger - 199075f9-71cc-402d-84ba-e868a1d64cd7 - Chat Handler Initiated
+2025-02-23 16:37:03 - INFO - app_logger - 199075f9-71cc-402d-84ba-e868a1d64cd7 - 'NoneType' object has no attribute 'content'
+2025-02-23 16:38:05 - INFO - app_logger - 1f2d5b19-a78b-439d-bdc5-1d2ba9fc0993 - Chat Handler Initiated
+2025-02-23 16:38:05 - INFO - app_logger - 1f2d5b19-a78b-439d-bdc5-1d2ba9fc0993 - 'NoneType' object has no attribute 'content'
+2025-02-23 16:44:08 - INFO - app_logger - da2615d3-d5ae-4e28-a440-d5bb95162c8f - Chat Handler Initiated
+2025-02-23 16:44:11 - INFO - app_logger - da2615d3-d5ae-4e28-a440-d5bb95162c8f - Intent Finding Success
+2025-02-23 16:44:43 - INFO - app_logger - 9fee497a-748a-45cf-a686-8362890033fc - Chat Handler Initiated
+2025-02-23 16:44:46 - INFO - app_logger - 9fee497a-748a-45cf-a686-8362890033fc - Intent Finding Success
+2025-02-23 16:45:02 - INFO - app_logger - 3df40d29-edd4-414e-870b-9a1da7cdf691 - Chat Handler Initiated
+2025-02-23 16:45:03 - INFO - app_logger - 3df40d29-edd4-414e-870b-9a1da7cdf691 - Intent Finding Success
+2025-02-23 16:45:07 - INFO - app_logger -  - Successfully Invoked llmNone
+2025-02-23 16:45:07 - INFO - app_logger - 3df40d29-edd4-414e-870b-9a1da7cdf691 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 16:45:07 - INFO - app_logger - 3df40d29-edd4-414e-870b-9a1da7cdf691 - expected string or bytes-like object, got 'NoneType'
+2025-02-23 17:34:50 - INFO - app_logger - 0c140ebd-72fe-4106-9f69-e58c42d855eb - Chat Handler Initiated
+2025-02-23 17:34:53 - INFO - app_logger - 0c140ebd-72fe-4106-9f69-e58c42d855eb - Intent Finding Success
+2025-02-23 17:34:55 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights ORDER BY departure_delay DESC LIMIT 10;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-104e0453-070d-44e3-aa60-5e8395cb0878-0' usage_metadata={'input_tokens': 1710, 'output_tokens': 16, 'total_tokens': 1726, 'input_token_details': {'cache_read': 0}}
+2025-02-23 17:34:55 - INFO - app_logger - 0c140ebd-72fe-4106-9f69-e58c42d855eb - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 17:34:55 - INFO - app_logger - 0c140ebd-72fe-4106-9f69-e58c42d855eb - Database instance created successfully
+2025-02-23 17:34:56 - INFO - app_logger - 0c140ebd-72fe-4106-9f69-e58c42d855eb - SQL execution success
+2025-02-23 17:34:56 - INFO - app_logger - 0c140ebd-72fe-4106-9f69-e58c42d855eb - SQL Generation Success. Returning Final SQl
+2025-02-23 17:34:56 - INFO - app_logger - 0c140ebd-72fe-4106-9f69-e58c42d855eb - SELECT * FROM flights ORDER BY departure_delay DESC LIMIT 10;
+2025-02-23 17:34:56 - INFO - app_logger - 0c140ebd-72fe-4106-9f69-e58c42d855eb - Database instance created successfully
+2025-02-23 17:34:56 - INFO - app_logger - 0c140ebd-72fe-4106-9f69-e58c42d855eb - SQL execution success
+2025-02-23 17:56:17 - INFO - app_logger - 6580323d-0086-4237-8a05-9cba8afd75b6 - Chat Handler Initiated
+2025-02-23 17:56:19 - INFO - app_logger - 6580323d-0086-4237-8a05-9cba8afd75b6 - 'NoneType' object has no attribute 'content'
+2025-02-23 17:57:04 - INFO - app_logger - 99f564d9-7b91-4d9e-9f3f-949b853862d3 - Chat Handler Initiated
+2025-02-23 17:57:06 - INFO - app_logger - 99f564d9-7b91-4d9e-9f3f-949b853862d3 - Intent Finding Success
+2025-02-23 18:10:45 - INFO - app_logger - 16841a6a-4576-4bce-9087-88a296a9ddd9 - Chat Handler Initiated
+2025-02-23 18:10:48 - INFO - app_logger - 16841a6a-4576-4bce-9087-88a296a9ddd9 - Intent Finding Success
+2025-02-23 18:11:13 - INFO - app_logger - 03ca5514-dff6-41a1-9115-3bdd1863cf2f - Chat Handler Initiated
+2025-02-23 18:11:14 - INFO - app_logger - 03ca5514-dff6-41a1-9115-3bdd1863cf2f - Intent Finding Success
+2025-02-23 18:11:35 - INFO - app_logger - 5011cb84-fdba-488e-b2f5-27fb177408ea - Chat Handler Initiated
+2025-02-23 18:11:38 - INFO - app_logger - 5011cb84-fdba-488e-b2f5-27fb177408ea - Intent Finding Success
+2025-02-23 18:12:25 - INFO - app_logger - 562b1c6e-8118-41cf-a267-2226fecbb519 - Chat Handler Initiated
+2025-02-23 18:12:28 - INFO - app_logger - 562b1c6e-8118-41cf-a267-2226fecbb519 - Intent Finding Success
+2025-02-23 18:12:30 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT MAX(arrival_delay) FROM flights;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-d4111f2a-4cb5-4f36-874e-ece1db0624b5-0' usage_metadata={'input_tokens': 1751, 'output_tokens': 11, 'total_tokens': 1762, 'input_token_details': {'cache_read': 0}}
+2025-02-23 18:12:30 - INFO - app_logger - 562b1c6e-8118-41cf-a267-2226fecbb519 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 18:12:30 - INFO - app_logger - 562b1c6e-8118-41cf-a267-2226fecbb519 - Database instance created successfully
+2025-02-23 18:12:31 - INFO - app_logger - 562b1c6e-8118-41cf-a267-2226fecbb519 - SQL execution success
+2025-02-23 18:12:31 - INFO - app_logger - 562b1c6e-8118-41cf-a267-2226fecbb519 - SQL Generation Success. Returning Final SQl
+2025-02-23 18:12:31 - INFO - app_logger - 562b1c6e-8118-41cf-a267-2226fecbb519 - SELECT MAX(arrival_delay) FROM flights;
+2025-02-23 18:12:31 - INFO - app_logger - 562b1c6e-8118-41cf-a267-2226fecbb519 - Database instance created successfully
+2025-02-23 18:12:31 - INFO - app_logger - 562b1c6e-8118-41cf-a267-2226fecbb519 - SQL execution success
+2025-02-23 18:14:57 - INFO - app_logger - 6167c538-b86a-498a-ad29-4a8196ec20f3 - Chat Handler Initiated
+2025-02-23 18:14:59 - INFO - app_logger - 6167c538-b86a-498a-ad29-4a8196ec20f3 - Intent Finding Success
+2025-02-23 18:15:02 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT f1.id AS delayed_flight_id, f1.departure_delay, f2.id AS caused_delay_flight_id, f2.departure_delay \nFROM flights f1 \nJOIN flights f2 ON f1.destination_airport = f2.origin_airport \nWHERE f1.departure_delay IS NOT NULL AND f2.departure_delay IS NOT NULL \nORDER BY f1.departure_delay + f2.departure_delay DESC \nLIMIT 1;' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 93, 'prompt_tokens': 1647, 'total_tokens': 1740, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0}}, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_7fcd609668', 'finish_reason': 'stop', 'logprobs': None} id='run-94caa843-9dae-49ea-a7c3-46a40dd3a6df-0' usage_metadata={'input_tokens': 1647, 'output_tokens': 93, 'total_tokens': 1740, 'input_token_details': {'audio': 0, 'cache_read': 0}, 'output_token_details': {'audio': 0, 'reasoning': 0}}
+2025-02-23 18:15:02 - INFO - app_logger - 6167c538-b86a-498a-ad29-4a8196ec20f3 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 18:15:02 - INFO - app_logger - 6167c538-b86a-498a-ad29-4a8196ec20f3 - Database instance created successfully
+2025-02-23 18:15:07 - INFO - app_logger - 6167c538-b86a-498a-ad29-4a8196ec20f3 - SQL execution success
+2025-02-23 18:15:07 - INFO - app_logger - 6167c538-b86a-498a-ad29-4a8196ec20f3 - SQL Generation Success. Returning Final SQl
+2025-02-23 18:15:07 - INFO - app_logger - 6167c538-b86a-498a-ad29-4a8196ec20f3 - SELECT f1.id AS delayed_flight_id, f1.departure_delay, f2.id AS caused_delay_flight_id, f2.departure_delay 
+FROM flights f1 
+JOIN flights f2 ON f1.destination_airport = f2.origin_airport 
+WHERE f1.departure_delay IS NOT NULL AND f2.departure_delay IS NOT NULL 
+ORDER BY f1.departure_delay + f2.departure_delay DESC 
+LIMIT 1;
+2025-02-23 18:15:07 - INFO - app_logger - 6167c538-b86a-498a-ad29-4a8196ec20f3 - Database instance created successfully
+2025-02-23 18:15:13 - INFO - app_logger - 6167c538-b86a-498a-ad29-4a8196ec20f3 - SQL execution success
+2025-02-23 18:18:58 - INFO - app_logger - 271df056-0dde-496a-a1bf-6055b0a93840 - Chat Handler Initiated
+2025-02-23 18:18:59 - INFO - app_logger - 271df056-0dde-496a-a1bf-6055b0a93840 - Intent Finding Success
+2025-02-23 18:19:00 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT f1.airline, f1.flight_number, f2.airline, f2.flight_number, f1.departure_delay + f2.departure_delay AS delay_chain\nFROM flights f1\nJOIN flights f2 ON f1.destination_airport = f2.origin_airport AND f1.year = f2.year AND f1.month = f2.month AND f1.day = f2.day AND f1.day_of_week = f2.day_of_week AND f1.scheduled_departure = f2.scheduled_arrival AND f1.departure_delay IS NOT NULL AND f2.departure_delay IS NOT NULL\nORDER BY delay_chain DESC;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 180, 'prompt_tokens': 1936, 'total_tokens': 2116, 'completion_time': 0.278404631, 'prompt_time': 0.103022602, 'queue_time': 0.01954218499999999, 'total_time': 0.381427233}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-f12f56ba-5d21-47a1-b0b2-f8a6d1a34e35-0' usage_metadata={'input_tokens': 1936, 'output_tokens': 180, 'total_tokens': 2116}
+2025-02-23 18:19:00 - INFO - app_logger - 271df056-0dde-496a-a1bf-6055b0a93840 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 18:19:00 - INFO - app_logger - 271df056-0dde-496a-a1bf-6055b0a93840 - Database instance created successfully
+2025-02-23 18:19:00 - INFO - app_logger - 271df056-0dde-496a-a1bf-6055b0a93840 - SQL execution success
+2025-02-23 18:19:00 - INFO - app_logger - 271df056-0dde-496a-a1bf-6055b0a93840 - SQL Generation Success. Returning Final SQl
+2025-02-23 18:19:00 - INFO - app_logger - 271df056-0dde-496a-a1bf-6055b0a93840 - SELECT f1.airline, f1.flight_number, f2.airline, f2.flight_number, f1.departure_delay + f2.departure_delay AS delay_chain
+FROM flights f1
+JOIN flights f2 ON f1.destination_airport = f2.origin_airport AND f1.year = f2.year AND f1.month = f2.month AND f1.day = f2.day AND f1.day_of_week = f2.day_of_week AND f1.scheduled_departure = f2.scheduled_arrival AND f1.departure_delay IS NOT NULL AND f2.departure_delay IS NOT NULL
+ORDER BY delay_chain DESC;
+2025-02-23 18:19:00 - INFO - app_logger - 271df056-0dde-496a-a1bf-6055b0a93840 - Database instance created successfully
+2025-02-23 18:19:01 - INFO - app_logger - 271df056-0dde-496a-a1bf-6055b0a93840 - SQL execution success
+2025-02-23 18:22:24 - INFO - app_logger - 4fdcd999-e2b6-475c-98f7-51e23249ddb1 - How does flight delay vary across different times of the day consider taking hour variation?
+2025-02-23 18:22:24 - INFO - app_logger - 4fdcd999-e2b6-475c-98f7-51e23249ddb1 - Chat Handler Initiated
+2025-02-23 18:22:27 - INFO - app_logger - 4fdcd999-e2b6-475c-98f7-51e23249ddb1 - Intent Finding Success
+2025-02-23 18:22:30 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT EXTRACT(HOUR FROM TO_TIMESTAMP(scheduled_departure / 60.0)) AS departure_hour, AVG(departure_delay) AS avg_departure_delay FROM flights GROUP BY departure_hour ORDER BY departure_hour;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-88edd91a-27cd-4544-bc87-42ac24181641-0' usage_metadata={'input_tokens': 1746, 'output_tokens': 50, 'total_tokens': 1796, 'input_token_details': {'cache_read': 0}}
+2025-02-23 18:22:30 - INFO - app_logger - 4fdcd999-e2b6-475c-98f7-51e23249ddb1 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 18:22:30 - INFO - app_logger - 4fdcd999-e2b6-475c-98f7-51e23249ddb1 - Database instance created successfully
+2025-02-23 18:22:30 - INFO - app_logger - 4fdcd999-e2b6-475c-98f7-51e23249ddb1 - SQL execution success
+2025-02-23 18:22:30 - INFO - app_logger - 4fdcd999-e2b6-475c-98f7-51e23249ddb1 - SQL Generation Success. Returning Final SQl
+2025-02-23 18:22:30 - INFO - app_logger - 4fdcd999-e2b6-475c-98f7-51e23249ddb1 - SELECT EXTRACT(HOUR FROM TO_TIMESTAMP(scheduled_departure / 60.0)) AS departure_hour, AVG(departure_delay) AS avg_departure_delay FROM flights GROUP BY departure_hour ORDER BY departure_hour;
+2025-02-23 18:28:35 - INFO - app_logger - fe60266b-4676-45f8-8fbc-d5cf874e9367 - hello How are you?
+2025-02-23 18:28:35 - INFO - app_logger - fe60266b-4676-45f8-8fbc-d5cf874e9367 - Chat Handler Initiated
+2025-02-23 18:28:36 - INFO - app_logger - fe60266b-4676-45f8-8fbc-d5cf874e9367 - Intent Finding Success
+2025-02-23 18:28:51 - INFO - app_logger - 02a1ebd5-963f-4b0a-b1ad-564280bbeeb1 - hello. Who is Ram Bahadur?
+2025-02-23 18:28:51 - INFO - app_logger - 02a1ebd5-963f-4b0a-b1ad-564280bbeeb1 - Chat Handler Initiated
+2025-02-23 18:28:54 - INFO - app_logger - 02a1ebd5-963f-4b0a-b1ad-564280bbeeb1 - Intent Finding Success
+2025-02-23 18:44:05 - INFO - app_logger - cf009871-e261-4bbc-a8a2-c9fbecea651e - Chat Handler Initiated
+2025-02-23 18:44:06 - INFO - app_logger - cf009871-e261-4bbc-a8a2-c9fbecea651e - Intent Finding Success
+2025-02-23 18:53:43 - INFO - app_logger - ac402874-aab8-4e61-8c65-ad576d6eeb8e - Chat Handler Initiated
+2025-02-23 18:53:44 - INFO - app_logger - ac402874-aab8-4e61-8c65-ad576d6eeb8e - Extra data: line 5 column 1 (char 49)
+2025-02-23 18:55:26 - INFO - app_logger - e7d654e1-54ee-42b0-808b-93b3318f6db9 - Chat Handler Initiated
+2025-02-23 18:55:28 - INFO - app_logger - e7d654e1-54ee-42b0-808b-93b3318f6db9 - Extra data: line 5 column 1 (char 49)
+2025-02-23 18:56:10 - INFO - app_logger - 511a1056-b149-4fda-90d1-90705fbb6305 - Chat Handler Initiated
+2025-02-23 18:56:10 - INFO - app_logger - 511a1056-b149-4fda-90d1-90705fbb6305 - Error getting prompt: Erro prompt type
+2025-02-23 18:56:23 - INFO - app_logger - e4028388-9405-4e57-8b6d-c2db6d0a5e72 - Chat Handler Initiated
+2025-02-23 18:56:25 - INFO - app_logger - e4028388-9405-4e57-8b6d-c2db6d0a5e72 - Intent Finding Success
+2025-02-23 18:56:26 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT * FROM flights WHERE airline ILIKE 'AA';" additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 1895, 'total_tokens': 1910, 'completion_time': 0.021620068, 'prompt_time': 0.090356117, 'queue_time': 0.021070183000000006, 'total_time': 0.111976185}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-937963e9-7a40-4a09-ad8b-fabc60009deb-0' usage_metadata={'input_tokens': 1895, 'output_tokens': 15, 'total_tokens': 1910}
+2025-02-23 18:56:26 - INFO - app_logger - e4028388-9405-4e57-8b6d-c2db6d0a5e72 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 18:56:26 - INFO - app_logger - e4028388-9405-4e57-8b6d-c2db6d0a5e72 - Database instance created successfully
+2025-02-23 18:56:26 - INFO - app_logger - e4028388-9405-4e57-8b6d-c2db6d0a5e72 - SQL execution success
+2025-02-23 18:56:26 - INFO - app_logger - e4028388-9405-4e57-8b6d-c2db6d0a5e72 - SQL Generation Success. Returning Final SQl
+2025-02-23 18:56:26 - INFO - app_logger - e4028388-9405-4e57-8b6d-c2db6d0a5e72 - SELECT * FROM flights WHERE airline ILIKE 'AA';
+2025-02-23 18:56:26 - INFO - app_logger - e4028388-9405-4e57-8b6d-c2db6d0a5e72 - Database instance created successfully
+2025-02-23 18:56:26 - INFO - app_logger - e4028388-9405-4e57-8b6d-c2db6d0a5e72 - SQL execution success
+2025-02-23 18:58:03 - INFO - app_logger - c7165bbc-06c9-4d2a-b643-d49bb3551256 - Chat Handler Initiated
+2025-02-23 18:58:04 - INFO - app_logger - c7165bbc-06c9-4d2a-b643-d49bb3551256 - Extra data: line 5 column 1 (char 49)
+2025-02-23 18:58:36 - INFO - app_logger - 2576e9c7-b13e-4458-8827-cae8a59912f2 - Chat Handler Initiated
+2025-02-23 18:58:44 - INFO - app_logger - 2576e9c7-b13e-4458-8827-cae8a59912f2 - 'NoneType' object has no attribute 'group'
+2025-02-23 18:59:13 - INFO - app_logger - 80af7b30-aff4-4735-a60b-7426e5055b04 - Chat Handler Initiated
+2025-02-23 18:59:14 - INFO - app_logger - 80af7b30-aff4-4735-a60b-7426e5055b04 - Intent Finding Success
+2025-02-23 18:59:16 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT day_of_week FROM flights GROUP BY day_of_week ORDER BY avg(departure_delay) DESC LIMIT 1;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-1e4cf66b-9787-4742-ae37-4ffe88b37101-0' usage_metadata={'input_tokens': 1672, 'output_tokens': 29, 'total_tokens': 1701, 'input_token_details': {'cache_read': 0}}
+2025-02-23 18:59:16 - INFO - app_logger - 80af7b30-aff4-4735-a60b-7426e5055b04 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 18:59:16 - INFO - app_logger - 80af7b30-aff4-4735-a60b-7426e5055b04 - Database instance created successfully
+2025-02-23 18:59:16 - INFO - app_logger - 80af7b30-aff4-4735-a60b-7426e5055b04 - SQL execution success
+2025-02-23 18:59:16 - INFO - app_logger - 80af7b30-aff4-4735-a60b-7426e5055b04 - SQL Generation Success. Returning Final SQl
+2025-02-23 18:59:16 - INFO - app_logger - 80af7b30-aff4-4735-a60b-7426e5055b04 - SELECT day_of_week FROM flights GROUP BY day_of_week ORDER BY avg(departure_delay) DESC LIMIT 1;
+2025-02-23 18:59:16 - INFO - app_logger - 80af7b30-aff4-4735-a60b-7426e5055b04 - Database instance created successfully
+2025-02-23 18:59:16 - INFO - app_logger - 80af7b30-aff4-4735-a60b-7426e5055b04 - SQL execution success
+2025-02-23 19:06:19 - INFO - app_logger - 3720d78e-bd46-4b7e-9108-6c2cb290129f - Chat Handler Initiated
+2025-02-23 19:06:29 - INFO - app_logger - 3720d78e-bd46-4b7e-9108-6c2cb290129f - 'NoneType' object has no attribute 'group'
+2025-02-23 19:06:58 - INFO - app_logger - f98af5f4-86f5-4e05-931f-1b277cecb2a7 - Chat Handler Initiated
+2025-02-23 19:07:04 - INFO - app_logger - f98af5f4-86f5-4e05-931f-1b277cecb2a7 - 'NoneType' object has no attribute 'group'
+2025-02-23 19:07:28 - INFO - app_logger - e8a24356-d790-4211-a800-3323a309b287 - Chat Handler Initiated
+2025-02-23 19:07:37 - INFO - app_logger - e8a24356-d790-4211-a800-3323a309b287 - 'NoneType' object has no attribute 'group'
+2025-02-23 19:11:09 - INFO - app_logger - defd3fc9-2627-4cdd-a269-0d1751a5ab25 - Chat Handler Initiated
+2025-02-23 19:11:10 - INFO - app_logger - defd3fc9-2627-4cdd-a269-0d1751a5ab25 - Intent Finding Success
+2025-02-23 19:11:13 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT day_of_week FROM flights GROUP BY day_of_week ORDER BY avg(departure_delay) DESC LIMIT 1;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-42bb6839-6eee-4692-8fbd-c35fe57e985f-0' usage_metadata={'input_tokens': 1693, 'output_tokens': 29, 'total_tokens': 1722, 'input_token_details': {'cache_read': 0}}
+2025-02-23 19:11:13 - INFO - app_logger - defd3fc9-2627-4cdd-a269-0d1751a5ab25 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 19:11:13 - INFO - app_logger - defd3fc9-2627-4cdd-a269-0d1751a5ab25 - Database instance created successfully
+2025-02-23 19:11:13 - INFO - app_logger - defd3fc9-2627-4cdd-a269-0d1751a5ab25 - SQL execution success
+2025-02-23 19:11:13 - INFO - app_logger - defd3fc9-2627-4cdd-a269-0d1751a5ab25 - SQL Generation Success. Returning Final SQl
+2025-02-23 19:11:13 - INFO - app_logger - defd3fc9-2627-4cdd-a269-0d1751a5ab25 - SELECT day_of_week FROM flights GROUP BY day_of_week ORDER BY avg(departure_delay) DESC LIMIT 1;
+2025-02-23 19:11:13 - INFO - app_logger - defd3fc9-2627-4cdd-a269-0d1751a5ab25 - Database instance created successfully
+2025-02-23 19:11:13 - INFO - app_logger - defd3fc9-2627-4cdd-a269-0d1751a5ab25 - SQL execution success
+2025-02-23 19:12:06 - INFO - app_logger - ef3ba67a-17b0-494d-96af-7f89b4b8781f - Chat Handler Initiated
+2025-02-23 19:12:07 - INFO - app_logger - ef3ba67a-17b0-494d-96af-7f89b4b8781f - Extra data: line 5 column 1 (char 49)
+2025-02-23 19:13:51 - INFO - app_logger - c7bd0db9-132d-4e5d-be30-38d30da138ae - Chat Handler Initiated
+2025-02-23 19:13:53 - INFO - app_logger - c7bd0db9-132d-4e5d-be30-38d30da138ae - Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-02-23 19:15:23 - INFO - app_logger - 9fda7a76-8ea2-4eb5-85a5-1562df25df69 - Chat Handler Initiated
+2025-02-23 19:15:25 - INFO - app_logger - 9fda7a76-8ea2-4eb5-85a5-1562df25df69 - Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-02-23 19:18:21 - INFO - app_logger - e5016368-867c-43c1-bd57-4353eedc0bea - Chat Handler Initiated
+2025-02-23 19:18:24 - INFO - app_logger - e5016368-867c-43c1-bd57-4353eedc0bea - Intent Finding Success
+2025-02-23 19:20:33 - INFO - app_logger - 95c90ef2-0f99-418e-9b77-ea6382fdcf4c - Chat Handler Initiated
+2025-02-23 19:20:35 - INFO - app_logger - 95c90ef2-0f99-418e-9b77-ea6382fdcf4c - Intent Finding Success
+2025-02-23 19:20:56 - INFO - app_logger - 7f8aa70c-f7fb-4c86-83a9-197b84257d5f - Chat Handler Initiated
+2025-02-23 19:20:56 - INFO - app_logger - 7f8aa70c-f7fb-4c86-83a9-197b84257d5f - Intent Finding Success
+2025-02-23 19:23:37 - INFO - app_logger - 0769a616-fb5f-48d9-b6c4-d21cc6015c97 - Chat Handler Initiated
+2025-02-23 19:23:38 - INFO - app_logger - 0769a616-fb5f-48d9-b6c4-d21cc6015c97 - Intent Finding Success
+2025-02-23 19:23:39 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT DISTINCT origin_airport \nFROM flights \nWHERE origin_airport ILIKE 'CA%';" additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 30, 'prompt_tokens': 1796, 'total_tokens': 1826, 'completion_time': 0.044870612, 'prompt_time': 0.113183698, 'queue_time': 0.020945258999999994, 'total_time': 0.15805431}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-4389dc95-1683-468a-a7be-48f0612ee576-0' usage_metadata={'input_tokens': 1796, 'output_tokens': 30, 'total_tokens': 1826}
+2025-02-23 19:23:39 - INFO - app_logger - 0769a616-fb5f-48d9-b6c4-d21cc6015c97 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 19:23:39 - INFO - app_logger - 0769a616-fb5f-48d9-b6c4-d21cc6015c97 - Database instance created successfully
+2025-02-23 19:23:39 - INFO - app_logger - 0769a616-fb5f-48d9-b6c4-d21cc6015c97 - SQL execution success
+2025-02-23 19:23:39 - INFO - app_logger - 0769a616-fb5f-48d9-b6c4-d21cc6015c97 - SQL Generation Success. Returning Final SQl
+2025-02-23 19:23:39 - INFO - app_logger - 0769a616-fb5f-48d9-b6c4-d21cc6015c97 - SELECT DISTINCT origin_airport 
+FROM flights 
+WHERE origin_airport ILIKE 'CA%';
+2025-02-23 19:23:39 - INFO - app_logger - 0769a616-fb5f-48d9-b6c4-d21cc6015c97 - Database instance created successfully
+2025-02-23 19:23:39 - INFO - app_logger - 0769a616-fb5f-48d9-b6c4-d21cc6015c97 - SQL execution success
+2025-02-23 19:24:35 - INFO - app_logger - f080710b-3bb4-4b90-b1e5-a62b8fc62901 - Chat Handler Initiated
+2025-02-23 19:24:39 - INFO - app_logger - f080710b-3bb4-4b90-b1e5-a62b8fc62901 - Intent Finding Success
+2025-02-23 19:24:42 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT DISTINCT origin_airport FROM flights WHERE origin_airport LIKE 'CA%' OR destination_airport LIKE 'CA%'" additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-9fbe28fe-085f-43c7-a727-a6e47d89240d-0' usage_metadata={'input_tokens': 1646, 'output_tokens': 24, 'total_tokens': 1670, 'input_token_details': {'cache_read': 0}}
+2025-02-23 19:24:42 - INFO - app_logger - f080710b-3bb4-4b90-b1e5-a62b8fc62901 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 19:24:42 - INFO - app_logger - f080710b-3bb4-4b90-b1e5-a62b8fc62901 - Database instance created successfully
+2025-02-23 19:24:42 - INFO - app_logger - f080710b-3bb4-4b90-b1e5-a62b8fc62901 - SQL execution success
+2025-02-23 19:24:42 - INFO - app_logger - f080710b-3bb4-4b90-b1e5-a62b8fc62901 - SQL Generation Success. Returning Final SQl
+2025-02-23 19:24:42 - INFO - app_logger - f080710b-3bb4-4b90-b1e5-a62b8fc62901 - SELECT DISTINCT origin_airport FROM flights WHERE origin_airport LIKE 'CA%' OR destination_airport LIKE 'CA%'
+2025-02-23 19:24:42 - INFO - app_logger - f080710b-3bb4-4b90-b1e5-a62b8fc62901 - Database instance created successfully
+2025-02-23 19:24:42 - INFO - app_logger - f080710b-3bb4-4b90-b1e5-a62b8fc62901 - SQL execution success
+2025-02-23 21:38:55 - INFO - app_logger - d6c6fb01-2eaa-409f-aaae-e469ab0532a8 - Database instance created successfully
+2025-02-23 21:38:56 - INFO - app_logger - d6c6fb01-2eaa-409f-aaae-e469ab0532a8 - SQL execution success
+2025-02-23 21:44:51 - INFO - app_logger - 4c353fb2-9b51-4026-9b82-854d6a8ba5ff - Test case: DROP TABLE IF EXISTS airports;
+2025-02-23 21:44:51 - WARNING - app_logger - 4c353fb2-9b51-4026-9b82-854d6a8ba5ff - SQL method Not Allowed
+2025-02-23 21:45:37 - INFO - app_logger - 870a31ee-1335-4d08-806d-eace7cb4c69d - Test case: INSERT INTO airlines (iata_code, airline) VALUES ('UA', 'United Airlines');
+2025-02-23 21:45:37 - WARNING - app_logger - 870a31ee-1335-4d08-806d-eace7cb4c69d - SQL method Not Allowed
+2025-02-23 21:48:01 - INFO - app_logger - 8839ee7b-b102-4cbd-90f9-9d80a8c50a16 - Test case: SELECT * FROM flights WHERE airline = 'AA';
+2025-02-23 21:48:01 - INFO - app_logger - 8839ee7b-b102-4cbd-90f9-9d80a8c50a16 - Database instance created successfully
+2025-02-23 21:48:01 - INFO - app_logger - 8839ee7b-b102-4cbd-90f9-9d80a8c50a16 - SQL execution success
+2025-02-23 21:48:01 - INFO - app_logger - f5965786-152c-42f6-91e8-a541499698f3 - Test case: SELECT * FROM airports WHERE state = 'CA';
+2025-02-23 21:48:01 - INFO - app_logger - f5965786-152c-42f6-91e8-a541499698f3 - Database instance created successfully
+2025-02-23 21:48:01 - INFO - app_logger - f5965786-152c-42f6-91e8-a541499698f3 - SQL execution success
+2025-02-23 21:48:01 - INFO - app_logger - c9d81e1e-1f2d-4e39-ac66-be0ea9d47564 - Test case: SELECT COUNT(*) FROM flights WHERE origin_airport = 'JFK';
+2025-02-23 21:48:01 - INFO - app_logger - c9d81e1e-1f2d-4e39-ac66-be0ea9d47564 - Database instance created successfully
+2025-02-23 21:48:01 - INFO - app_logger - c9d81e1e-1f2d-4e39-ac66-be0ea9d47564 - SQL execution success
+2025-02-23 21:48:01 - INFO - app_logger - d5f53793-d966-44f6-ac4a-90c40358cac6 - Test case: SELECT * FROM flights WHERE cancelled = 1;
+2025-02-23 21:48:01 - INFO - app_logger - d5f53793-d966-44f6-ac4a-90c40358cac6 - Database instance created successfully
+2025-02-23 21:48:01 - INFO - app_logger - d5f53793-d966-44f6-ac4a-90c40358cac6 - SQL execution success
+2025-02-23 21:48:01 - INFO - app_logger - 34e36e50-d9db-4009-8c00-eff3ae748020 - Test case: SELECT * FROM flights WHERE departure_delay > 60 OR arrival_delay > 60;
+2025-02-23 21:48:01 - INFO - app_logger - 34e36e50-d9db-4009-8c00-eff3ae748020 - Database instance created successfully
+2025-02-23 21:48:01 - INFO - app_logger - 34e36e50-d9db-4009-8c00-eff3ae748020 - SQL execution success
+2025-02-23 21:48:01 - INFO - app_logger - 3baa4780-8c34-45ab-8c6a-8ac67c3c0afe - Test case: SELECT airline, COUNT(*) AS total_flights FROM flights GROUP BY airline ORDER BY total_flights DESC LIMIT 5;
+2025-02-23 21:48:01 - INFO - app_logger - 3baa4780-8c34-45ab-8c6a-8ac67c3c0afe - Database instance created successfully
+2025-02-23 21:48:01 - INFO - app_logger - 3baa4780-8c34-45ab-8c6a-8ac67c3c0afe - SQL execution success
+2025-02-23 21:48:01 - INFO - app_logger - 956c18a4-c4ec-42f0-96a5-1a8232437c3e - Test case: SELECT airline, AVG(departure_delay) AS avg_departure_delay FROM flights WHERE departure_delay IS NOT NULL GROUP BY airline;
+2025-02-23 21:48:01 - INFO - app_logger - 956c18a4-c4ec-42f0-96a5-1a8232437c3e - Database instance created successfully
+2025-02-23 21:48:01 - INFO - app_logger - 956c18a4-c4ec-42f0-96a5-1a8232437c3e - SQL execution success
+2025-02-23 21:48:01 - INFO - app_logger - 9268652c-745c-4ab1-ae62-804a5b856eda - Test case: SELECT airline, COUNT(*) AS cancelled_flights FROM flights WHERE cancelled = 1 GROUP BY airline ORDER BY cancelled_flights DESC;
+2025-02-23 21:48:01 - INFO - app_logger - 9268652c-745c-4ab1-ae62-804a5b856eda - Database instance created successfully
+2025-02-23 21:48:01 - INFO - app_logger - 9268652c-745c-4ab1-ae62-804a5b856eda - SQL execution success
+2025-02-23 21:48:01 - INFO - app_logger - 5a4fa228-7f2c-4719-ae18-542ac149943a - Test case: SELECT origin_airport, COUNT(*) AS total_departures FROM flights GROUP BY origin_airport ORDER BY total_departures DESC LIMIT 10;
+2025-02-23 21:48:01 - INFO - app_logger - 5a4fa228-7f2c-4719-ae18-542ac149943a - Database instance created successfully
+2025-02-23 21:48:01 - INFO - app_logger - 5a4fa228-7f2c-4719-ae18-542ac149943a - SQL execution success
+2025-02-23 21:48:01 - INFO - app_logger - 6900ada7-0a11-4eff-b5c6-419fe2edd37d - Test case: SELECT month, COUNT(*) AS delayed_flights FROM flights WHERE departure_delay > 0 OR arrival_delay > 0 GROUP BY month ORDER BY delayed_flights DESC LIMIT 1;
+2025-02-23 21:48:02 - INFO - app_logger - 6900ada7-0a11-4eff-b5c6-419fe2edd37d - Database instance created successfully
+2025-02-23 21:48:02 - INFO - app_logger - 6900ada7-0a11-4eff-b5c6-419fe2edd37d - SQL execution success
+2025-02-23 21:48:02 - INFO - app_logger - 0a3476ec-61ff-4712-ac2a-ea78cf07cc29 - Test case: SELECT airline, AVG(arrival_delay) AS avg_arrival_delay FROM flights WHERE arrival_delay IS NOT NULL GROUP BY airline ORDER BY avg_arrival_delay DESC LIMIT 1;
+2025-02-23 21:48:02 - INFO - app_logger - 0a3476ec-61ff-4712-ac2a-ea78cf07cc29 - Database instance created successfully
+2025-02-23 21:48:02 - INFO - app_logger - 0a3476ec-61ff-4712-ac2a-ea78cf07cc29 - SQL execution success
+2025-02-23 21:48:02 - INFO - app_logger - c13d6734-29ca-4257-ae6b-ee5ec5d06e07 - Test case: SELECT origin_airport, COUNT(*) AS diverted_flights FROM flights WHERE diverted = 1 GROUP BY origin_airport ORDER BY diverted_flights DESC LIMIT 1;
+2025-02-23 21:48:02 - INFO - app_logger - c13d6734-29ca-4257-ae6b-ee5ec5d06e07 - Database instance created successfully
+2025-02-23 21:48:02 - INFO - app_logger - c13d6734-29ca-4257-ae6b-ee5ec5d06e07 - SQL execution success
+2025-02-23 21:48:02 - INFO - app_logger - 214e5e3a-476f-4aa0-9901-2e11fd42ffbf - Test case: DROP TABLE IF EXISTS flights;
+2025-02-23 21:48:02 - WARNING - app_logger - 214e5e3a-476f-4aa0-9901-2e11fd42ffbf - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 4d101ccb-ecf8-43af-b2ef-895e44a54f8b - Test case: DROP TABLE IF EXISTS airlines;
+2025-02-23 21:48:02 - WARNING - app_logger - 4d101ccb-ecf8-43af-b2ef-895e44a54f8b - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 2702946a-47a0-40cb-a770-4ec0a645cabb - Test case: DROP TABLE IF EXISTS airports;
+2025-02-23 21:48:02 - WARNING - app_logger - 2702946a-47a0-40cb-a770-4ec0a645cabb - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 4d86d6ca-e2c3-4fb7-8a8c-defb4dee6da9 - Test case: TRUNCATE TABLE flights RESTART IDENTITY CASCADE;
+2025-02-23 21:48:02 - WARNING - app_logger - 4d86d6ca-e2c3-4fb7-8a8c-defb4dee6da9 - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 36929599-b7c8-4d31-8741-417440ed47df - Test case: TRUNCATE TABLE airlines RESTART IDENTITY CASCADE;
+2025-02-23 21:48:02 - WARNING - app_logger - 36929599-b7c8-4d31-8741-417440ed47df - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - e8a19499-2ea6-48b0-ac32-56359cc17728 - Test case: TRUNCATE TABLE airports RESTART IDENTITY CASCADE;
+2025-02-23 21:48:02 - WARNING - app_logger - e8a19499-2ea6-48b0-ac32-56359cc17728 - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - a79c9724-7c9b-461a-96e8-24dbe8b7ded2 - Test case: INSERT INTO airlines (iata_code, airline) VALUES ('AA', 'American Airlines');
+2025-02-23 21:48:02 - WARNING - app_logger - a79c9724-7c9b-461a-96e8-24dbe8b7ded2 - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 18e96b95-16a6-44d7-80db-507c82bf217c - Test case: INSERT INTO airlines (iata_code, airline) VALUES ('DL', 'Delta Airlines');
+2025-02-23 21:48:02 - WARNING - app_logger - 18e96b95-16a6-44d7-80db-507c82bf217c - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 7af97af5-08c9-4578-b003-627c40b602e5 - Test case: INSERT INTO airlines (iata_code, airline) VALUES ('UA', 'United Airlines');
+2025-02-23 21:48:02 - WARNING - app_logger - 7af97af5-08c9-4578-b003-627c40b602e5 - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 0ffd76be-8b14-4906-91d5-e9baecd31d21 - Test case: INSERT INTO airports (iata_code, airport, city, state, country, latitude, longitude) VALUES ('JFK', 'John F. Kennedy International Airport', 'New York', 'NY', 'USA', 40.6413, -73.7781);
+2025-02-23 21:48:02 - WARNING - app_logger - 0ffd76be-8b14-4906-91d5-e9baecd31d21 - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 266c3726-2e7c-4008-b032-47d2317d0983 - Test case: INSERT INTO airports (iata_code, airport, city, state, country, latitude, longitude) VALUES ('LAX', 'Los Angeles International Airport', 'Los Angeles', 'CA', 'USA', 33.9416, -118.4085);
+2025-02-23 21:48:02 - WARNING - app_logger - 266c3726-2e7c-4008-b032-47d2317d0983 - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - af9bc63d-0270-4d47-9d3f-3df83799f35a - Test case: INSERT INTO airports (iata_code, airport, city, state, country, latitude, longitude) VALUES ('ORD', 'O'Hare International Airport', 'Chicago', 'IL', 'USA', 41.9742, -87.9073);
+2025-02-23 21:48:02 - WARNING - app_logger - af9bc63d-0270-4d47-9d3f-3df83799f35a - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 885fadc2-00b1-456f-961b-3c30190312f9 - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 20, 4, 'AA', 1001, 'N123AA', 'JFK', 'LAX', 800, 810, 10, 1100, 1115, 15, 0, 0);
+2025-02-23 21:48:02 - WARNING - app_logger - 885fadc2-00b1-456f-961b-3c30190312f9 - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 816e41f6-0e89-49b3-b66f-c75dc7684b6f - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 21, 5, 'DL', 2002, 'N456DL', 'LAX', 'ORD', 900, 920, 20, 1230, 1250, 20, 0, 0);
+2025-02-23 21:48:02 - WARNING - app_logger - 816e41f6-0e89-49b3-b66f-c75dc7684b6f - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - aaca2ad0-4c46-4e3d-a8a8-f22f3d2264f4 - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 22, 6, 'UA', 3003, 'N789UA', 'ORD', 'JFK', 700, 705, 5, 1000, 1005, 5, 0, 0);
+2025-02-23 21:48:02 - WARNING - app_logger - aaca2ad0-4c46-4e3d-a8a8-f22f3d2264f4 - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - c15e5221-9937-4cf0-9e79-b3a5b224879a - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 23, 7, 'AA', 1010, 'N321AA', 'JFK', 'ORD', 1200, 1225, 25, 1430, 1500, 30, 0, 0);
+2025-02-23 21:48:02 - WARNING - app_logger - c15e5221-9937-4cf0-9e79-b3a5b224879a - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 8d7467e6-91cc-4541-93e0-9de806ec315c - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 24, 1, 'DL', 2020, 'N654DL', 'LAX', 'JFK', 1300, 1320, 20, 1700, 1730, 30, 0, 0);
+2025-02-23 21:48:02 - WARNING - app_logger - 8d7467e6-91cc-4541-93e0-9de806ec315c - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - cb8fcf36-4c45-402c-8707-4505cf50203f - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 25, 2, 'UA', 3030, 'N987UA', 'ORD', 'LAX', 1400, 1420, 20, 1730, 1800, 30, 0, 0);
+2025-02-23 21:48:02 - WARNING - app_logger - cb8fcf36-4c45-402c-8707-4505cf50203f - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 56ca3173-e431-4670-b1dc-8f16c63d416a - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 26, 3, 'AA', 1040, 'N741AA', 'JFK', 'LAX', 1600, 1630, 30, 2000, 2045, 45, 0, 0);
+2025-02-23 21:48:02 - WARNING - app_logger - 56ca3173-e431-4670-b1dc-8f16c63d416a - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 07f6c1b6-bc82-43c9-a498-af85ec0b58df - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 27, 4, 'DL', 2050, 'N852DL', 'LAX', 'ORD', 1800, 1815, 15, 2200, 2230, 30, 0, 0);
+2025-02-23 21:48:02 - WARNING - app_logger - 07f6c1b6-bc82-43c9-a498-af85ec0b58df - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 3985b376-608f-464a-b090-864890f6263c - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 28, 5, 'UA', 3060, 'N963UA', 'ORD', 'JFK', 1900, 1925, 25, 2230, 2300, 30, 0, 0);
+2025-02-23 21:48:02 - WARNING - app_logger - 3985b376-608f-464a-b090-864890f6263c - SQL method Not Allowed
+2025-02-23 21:48:02 - INFO - app_logger - 5f34f11b-9aaf-4ca7-824e-99d9e9c650fa - Test case: SELECT origin_airport, COUNT(*) AS num_flights FROM flights GROUP BY origin_airport ORDER BY num_flights DESC LIMIT 1;
+2025-02-23 21:48:02 - INFO - app_logger - 5f34f11b-9aaf-4ca7-824e-99d9e9c650fa - Database instance created successfully
+2025-02-23 21:48:02 - INFO - app_logger - 5f34f11b-9aaf-4ca7-824e-99d9e9c650fa - SQL execution success
+2025-02-23 21:48:02 - INFO - app_logger - 36071659-bbe2-4454-828a-7e685bb112a5 - Test case: SELECT flag FROM secret_table;
+2025-02-23 21:48:02 - INFO - app_logger - 36071659-bbe2-4454-828a-7e685bb112a5 - Database instance created successfully
+2025-02-23 21:48:02 - INFO - app_logger - 36071659-bbe2-4454-828a-7e685bb112a5 - SQL execution unsuccess (psycopg2.errors.UndefinedTable) relation "secret_table" does not exist
+LINE 1: SELECT flag FROM secret_table;
+                         ^
+
+2025-02-23 21:49:51 - INFO - app_logger - 65c14233-10af-45f0-9f01-247728ea747d - Test case: SELECT * FROM flights WHERE airline = 'AA';
+2025-02-23 21:49:51 - INFO - app_logger - 65c14233-10af-45f0-9f01-247728ea747d - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - 65c14233-10af-45f0-9f01-247728ea747d - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - 5a8ae798-76b1-4477-8e30-bb9c4bd54433 - Test case: SELECT * FROM airports WHERE state = 'CA';
+2025-02-23 21:49:51 - INFO - app_logger - 5a8ae798-76b1-4477-8e30-bb9c4bd54433 - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - 5a8ae798-76b1-4477-8e30-bb9c4bd54433 - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - c0a3c38a-5d2e-4b82-9a22-44d0540dae82 - Test case: SELECT COUNT(*) FROM flights WHERE origin_airport = 'JFK';
+2025-02-23 21:49:51 - INFO - app_logger - c0a3c38a-5d2e-4b82-9a22-44d0540dae82 - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - c0a3c38a-5d2e-4b82-9a22-44d0540dae82 - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - 38419773-7a00-4e52-805c-63ddb01baf24 - Test case: SELECT * FROM flights WHERE cancelled = 1;
+2025-02-23 21:49:51 - INFO - app_logger - 38419773-7a00-4e52-805c-63ddb01baf24 - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - 38419773-7a00-4e52-805c-63ddb01baf24 - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - f7560d8d-e03d-4a34-b542-7a1607acd7f9 - Test case: SELECT * FROM flights WHERE departure_delay > 60 OR arrival_delay > 60;
+2025-02-23 21:49:51 - INFO - app_logger - f7560d8d-e03d-4a34-b542-7a1607acd7f9 - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - f7560d8d-e03d-4a34-b542-7a1607acd7f9 - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - ecb14a53-cfd8-4bee-8b17-4380beaa85db - Test case: SELECT airline, COUNT(*) AS total_flights FROM flights GROUP BY airline ORDER BY total_flights DESC LIMIT 5;
+2025-02-23 21:49:51 - INFO - app_logger - ecb14a53-cfd8-4bee-8b17-4380beaa85db - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - ecb14a53-cfd8-4bee-8b17-4380beaa85db - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - 7591c45f-eb5f-4eee-a92d-eef6f42e8963 - Test case: SELECT airline, AVG(departure_delay) AS avg_departure_delay FROM flights WHERE departure_delay IS NOT NULL GROUP BY airline;
+2025-02-23 21:49:51 - INFO - app_logger - 7591c45f-eb5f-4eee-a92d-eef6f42e8963 - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - 7591c45f-eb5f-4eee-a92d-eef6f42e8963 - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - a41056e4-c019-47e6-bd84-74fe50ab9ee1 - Test case: SELECT airline, COUNT(*) AS cancelled_flights FROM flights WHERE cancelled = 1 GROUP BY airline ORDER BY cancelled_flights DESC;
+2025-02-23 21:49:51 - INFO - app_logger - a41056e4-c019-47e6-bd84-74fe50ab9ee1 - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - a41056e4-c019-47e6-bd84-74fe50ab9ee1 - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - 53ba4aa0-f745-417d-a300-3690d45f818a - Test case: SELECT origin_airport, COUNT(*) AS total_departures FROM flights GROUP BY origin_airport ORDER BY total_departures DESC LIMIT 10;
+2025-02-23 21:49:51 - INFO - app_logger - 53ba4aa0-f745-417d-a300-3690d45f818a - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - 53ba4aa0-f745-417d-a300-3690d45f818a - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - 5ec8b02a-623f-4126-8049-30237e69f857 - Test case: SELECT month, COUNT(*) AS delayed_flights FROM flights WHERE departure_delay > 0 OR arrival_delay > 0 GROUP BY month ORDER BY delayed_flights DESC LIMIT 1;
+2025-02-23 21:49:51 - INFO - app_logger - 5ec8b02a-623f-4126-8049-30237e69f857 - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - 5ec8b02a-623f-4126-8049-30237e69f857 - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - f4f75696-10fa-4525-af56-ed4a59c6881a - Test case: SELECT airline, AVG(arrival_delay) AS avg_arrival_delay FROM flights WHERE arrival_delay IS NOT NULL GROUP BY airline ORDER BY avg_arrival_delay DESC LIMIT 1;
+2025-02-23 21:49:51 - INFO - app_logger - f4f75696-10fa-4525-af56-ed4a59c6881a - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - f4f75696-10fa-4525-af56-ed4a59c6881a - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - e8881cdf-60c4-47bc-afb0-f7d3534412d6 - Test case: SELECT origin_airport, COUNT(*) AS diverted_flights FROM flights WHERE diverted = 1 GROUP BY origin_airport ORDER BY diverted_flights DESC LIMIT 1;
+2025-02-23 21:49:51 - INFO - app_logger - e8881cdf-60c4-47bc-afb0-f7d3534412d6 - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - e8881cdf-60c4-47bc-afb0-f7d3534412d6 - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - f8e90c1a-43dc-4b54-a1e6-d1f3ed6a32ac - Test case: DROP TABLE IF EXISTS flights;
+2025-02-23 21:49:51 - WARNING - app_logger - f8e90c1a-43dc-4b54-a1e6-d1f3ed6a32ac - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - 787930ea-f24d-44d9-9d12-dde49a526fe1 - Test case: DROP TABLE IF EXISTS airlines;
+2025-02-23 21:49:51 - WARNING - app_logger - 787930ea-f24d-44d9-9d12-dde49a526fe1 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - b8a24b97-bd38-4f20-a3ae-bbb2e7264e89 - Test case: DROP TABLE IF EXISTS airports;
+2025-02-23 21:49:51 - WARNING - app_logger - b8a24b97-bd38-4f20-a3ae-bbb2e7264e89 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - acd58be9-ad95-40e6-91ee-24ffb184e3b5 - Test case: TRUNCATE TABLE flights RESTART IDENTITY CASCADE;
+2025-02-23 21:49:51 - WARNING - app_logger - acd58be9-ad95-40e6-91ee-24ffb184e3b5 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - be188168-9eaf-4380-9832-223e31158419 - Test case: TRUNCATE TABLE airlines RESTART IDENTITY CASCADE;
+2025-02-23 21:49:51 - WARNING - app_logger - be188168-9eaf-4380-9832-223e31158419 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - 9f1edfad-2150-4ab4-8ab2-0a56643d54dd - Test case: TRUNCATE TABLE airports RESTART IDENTITY CASCADE;
+2025-02-23 21:49:51 - WARNING - app_logger - 9f1edfad-2150-4ab4-8ab2-0a56643d54dd - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - 71ba4058-e589-42c1-ad2d-37d7dc74ebd7 - Test case: INSERT INTO airlines (iata_code, airline) VALUES ('AA', 'American Airlines');
+2025-02-23 21:49:51 - WARNING - app_logger - 71ba4058-e589-42c1-ad2d-37d7dc74ebd7 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - ea34fad3-3d47-447b-b69e-06b7f4b6b87b - Test case: INSERT INTO airlines (iata_code, airline) VALUES ('DL', 'Delta Airlines');
+2025-02-23 21:49:51 - WARNING - app_logger - ea34fad3-3d47-447b-b69e-06b7f4b6b87b - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - b56f3f27-f6d3-440e-936e-3d6326108db3 - Test case: INSERT INTO airlines (iata_code, airline) VALUES ('UA', 'United Airlines');
+2025-02-23 21:49:51 - WARNING - app_logger - b56f3f27-f6d3-440e-936e-3d6326108db3 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - 13f14f9f-c674-4398-9a0b-b89f0c9b77c8 - Test case: INSERT INTO airports (iata_code, airport, city, state, country, latitude, longitude) VALUES ('JFK', 'John F. Kennedy International Airport', 'New York', 'NY', 'USA', 40.6413, -73.7781);
+2025-02-23 21:49:51 - WARNING - app_logger - 13f14f9f-c674-4398-9a0b-b89f0c9b77c8 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - b9f274aa-2a12-460c-a05a-4e89dc5f2770 - Test case: INSERT INTO airports (iata_code, airport, city, state, country, latitude, longitude) VALUES ('LAX', 'Los Angeles International Airport', 'Los Angeles', 'CA', 'USA', 33.9416, -118.4085);
+2025-02-23 21:49:51 - WARNING - app_logger - b9f274aa-2a12-460c-a05a-4e89dc5f2770 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - d172c4f1-f528-4605-a29a-f6d2e899291d - Test case: INSERT INTO airports (iata_code, airport, city, state, country, latitude, longitude) VALUES ('ORD', 'O'Hare International Airport', 'Chicago', 'IL', 'USA', 41.9742, -87.9073);
+2025-02-23 21:49:51 - WARNING - app_logger - d172c4f1-f528-4605-a29a-f6d2e899291d - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - f93793ad-939d-460b-bec8-90888fd5bdce - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 20, 4, 'AA', 1001, 'N123AA', 'JFK', 'LAX', 800, 810, 10, 1100, 1115, 15, 0, 0);
+2025-02-23 21:49:51 - WARNING - app_logger - f93793ad-939d-460b-bec8-90888fd5bdce - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - 5a5758b6-c134-4200-bf59-05a385e49be7 - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 21, 5, 'DL', 2002, 'N456DL', 'LAX', 'ORD', 900, 920, 20, 1230, 1250, 20, 0, 0);
+2025-02-23 21:49:51 - WARNING - app_logger - 5a5758b6-c134-4200-bf59-05a385e49be7 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - 70cc207d-6b8d-43cf-abbb-cb2c9777a8a3 - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 22, 6, 'UA', 3003, 'N789UA', 'ORD', 'JFK', 700, 705, 5, 1000, 1005, 5, 0, 0);
+2025-02-23 21:49:51 - WARNING - app_logger - 70cc207d-6b8d-43cf-abbb-cb2c9777a8a3 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - a153ab5a-fbc4-4068-87ad-310838dd719d - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 23, 7, 'AA', 1010, 'N321AA', 'JFK', 'ORD', 1200, 1225, 25, 1430, 1500, 30, 0, 0);
+2025-02-23 21:49:51 - WARNING - app_logger - a153ab5a-fbc4-4068-87ad-310838dd719d - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - c410c30a-95a0-4f54-b3b5-403720ec2bfd - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 24, 1, 'DL', 2020, 'N654DL', 'LAX', 'JFK', 1300, 1320, 20, 1700, 1730, 30, 0, 0);
+2025-02-23 21:49:51 - WARNING - app_logger - c410c30a-95a0-4f54-b3b5-403720ec2bfd - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - a36e5e33-94c4-40de-ba56-50837d250ad4 - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 25, 2, 'UA', 3030, 'N987UA', 'ORD', 'LAX', 1400, 1420, 20, 1730, 1800, 30, 0, 0);
+2025-02-23 21:49:51 - WARNING - app_logger - a36e5e33-94c4-40de-ba56-50837d250ad4 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - f6de2be9-3e82-4c38-9ebe-7289db006c37 - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 26, 3, 'AA', 1040, 'N741AA', 'JFK', 'LAX', 1600, 1630, 30, 2000, 2045, 45, 0, 0);
+2025-02-23 21:49:51 - WARNING - app_logger - f6de2be9-3e82-4c38-9ebe-7289db006c37 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - 8ef33689-ebd3-4b56-8a38-aecbedadc218 - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 27, 4, 'DL', 2050, 'N852DL', 'LAX', 'ORD', 1800, 1815, 15, 2200, 2230, 30, 0, 0);
+2025-02-23 21:49:51 - WARNING - app_logger - 8ef33689-ebd3-4b56-8a38-aecbedadc218 - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - 28481aa8-5ab9-4cee-a687-cf2b5c656aeb - Test case: INSERT INTO flights (year, month, day, day_of_week, airline, flight_number, tail_number, origin_airport, destination_airport, scheduled_departure, departure_time, departure_delay, scheduled_arrival, arrival_time, arrival_delay, cancelled, diverted) VALUES (2025, 2, 28, 5, 'UA', 3060, 'N963UA', 'ORD', 'JFK', 1900, 1925, 25, 2230, 2300, 30, 0, 0);
+2025-02-23 21:49:51 - WARNING - app_logger - 28481aa8-5ab9-4cee-a687-cf2b5c656aeb - SQL method Not Allowed
+2025-02-23 21:49:51 - INFO - app_logger - c09dfc71-7445-4a8e-8cda-6f5570e0104f - Test case: SELECT origin_airport, COUNT(*) AS num_flights FROM flights GROUP BY origin_airport ORDER BY num_flights DESC LIMIT 1;
+2025-02-23 21:49:51 - INFO - app_logger - c09dfc71-7445-4a8e-8cda-6f5570e0104f - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - c09dfc71-7445-4a8e-8cda-6f5570e0104f - SQL execution success
+2025-02-23 21:49:51 - INFO - app_logger - 6f67a4d6-54c4-43d2-84ce-5e6fecd99bb9 - Test case: SELECT flag FROM secret_table;
+2025-02-23 21:49:51 - INFO - app_logger - 6f67a4d6-54c4-43d2-84ce-5e6fecd99bb9 - Database instance created successfully
+2025-02-23 21:49:51 - INFO - app_logger - 6f67a4d6-54c4-43d2-84ce-5e6fecd99bb9 - SQL execution unsuccess (psycopg2.errors.UndefinedTable) relation "secret_table" does not exist
+LINE 1: SELECT flag FROM secret_table;
+                         ^
+
+2025-02-23 22:07:29 - INFO - app_logger - 5428471e-235c-4e65-b8cb-156651f3b5f5 - Chat Handler Initiated
+2025-02-23 22:07:32 - INFO - app_logger - 5428471e-235c-4e65-b8cb-156651f3b5f5 - Intent Finding Success
+2025-02-23 22:07:35 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT DISTINCT origin_airport FROM flights WHERE origin_airport LIKE 'CA%' UNION SELECT DISTINCT destination_airport FROM flights WHERE destination_airport LIKE 'CA%'" additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-fa2b38f3-8437-4960-90fe-738201bb0ef1-0' usage_metadata={'input_tokens': 1688, 'output_tokens': 32, 'total_tokens': 1720, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:07:35 - INFO - app_logger - 5428471e-235c-4e65-b8cb-156651f3b5f5 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:07:35 - INFO - app_logger - 5428471e-235c-4e65-b8cb-156651f3b5f5 - Database instance created successfully
+2025-02-23 22:07:35 - INFO - app_logger - 5428471e-235c-4e65-b8cb-156651f3b5f5 - SQL execution success
+2025-02-23 22:07:35 - INFO - app_logger - 5428471e-235c-4e65-b8cb-156651f3b5f5 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:07:35 - INFO - app_logger - 5428471e-235c-4e65-b8cb-156651f3b5f5 - SELECT DISTINCT origin_airport FROM flights WHERE origin_airport LIKE 'CA%' UNION SELECT DISTINCT destination_airport FROM flights WHERE destination_airport LIKE 'CA%'
+2025-02-23 22:08:51 - INFO - app_logger - 28f7309c-27bb-42ea-a8b5-e9d268c31523 - Chat Handler Initiated
+2025-02-23 22:08:54 - INFO - app_logger - 28f7309c-27bb-42ea-a8b5-e9d268c31523 - Intent Finding Success
+2025-02-23 22:08:57 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT DISTINCT origin_airport FROM flights WHERE origin_airport IN (SELECT iata_code FROM airports WHERE state = 'CA') UNION SELECT DISTINCT destination_airport FROM flights WHERE destination_airport IN (SELECT iata_code FROM airports WHERE state = 'CA')" additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-4c239ae0-7431-4bdf-bd83-6808308453e2-0' usage_metadata={'input_tokens': 1738, 'output_tokens': 54, 'total_tokens': 1792, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:08:57 - INFO - app_logger - 28f7309c-27bb-42ea-a8b5-e9d268c31523 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:08:57 - INFO - app_logger - 28f7309c-27bb-42ea-a8b5-e9d268c31523 - Database instance created successfully
+2025-02-23 22:08:57 - INFO - app_logger - 28f7309c-27bb-42ea-a8b5-e9d268c31523 - SQL execution success
+2025-02-23 22:08:57 - INFO - app_logger - 28f7309c-27bb-42ea-a8b5-e9d268c31523 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:08:57 - INFO - app_logger - 28f7309c-27bb-42ea-a8b5-e9d268c31523 - SELECT DISTINCT origin_airport FROM flights WHERE origin_airport IN (SELECT iata_code FROM airports WHERE state = 'CA') UNION SELECT DISTINCT destination_airport FROM flights WHERE destination_airport IN (SELECT iata_code FROM airports WHERE state = 'CA')
+2025-02-23 22:09:42 - INFO - app_logger - a57afb02-55ac-4a2e-a513-004c8be96001 - Chat Handler Initiated
+2025-02-23 22:09:42 - INFO - app_logger - a57afb02-55ac-4a2e-a513-004c8be96001 - Intent Finding Success
+2025-02-23 22:09:43 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT DISTINCT origin_airport AS airport\nFROM flights\nWHERE origin_airport ILIKE 'CA%';" additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 30, 'prompt_tokens': 1883, 'total_tokens': 1913, 'completion_time': 0.045360393, 'prompt_time': 0.09855929, 'queue_time': 0.02035666800000001, 'total_time': 0.143919683}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-e0e73407-cd0f-4091-97a5-8fcbb20acedd-0' usage_metadata={'input_tokens': 1883, 'output_tokens': 30, 'total_tokens': 1913}
+2025-02-23 22:09:43 - INFO - app_logger - a57afb02-55ac-4a2e-a513-004c8be96001 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:09:43 - INFO - app_logger - a57afb02-55ac-4a2e-a513-004c8be96001 - Database instance created successfully
+2025-02-23 22:09:43 - INFO - app_logger - a57afb02-55ac-4a2e-a513-004c8be96001 - SQL execution success
+2025-02-23 22:09:43 - INFO - app_logger - a57afb02-55ac-4a2e-a513-004c8be96001 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:09:43 - INFO - app_logger - a57afb02-55ac-4a2e-a513-004c8be96001 - SELECT DISTINCT origin_airport AS airport
+FROM flights
+WHERE origin_airport ILIKE 'CA%';
+2025-02-23 22:15:19 - INFO - app_logger - 8d1ea3bf-bd85-4472-bf04-9088f4a05aa7 - Chat Handler Initiated
+2025-02-23 22:15:22 - INFO - app_logger - 8d1ea3bf-bd85-4472-bf04-9088f4a05aa7 - 'str' object has no attribute 'content'
+2025-02-23 22:16:41 - INFO - app_logger - d666feb8-5bf6-4f24-80cd-84000c0f17f7 - Chat Handler Initiated
+2025-02-23 22:16:43 - INFO - app_logger - d666feb8-5bf6-4f24-80cd-84000c0f17f7 - 'str' object has no attribute 'content'
+2025-02-23 22:17:13 - INFO - app_logger - 856332b5-5b83-465f-987f-30934a488b4a - Chat Handler Initiated
+2025-02-23 22:17:15 - INFO - app_logger - 856332b5-5b83-465f-987f-30934a488b4a - 'str' object has no attribute 'content'
+2025-02-23 22:20:17 - INFO - app_logger - 8cafb6a0-464c-489a-bfda-52865c6b3b51 - Chat Handler Initiated
+2025-02-23 22:20:19 - INFO - app_logger - 8cafb6a0-464c-489a-bfda-52865c6b3b51 - 'str' object has no attribute 'content'
+2025-02-23 22:45:24 - INFO - app_logger - 5a211486-4a4e-4d69-a8af-bd0c676e0f90 - Chat Handler Initiated
+2025-02-23 22:45:26 - INFO - app_logger - 5a211486-4a4e-4d69-a8af-bd0c676e0f90 - 'str' object has no attribute 'content'
+2025-02-23 22:46:45 - INFO - app_logger - 77b1a203-c8b4-43b6-9bbc-77c52293c1b7 - Chat Handler Initiated
+2025-02-23 22:46:47 - INFO - app_logger - 77b1a203-c8b4-43b6-9bbc-77c52293c1b7 - 'str' object has no attribute 'content'
+2025-02-23 22:47:36 - INFO - app_logger - b74c9250-9dbe-439a-83d1-f3d92521852f - Chat Handler Initiated
+2025-02-23 22:47:37 - INFO - app_logger - b74c9250-9dbe-439a-83d1-f3d92521852f - Intent Finding Success
+2025-02-23 22:47:38 - INFO - app_logger - 84444807-a1e8-418f-a0ba-6f269c7e40e8 - Chat Handler Initiated
+2025-02-23 22:47:39 - INFO - app_logger - 84444807-a1e8-418f-a0ba-6f269c7e40e8 - Intent Finding Success
+2025-02-23 22:47:40 - INFO - app_logger - e9d4c3fd-c5eb-4c22-8229-d7fc43ec8645 - Chat Handler Initiated
+2025-02-23 22:47:40 - INFO - app_logger - e9d4c3fd-c5eb-4c22-8229-d7fc43ec8645 - Intent Finding Success
+2025-02-23 22:47:41 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT origin_airport \nFROM flights \nWHERE origin_airport ILIKE 'CA%' \nORDER BY origin_airport;" additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 35, 'prompt_tokens': 1925, 'total_tokens': 1960, 'completion_time': 0.052845321, 'prompt_time': 0.125948164, 'queue_time': 0.016968973999999998, 'total_time': 0.178793485}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-f6ac6448-9946-4d41-9495-216c9c4a65cd-0' usage_metadata={'input_tokens': 1925, 'output_tokens': 35, 'total_tokens': 1960}
+2025-02-23 22:47:41 - INFO - app_logger - e9d4c3fd-c5eb-4c22-8229-d7fc43ec8645 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:47:41 - INFO - app_logger - e9d4c3fd-c5eb-4c22-8229-d7fc43ec8645 - Database instance created successfully
+2025-02-23 22:47:41 - INFO - app_logger - e9d4c3fd-c5eb-4c22-8229-d7fc43ec8645 - SQL execution success
+2025-02-23 22:47:41 - INFO - app_logger - e9d4c3fd-c5eb-4c22-8229-d7fc43ec8645 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:47:41 - INFO - app_logger - e9d4c3fd-c5eb-4c22-8229-d7fc43ec8645 - SELECT origin_airport 
+FROM flights 
+WHERE origin_airport ILIKE 'CA%' 
+ORDER BY origin_airport;
+2025-02-23 22:47:42 - INFO - app_logger - 54bbfa1a-3be8-471a-954b-3728f40a8d09 - Chat Handler Initiated
+2025-02-23 22:47:43 - INFO - app_logger - 54bbfa1a-3be8-471a-954b-3728f40a8d09 - Intent Finding Success
+2025-02-23 22:47:46 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT *\nFROM flights\nWHERE origin_airport ILIKE 'CA%' OR destination_airport ILIKE 'CA%';" additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 33, 'prompt_tokens': 1758, 'total_tokens': 1791, 'completion_time': 0.049545503, 'prompt_time': 0.112303892, 'queue_time': 0.020239246000000002, 'total_time': 0.161849395}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-b7f0d294-a367-4786-b6ee-dafd23851b8d-0' usage_metadata={'input_tokens': 1758, 'output_tokens': 33, 'total_tokens': 1791}
+2025-02-23 22:47:46 - INFO - app_logger - 54bbfa1a-3be8-471a-954b-3728f40a8d09 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:47:46 - INFO - app_logger - 54bbfa1a-3be8-471a-954b-3728f40a8d09 - Database instance created successfully
+2025-02-23 22:47:47 - INFO - app_logger - 54bbfa1a-3be8-471a-954b-3728f40a8d09 - SQL execution success
+2025-02-23 22:47:47 - INFO - app_logger - 54bbfa1a-3be8-471a-954b-3728f40a8d09 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:47:47 - INFO - app_logger - 54bbfa1a-3be8-471a-954b-3728f40a8d09 - SELECT *
+FROM flights
+WHERE origin_airport ILIKE 'CA%' OR destination_airport ILIKE 'CA%';
+2025-02-23 22:47:48 - INFO - app_logger - 15fab060-6dae-4ffa-b029-f3aff06cf6a5 - Chat Handler Initiated
+2025-02-23 22:47:52 - INFO - app_logger - 15fab060-6dae-4ffa-b029-f3aff06cf6a5 - Intent Finding Success
+2025-02-23 22:47:53 - INFO - app_logger - 3fe047ba-de4c-4b1f-8055-de50b91fa71f - Chat Handler Initiated
+2025-02-23 22:47:58 - INFO - app_logger - 3fe047ba-de4c-4b1f-8055-de50b91fa71f - Intent Finding Success
+2025-02-23 22:47:59 - INFO - app_logger - 543e1954-4c38-4b15-abb5-775524e0fbf8 - Chat Handler Initiated
+2025-02-23 22:48:04 - INFO - app_logger - 543e1954-4c38-4b15-abb5-775524e0fbf8 - Intent Finding Success
+2025-02-23 22:48:27 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights WHERE cancelled = 1;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 12, 'prompt_tokens': 1843, 'total_tokens': 1855, 'completion_time': 0.01695909, 'prompt_time': 0.139717763, 'queue_time': 0.019634873999999997, 'total_time': 0.156676853}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-00f3b9f1-aa94-4432-af5f-fdf2418fe6aa-0' usage_metadata={'input_tokens': 1843, 'output_tokens': 12, 'total_tokens': 1855}
+2025-02-23 22:48:27 - INFO - app_logger - 543e1954-4c38-4b15-abb5-775524e0fbf8 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:48:27 - INFO - app_logger - 543e1954-4c38-4b15-abb5-775524e0fbf8 - Database instance created successfully
+2025-02-23 22:48:27 - INFO - app_logger - 543e1954-4c38-4b15-abb5-775524e0fbf8 - SQL execution success
+2025-02-23 22:48:27 - INFO - app_logger - 543e1954-4c38-4b15-abb5-775524e0fbf8 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:48:27 - INFO - app_logger - 543e1954-4c38-4b15-abb5-775524e0fbf8 - SELECT * FROM flights WHERE cancelled = 1;
+2025-02-23 22:48:28 - INFO - app_logger - 6d652eb0-f7ed-48e5-b1ca-0d575b39971a - Chat Handler Initiated
+2025-02-23 22:48:33 - INFO - app_logger - 6d652eb0-f7ed-48e5-b1ca-0d575b39971a - Intent Finding Success
+2025-02-23 22:48:54 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT *\nFROM flights\nWHERE cancelled = 1;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 1801, 'total_tokens': 1816, 'completion_time': 0.021653495, 'prompt_time': 0.192775984, 'queue_time': 0.022662076999999975, 'total_time': 0.214429479}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-b27f1b5b-4455-4fa1-b797-1c8b20dc434d-0' usage_metadata={'input_tokens': 1801, 'output_tokens': 15, 'total_tokens': 1816}
+2025-02-23 22:48:54 - INFO - app_logger - 6d652eb0-f7ed-48e5-b1ca-0d575b39971a - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:48:54 - INFO - app_logger - 6d652eb0-f7ed-48e5-b1ca-0d575b39971a - Database instance created successfully
+2025-02-23 22:48:54 - INFO - app_logger - 6d652eb0-f7ed-48e5-b1ca-0d575b39971a - SQL execution success
+2025-02-23 22:48:54 - INFO - app_logger - 6d652eb0-f7ed-48e5-b1ca-0d575b39971a - SQL Generation Success. Returning Final SQl
+2025-02-23 22:48:54 - INFO - app_logger - 6d652eb0-f7ed-48e5-b1ca-0d575b39971a - SELECT *
+FROM flights
+WHERE cancelled = 1;
+2025-02-23 22:48:56 - INFO - app_logger - fba9c9f8-0e9f-4ed1-9b52-391237cd598c - Chat Handler Initiated
+2025-02-23 22:49:00 - INFO - app_logger - fba9c9f8-0e9f-4ed1-9b52-391237cd598c - Intent Finding Success
+2025-02-23 22:49:11 - INFO - app_logger - fba9c9f8-0e9f-4ed1-9b52-391237cd598c - cannot access local variable 'response' where it is not associated with a value
+2025-02-23 22:50:37 - INFO - app_logger - 52e8ec09-71f8-484d-96a1-865fa60d36e8 - Chat Handler Initiated
+2025-02-23 22:50:38 - INFO - app_logger - 52e8ec09-71f8-484d-96a1-865fa60d36e8 - Intent Finding Success
+2025-02-23 22:50:39 - INFO - app_logger - fb881e87-22f4-4382-8233-586d22877c59 - Chat Handler Initiated
+2025-02-23 22:50:41 - INFO - app_logger - fb881e87-22f4-4382-8233-586d22877c59 - Intent Finding Success
+2025-02-23 22:50:42 - INFO - app_logger - 7ffa53eb-d18a-4fe6-99f0-816134028e22 - Chat Handler Initiated
+2025-02-23 22:50:42 - INFO - app_logger - 7ffa53eb-d18a-4fe6-99f0-816134028e22 - Intent Finding Success
+2025-02-23 22:50:43 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT *\nFROM flights\nWHERE origin_airport ILIKE 'CA%' OR destination_airport ILIKE 'CA%';" additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 33, 'prompt_tokens': 1842, 'total_tokens': 1875, 'completion_time': 0.050248867, 'prompt_time': 0.292416355, 'queue_time': 0.02110719099999997, 'total_time': 0.342665222}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-857b2571-2575-444a-b6c8-fd3a1b4e0dd5-0' usage_metadata={'input_tokens': 1842, 'output_tokens': 33, 'total_tokens': 1875}
+2025-02-23 22:50:43 - INFO - app_logger - 7ffa53eb-d18a-4fe6-99f0-816134028e22 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:50:43 - INFO - app_logger - 7ffa53eb-d18a-4fe6-99f0-816134028e22 - Database instance created successfully
+2025-02-23 22:50:43 - INFO - app_logger - 7ffa53eb-d18a-4fe6-99f0-816134028e22 - SQL execution success
+2025-02-23 22:50:43 - INFO - app_logger - 7ffa53eb-d18a-4fe6-99f0-816134028e22 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:50:43 - INFO - app_logger - 7ffa53eb-d18a-4fe6-99f0-816134028e22 - SELECT *
+FROM flights
+WHERE origin_airport ILIKE 'CA%' OR destination_airport ILIKE 'CA%';
+2025-02-23 22:50:44 - INFO - app_logger - 5f7b8770-94e9-44a0-8bbd-da978709cbfe - Chat Handler Initiated
+2025-02-23 22:50:47 - INFO - app_logger - 5f7b8770-94e9-44a0-8bbd-da978709cbfe - Intent Finding Success
+2025-02-23 22:50:50 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT DISTINCT origin_airport FROM flights WHERE origin_airport LIKE 'CA%' UNION SELECT DISTINCT destination_airport FROM flights WHERE destination_airport LIKE 'CA%'" additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-4a1bcf34-ceab-45dd-84db-0bebec200755-0' usage_metadata={'input_tokens': 1742, 'output_tokens': 32, 'total_tokens': 1774, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:50:50 - INFO - app_logger - 5f7b8770-94e9-44a0-8bbd-da978709cbfe - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:50:50 - INFO - app_logger - 5f7b8770-94e9-44a0-8bbd-da978709cbfe - Database instance created successfully
+2025-02-23 22:50:50 - INFO - app_logger - 5f7b8770-94e9-44a0-8bbd-da978709cbfe - SQL execution success
+2025-02-23 22:50:50 - INFO - app_logger - 5f7b8770-94e9-44a0-8bbd-da978709cbfe - SQL Generation Success. Returning Final SQl
+2025-02-23 22:50:50 - INFO - app_logger - 5f7b8770-94e9-44a0-8bbd-da978709cbfe - SELECT DISTINCT origin_airport FROM flights WHERE origin_airport LIKE 'CA%' UNION SELECT DISTINCT destination_airport FROM flights WHERE destination_airport LIKE 'CA%'
+2025-02-23 22:50:51 - INFO - app_logger - 97d3e412-fdef-4e91-986c-93e42a97f469 - Chat Handler Initiated
+2025-02-23 22:50:51 - INFO - app_logger - 97d3e412-fdef-4e91-986c-93e42a97f469 - Intent Finding Success
+2025-02-23 22:50:52 - INFO - app_logger - d5de7dec-b64a-418c-90ed-301300add6c5 - Chat Handler Initiated
+2025-02-23 22:50:55 - INFO - app_logger - d5de7dec-b64a-418c-90ed-301300add6c5 - Intent Finding Success
+2025-02-23 22:50:56 - INFO - app_logger - 4afd052b-ca12-4e90-9dcd-29ef88fff7dc - Chat Handler Initiated
+2025-02-23 22:50:57 - INFO - app_logger - 4afd052b-ca12-4e90-9dcd-29ef88fff7dc - Intent Finding Success
+2025-02-23 22:50:57 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT *\nFROM flights\nWHERE cancelled = 1;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 1862, 'total_tokens': 1877, 'completion_time': 0.022010983, 'prompt_time': 0.114791498, 'queue_time': 0.017594899999999983, 'total_time': 0.136802481}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-60330aa5-19c1-4269-a6d4-3b3344af1fba-0' usage_metadata={'input_tokens': 1862, 'output_tokens': 15, 'total_tokens': 1877}
+2025-02-23 22:50:57 - INFO - app_logger - 4afd052b-ca12-4e90-9dcd-29ef88fff7dc - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:50:57 - INFO - app_logger - 4afd052b-ca12-4e90-9dcd-29ef88fff7dc - Database instance created successfully
+2025-02-23 22:50:57 - INFO - app_logger - 4afd052b-ca12-4e90-9dcd-29ef88fff7dc - SQL execution success
+2025-02-23 22:50:57 - INFO - app_logger - 4afd052b-ca12-4e90-9dcd-29ef88fff7dc - SQL Generation Success. Returning Final SQl
+2025-02-23 22:50:57 - INFO - app_logger - 4afd052b-ca12-4e90-9dcd-29ef88fff7dc - SELECT *
+FROM flights
+WHERE cancelled = 1;
+2025-02-23 22:50:58 - INFO - app_logger - b843c1db-f7b1-485f-a8fc-61f761bf82ae - Chat Handler Initiated
+2025-02-23 22:51:01 - INFO - app_logger - b843c1db-f7b1-485f-a8fc-61f761bf82ae - Intent Finding Success
+2025-02-23 22:51:02 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights WHERE cancelled = 1' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-30aec990-4974-4b6a-80fe-3b3a6aa5d128-0' usage_metadata={'input_tokens': 1792, 'output_tokens': 10, 'total_tokens': 1802, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:51:02 - INFO - app_logger - b843c1db-f7b1-485f-a8fc-61f761bf82ae - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:51:02 - INFO - app_logger - b843c1db-f7b1-485f-a8fc-61f761bf82ae - Database instance created successfully
+2025-02-23 22:51:02 - INFO - app_logger - b843c1db-f7b1-485f-a8fc-61f761bf82ae - SQL execution success
+2025-02-23 22:51:02 - INFO - app_logger - b843c1db-f7b1-485f-a8fc-61f761bf82ae - SQL Generation Success. Returning Final SQl
+2025-02-23 22:51:02 - INFO - app_logger - b843c1db-f7b1-485f-a8fc-61f761bf82ae - SELECT * FROM flights WHERE cancelled = 1
+2025-02-23 22:51:03 - INFO - app_logger - 187cbf7d-422e-466c-8e9e-e5349ec9340a - Chat Handler Initiated
+2025-02-23 22:51:04 - INFO - app_logger - 187cbf7d-422e-466c-8e9e-e5349ec9340a - Intent Finding Success
+2025-02-23 22:51:16 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT COUNT(*)\nFROM flights\nWHERE origin_airport ILIKE 'JFK';" additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 25, 'prompt_tokens': 1870, 'total_tokens': 1895, 'completion_time': 0.037078731, 'prompt_time': 0.097473171, 'queue_time': 0.020838347000000007, 'total_time': 0.134551902}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-4b5188cb-c146-4291-bfd5-49d95935d18e-0' usage_metadata={'input_tokens': 1870, 'output_tokens': 25, 'total_tokens': 1895}
+2025-02-23 22:51:16 - INFO - app_logger - 187cbf7d-422e-466c-8e9e-e5349ec9340a - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:51:16 - INFO - app_logger - 187cbf7d-422e-466c-8e9e-e5349ec9340a - Database instance created successfully
+2025-02-23 22:51:16 - INFO - app_logger - 187cbf7d-422e-466c-8e9e-e5349ec9340a - SQL execution success
+2025-02-23 22:51:16 - INFO - app_logger - 187cbf7d-422e-466c-8e9e-e5349ec9340a - SQL Generation Success. Returning Final SQl
+2025-02-23 22:51:16 - INFO - app_logger - 187cbf7d-422e-466c-8e9e-e5349ec9340a - SELECT COUNT(*)
+FROM flights
+WHERE origin_airport ILIKE 'JFK';
+2025-02-23 22:51:17 - INFO - app_logger - c7f6a248-abc9-4286-95f1-2b77a6d07eec - Chat Handler Initiated
+2025-02-23 22:51:18 - INFO - app_logger - c7f6a248-abc9-4286-95f1-2b77a6d07eec - Intent Finding Success
+2025-02-23 22:51:19 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT COUNT(*) FROM flights WHERE origin_airport = 'JFK';" additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-a2489907-b97a-404c-86d0-9a7ce7562a5a-0' usage_metadata={'input_tokens': 1699, 'output_tokens': 14, 'total_tokens': 1713, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:51:19 - INFO - app_logger - c7f6a248-abc9-4286-95f1-2b77a6d07eec - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:51:19 - INFO - app_logger - c7f6a248-abc9-4286-95f1-2b77a6d07eec - Database instance created successfully
+2025-02-23 22:51:19 - INFO - app_logger - c7f6a248-abc9-4286-95f1-2b77a6d07eec - SQL execution success
+2025-02-23 22:51:19 - INFO - app_logger - c7f6a248-abc9-4286-95f1-2b77a6d07eec - SQL Generation Success. Returning Final SQl
+2025-02-23 22:51:19 - INFO - app_logger - c7f6a248-abc9-4286-95f1-2b77a6d07eec - SELECT COUNT(*) FROM flights WHERE origin_airport = 'JFK';
+2025-02-23 22:51:20 - INFO - app_logger - d87f5003-de09-4376-b310-ce3d1282900d - Chat Handler Initiated
+2025-02-23 22:51:22 - INFO - app_logger - d87f5003-de09-4376-b310-ce3d1282900d - Intent Finding Success
+2025-02-23 22:51:45 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights WHERE departure_delay > 60;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 1866, 'total_tokens': 1881, 'completion_time': 0.021625146, 'prompt_time': 0.170012469, 'queue_time': 0.019434164000000004, 'total_time': 0.191637615}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-5ba4cf38-e5bd-4fd6-b91b-87a0a302e807-0' usage_metadata={'input_tokens': 1866, 'output_tokens': 15, 'total_tokens': 1881}
+2025-02-23 22:51:45 - INFO - app_logger - d87f5003-de09-4376-b310-ce3d1282900d - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:51:45 - INFO - app_logger - d87f5003-de09-4376-b310-ce3d1282900d - Database instance created successfully
+2025-02-23 22:51:45 - INFO - app_logger - d87f5003-de09-4376-b310-ce3d1282900d - SQL execution success
+2025-02-23 22:51:45 - INFO - app_logger - d87f5003-de09-4376-b310-ce3d1282900d - SQL Generation Success. Returning Final SQl
+2025-02-23 22:51:45 - INFO - app_logger - d87f5003-de09-4376-b310-ce3d1282900d - SELECT * FROM flights WHERE departure_delay > 60;
+2025-02-23 22:51:46 - INFO - app_logger - 7512182f-0077-4050-94db-63b93e09ccc7 - Chat Handler Initiated
+2025-02-23 22:51:49 - INFO - app_logger - 7512182f-0077-4050-94db-63b93e09ccc7 - Intent Finding Success
+2025-02-23 22:51:52 - INFO - app_logger - 7512182f-0077-4050-94db-63b93e09ccc7 - cannot access local variable 'response' where it is not associated with a value
+2025-02-23 22:51:53 - INFO - app_logger - 2248e4d3-2b14-4281-8c7f-598050550156 - Chat Handler Initiated
+2025-02-23 22:51:54 - INFO - app_logger - 2248e4d3-2b14-4281-8c7f-598050550156 - Intent Finding Success
+2025-02-23 22:51:55 - INFO - app_logger - 15f7a67a-b1b6-4f90-a992-d2c7f9942561 - Chat Handler Initiated
+2025-02-23 22:51:58 - INFO - app_logger - 15f7a67a-b1b6-4f90-a992-d2c7f9942561 - Intent Finding Success
+2025-02-23 22:51:59 - INFO - app_logger - 89c482cb-121c-417b-8d95-16654e81e363 - Chat Handler Initiated
+2025-02-23 22:51:59 - INFO - app_logger - 89c482cb-121c-417b-8d95-16654e81e363 - Intent Finding Success
+2025-02-23 22:52:00 - INFO - app_logger - 8692a012-563f-41c6-81ff-382adbfabcaa - Chat Handler Initiated
+2025-02-23 22:52:05 - INFO - app_logger - 8692a012-563f-41c6-81ff-382adbfabcaa - Invalid API key or model name. Please check and retry.
+2025-02-23 22:52:06 - INFO - app_logger - 1d0b3067-1250-4862-98c6-f568e64e808f - Chat Handler Initiated
+2025-02-23 22:52:06 - INFO - app_logger - 1d0b3067-1250-4862-98c6-f568e64e808f - Intent Finding Success
+2025-02-23 22:54:05 - INFO - app_logger - 672e3dc9-540f-4738-888f-9d6920895bc7 - Chat Handler Initiated
+2025-02-23 22:54:07 - INFO - app_logger - 672e3dc9-540f-4738-888f-9d6920895bc7 - Intent Finding Success
+2025-02-23 22:54:08 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT * FROM flights WHERE departure_delay > 60 OR arrival_delay > 60;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-09272cd3-0e82-4e62-a48a-509d5c919097-0' usage_metadata={'input_tokens': 1693, 'output_tokens': 22, 'total_tokens': 1715, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:54:08 - INFO - app_logger - 672e3dc9-540f-4738-888f-9d6920895bc7 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:54:08 - INFO - app_logger - 672e3dc9-540f-4738-888f-9d6920895bc7 - Database instance created successfully
+2025-02-23 22:54:08 - INFO - app_logger - 672e3dc9-540f-4738-888f-9d6920895bc7 - SQL execution success
+2025-02-23 22:54:08 - INFO - app_logger - 672e3dc9-540f-4738-888f-9d6920895bc7 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:54:08 - INFO - app_logger - 672e3dc9-540f-4738-888f-9d6920895bc7 - SELECT * FROM flights WHERE departure_delay > 60 OR arrival_delay > 60;
+2025-02-23 22:54:10 - INFO - app_logger - e4b2a4a2-221e-4b04-946b-b4d69f412860 - Chat Handler Initiated
+2025-02-23 22:54:11 - INFO - app_logger - e4b2a4a2-221e-4b04-946b-b4d69f412860 - Intent Finding Success
+2025-02-23 22:54:12 - INFO - app_logger - 32770040-2288-4849-8dc2-c9831f464cd4 - Chat Handler Initiated
+2025-02-23 22:54:13 - INFO - app_logger - 32770040-2288-4849-8dc2-c9831f464cd4 - Intent Finding Success
+2025-02-23 22:54:14 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, AVG(departure_delay) \nFROM flights \nWHERE departure_delay IS NOT NULL \nGROUP BY airline;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 36, 'prompt_tokens': 1843, 'total_tokens': 1879, 'completion_time': 0.055347239, 'prompt_time': 0.15819578, 'queue_time': 0.019674991000000003, 'total_time': 0.213543019}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-44f5caf0-7da4-4d9b-b8d7-30c938c2da2f-0' usage_metadata={'input_tokens': 1843, 'output_tokens': 36, 'total_tokens': 1879}
+2025-02-23 22:54:14 - INFO - app_logger - 32770040-2288-4849-8dc2-c9831f464cd4 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:54:14 - INFO - app_logger - 32770040-2288-4849-8dc2-c9831f464cd4 - Database instance created successfully
+2025-02-23 22:54:14 - INFO - app_logger - 32770040-2288-4849-8dc2-c9831f464cd4 - SQL execution success
+2025-02-23 22:54:14 - INFO - app_logger - 32770040-2288-4849-8dc2-c9831f464cd4 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:54:14 - INFO - app_logger - 32770040-2288-4849-8dc2-c9831f464cd4 - SELECT airline, AVG(departure_delay) 
+FROM flights 
+WHERE departure_delay IS NOT NULL 
+GROUP BY airline;
+2025-02-23 22:54:15 - INFO - app_logger - 5b7c1ed9-bd06-4159-8b28-c2f370302f93 - Chat Handler Initiated
+2025-02-23 22:54:16 - INFO - app_logger - 5b7c1ed9-bd06-4159-8b28-c2f370302f93 - Intent Finding Success
+2025-02-23 22:54:19 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, AVG(departure_delay) AS average_departure_delay FROM flights GROUP BY airline;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-f8453b9c-448f-4479-a1d0-2d350f0ce252-0' usage_metadata={'input_tokens': 1798, 'output_tokens': 22, 'total_tokens': 1820, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:54:19 - INFO - app_logger - 5b7c1ed9-bd06-4159-8b28-c2f370302f93 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:54:19 - INFO - app_logger - 5b7c1ed9-bd06-4159-8b28-c2f370302f93 - Database instance created successfully
+2025-02-23 22:54:19 - INFO - app_logger - 5b7c1ed9-bd06-4159-8b28-c2f370302f93 - SQL execution success
+2025-02-23 22:54:19 - INFO - app_logger - 5b7c1ed9-bd06-4159-8b28-c2f370302f93 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:54:19 - INFO - app_logger - 5b7c1ed9-bd06-4159-8b28-c2f370302f93 - SELECT airline, AVG(departure_delay) AS average_departure_delay FROM flights GROUP BY airline;
+2025-02-23 22:54:20 - INFO - app_logger - 44e1d54a-33c4-4ade-9a74-ba7a6c541845 - Chat Handler Initiated
+2025-02-23 22:54:20 - INFO - app_logger - 44e1d54a-33c4-4ade-9a74-ba7a6c541845 - Intent Finding Success
+2025-02-23 22:54:21 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, COUNT(*) AS total_cancellations\nFROM flights\nWHERE cancelled = 1\nGROUP BY airline;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 32, 'prompt_tokens': 1891, 'total_tokens': 1923, 'completion_time': 0.048206836, 'prompt_time': 0.167025437, 'queue_time': 0.019185447999999994, 'total_time': 0.215232273}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-8a269c49-a3ad-4b3e-bf71-d5538970703e-0' usage_metadata={'input_tokens': 1891, 'output_tokens': 32, 'total_tokens': 1923}
+2025-02-23 22:54:21 - INFO - app_logger - 44e1d54a-33c4-4ade-9a74-ba7a6c541845 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:54:21 - INFO - app_logger - 44e1d54a-33c4-4ade-9a74-ba7a6c541845 - Database instance created successfully
+2025-02-23 22:54:21 - INFO - app_logger - 44e1d54a-33c4-4ade-9a74-ba7a6c541845 - SQL execution success
+2025-02-23 22:54:21 - INFO - app_logger - 44e1d54a-33c4-4ade-9a74-ba7a6c541845 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:54:21 - INFO - app_logger - 44e1d54a-33c4-4ade-9a74-ba7a6c541845 - SELECT airline, COUNT(*) AS total_cancellations
+FROM flights
+WHERE cancelled = 1
+GROUP BY airline;
+2025-02-23 22:54:22 - INFO - app_logger - e82c16de-b6b1-4adb-ac1c-c223a7dfb2f5 - Chat Handler Initiated
+2025-02-23 22:54:23 - INFO - app_logger - e82c16de-b6b1-4adb-ac1c-c223a7dfb2f5 - Intent Finding Success
+2025-02-23 22:54:25 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, COUNT(*) FROM flights WHERE cancelled = 1 GROUP BY airline;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-244f1a91-fdd9-4071-be1c-04ad54037668-0' usage_metadata={'input_tokens': 1766, 'output_tokens': 17, 'total_tokens': 1783, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:54:25 - INFO - app_logger - e82c16de-b6b1-4adb-ac1c-c223a7dfb2f5 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:54:25 - INFO - app_logger - e82c16de-b6b1-4adb-ac1c-c223a7dfb2f5 - Database instance created successfully
+2025-02-23 22:54:25 - INFO - app_logger - e82c16de-b6b1-4adb-ac1c-c223a7dfb2f5 - SQL execution success
+2025-02-23 22:54:25 - INFO - app_logger - e82c16de-b6b1-4adb-ac1c-c223a7dfb2f5 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:54:25 - INFO - app_logger - e82c16de-b6b1-4adb-ac1c-c223a7dfb2f5 - SELECT airline, COUNT(*) FROM flights WHERE cancelled = 1 GROUP BY airline;
+2025-02-23 22:54:26 - INFO - app_logger - bc527e11-5f65-4e88-9b5c-a8020edb71ee - Chat Handler Initiated
+2025-02-23 22:54:26 - INFO - app_logger - bc527e11-5f65-4e88-9b5c-a8020edb71ee - Intent Finding Success
+2025-02-23 22:54:27 - INFO - app_logger - 495eea05-e25d-4703-9856-b1d46f51f67e - Chat Handler Initiated
+2025-02-23 22:54:29 - INFO - app_logger - 495eea05-e25d-4703-9856-b1d46f51f67e - Intent Finding Success
+2025-02-23 22:54:30 - INFO - app_logger - b0a7f5fd-c1fd-48fc-9f68-1d633bf5a7c9 - Chat Handler Initiated
+2025-02-23 22:54:30 - INFO - app_logger - b0a7f5fd-c1fd-48fc-9f68-1d633bf5a7c9 - Intent Finding Success
+2025-02-23 22:54:45 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT origin_airport, COUNT(id) AS total_departing_flights\nFROM flights\nWHERE departure_time IS NOT NULL\nGROUP BY origin_airport\nORDER BY total_departing_flights DESC;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 55, 'prompt_tokens': 1868, 'total_tokens': 1923, 'completion_time': 0.083673872, 'prompt_time': 0.158595506, 'queue_time': 0.017399671000000005, 'total_time': 0.242269378}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-eccfdcec-b1ef-431f-b9a0-a43cbb14c413-0' usage_metadata={'input_tokens': 1868, 'output_tokens': 55, 'total_tokens': 1923}
+2025-02-23 22:54:45 - INFO - app_logger - b0a7f5fd-c1fd-48fc-9f68-1d633bf5a7c9 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:54:45 - INFO - app_logger - b0a7f5fd-c1fd-48fc-9f68-1d633bf5a7c9 - Database instance created successfully
+2025-02-23 22:54:45 - INFO - app_logger - b0a7f5fd-c1fd-48fc-9f68-1d633bf5a7c9 - SQL execution success
+2025-02-23 22:54:45 - INFO - app_logger - b0a7f5fd-c1fd-48fc-9f68-1d633bf5a7c9 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:54:45 - INFO - app_logger - b0a7f5fd-c1fd-48fc-9f68-1d633bf5a7c9 - SELECT origin_airport, COUNT(id) AS total_departing_flights
+FROM flights
+WHERE departure_time IS NOT NULL
+GROUP BY origin_airport
+ORDER BY total_departing_flights DESC;
+2025-02-23 22:54:46 - INFO - app_logger - 1ba227e5-915d-44fe-9203-d5bb1527054d - Chat Handler Initiated
+2025-02-23 22:54:48 - INFO - app_logger - 1ba227e5-915d-44fe-9203-d5bb1527054d - Intent Finding Success
+2025-02-23 22:54:49 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT origin_airport, COUNT(*) AS total_departures FROM flights GROUP BY origin_airport ORDER BY total_departures DESC;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-ae52a3bf-fe61-42e1-98fe-659ce998e2e7-0' usage_metadata={'input_tokens': 1743, 'output_tokens': 28, 'total_tokens': 1771, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:54:49 - INFO - app_logger - 1ba227e5-915d-44fe-9203-d5bb1527054d - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:54:49 - INFO - app_logger - 1ba227e5-915d-44fe-9203-d5bb1527054d - Database instance created successfully
+2025-02-23 22:54:49 - INFO - app_logger - 1ba227e5-915d-44fe-9203-d5bb1527054d - SQL execution success
+2025-02-23 22:54:49 - INFO - app_logger - 1ba227e5-915d-44fe-9203-d5bb1527054d - SQL Generation Success. Returning Final SQl
+2025-02-23 22:54:49 - INFO - app_logger - 1ba227e5-915d-44fe-9203-d5bb1527054d - SELECT origin_airport, COUNT(*) AS total_departures FROM flights GROUP BY origin_airport ORDER BY total_departures DESC;
+2025-02-23 22:54:50 - INFO - app_logger - 8763b56f-05d3-4a61-a98f-6ff7c22cc94e - Chat Handler Initiated
+2025-02-23 22:54:52 - INFO - app_logger - 8763b56f-05d3-4a61-a98f-6ff7c22cc94e - Intent Finding Success
+2025-02-23 22:55:15 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT month, COUNT(id) AS delay_count\nFROM flights\nWHERE departure_delay IS NOT NULL\nGROUP BY month\nORDER BY delay_count DESC\nLIMIT 1;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 43, 'prompt_tokens': 1860, 'total_tokens': 1903, 'completion_time': 0.064939658, 'prompt_time': 0.19212645, 'queue_time': 0.020147110999999995, 'total_time': 0.257066108}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-7c691cce-2f9a-4dbe-b45b-d604332e45d4-0' usage_metadata={'input_tokens': 1860, 'output_tokens': 43, 'total_tokens': 1903}
+2025-02-23 22:55:15 - INFO - app_logger - 8763b56f-05d3-4a61-a98f-6ff7c22cc94e - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:55:15 - INFO - app_logger - 8763b56f-05d3-4a61-a98f-6ff7c22cc94e - Database instance created successfully
+2025-02-23 22:55:15 - INFO - app_logger - 8763b56f-05d3-4a61-a98f-6ff7c22cc94e - SQL execution success
+2025-02-23 22:55:15 - INFO - app_logger - 8763b56f-05d3-4a61-a98f-6ff7c22cc94e - SQL Generation Success. Returning Final SQl
+2025-02-23 22:55:15 - INFO - app_logger - 8763b56f-05d3-4a61-a98f-6ff7c22cc94e - SELECT month, COUNT(id) AS delay_count
+FROM flights
+WHERE departure_delay IS NOT NULL
+GROUP BY month
+ORDER BY delay_count DESC
+LIMIT 1;
+2025-02-23 22:55:16 - INFO - app_logger - f3cf910e-8c83-48e4-b56f-28ad59154f49 - Chat Handler Initiated
+2025-02-23 22:55:19 - INFO - app_logger - f3cf910e-8c83-48e4-b56f-28ad59154f49 - Intent Finding Success
+2025-02-23 22:56:57 - INFO - app_logger - 7a5ee9ac-5077-4c65-82ff-664a54e460ec - Chat Handler Initiated
+2025-02-23 22:56:58 - INFO - app_logger - 7a5ee9ac-5077-4c65-82ff-664a54e460ec - Intent Finding Success
+2025-02-23 22:57:00 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT month FROM flights WHERE departure_delay > 0 GROUP BY month ORDER BY count(*) DESC LIMIT 1' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-20e2e92d-402c-4ff9-ad88-8b4edd125dcf-0' usage_metadata={'input_tokens': 1798, 'output_tokens': 23, 'total_tokens': 1821, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:57:00 - INFO - app_logger - 7a5ee9ac-5077-4c65-82ff-664a54e460ec - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:57:00 - INFO - app_logger - 7a5ee9ac-5077-4c65-82ff-664a54e460ec - Database instance created successfully
+2025-02-23 22:57:00 - INFO - app_logger - 7a5ee9ac-5077-4c65-82ff-664a54e460ec - SQL execution success
+2025-02-23 22:57:00 - INFO - app_logger - 7a5ee9ac-5077-4c65-82ff-664a54e460ec - SQL Generation Success. Returning Final SQl
+2025-02-23 22:57:00 - INFO - app_logger - 7a5ee9ac-5077-4c65-82ff-664a54e460ec - SELECT month FROM flights WHERE departure_delay > 0 GROUP BY month ORDER BY count(*) DESC LIMIT 1
+2025-02-23 22:57:01 - INFO - app_logger - 105e0060-b7a2-4940-a0c8-95b8b3a8c6fa - Chat Handler Initiated
+2025-02-23 22:57:01 - INFO - app_logger - 105e0060-b7a2-4940-a0c8-95b8b3a8c6fa - Intent Finding Success
+2025-02-23 22:57:02 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, AVG(arrival_delay) AS avg_arrival_delay\nFROM flights\nWHERE arrival_delay IS NOT NULL\nGROUP BY airline\nORDER BY avg_arrival_delay DESC\nLIMIT 1;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 59, 'prompt_tokens': 1844, 'total_tokens': 1903, 'completion_time': 0.090517437, 'prompt_time': 0.096207453, 'queue_time': 0.021339445, 'total_time': 0.18672489}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-da53f81e-322f-43e9-8dec-90a1f8326682-0' usage_metadata={'input_tokens': 1844, 'output_tokens': 59, 'total_tokens': 1903}
+2025-02-23 22:57:02 - INFO - app_logger - 105e0060-b7a2-4940-a0c8-95b8b3a8c6fa - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:57:02 - INFO - app_logger - 105e0060-b7a2-4940-a0c8-95b8b3a8c6fa - Database instance created successfully
+2025-02-23 22:57:02 - INFO - app_logger - 105e0060-b7a2-4940-a0c8-95b8b3a8c6fa - SQL execution success
+2025-02-23 22:57:02 - INFO - app_logger - 105e0060-b7a2-4940-a0c8-95b8b3a8c6fa - SQL Generation Success. Returning Final SQl
+2025-02-23 22:57:02 - INFO - app_logger - 105e0060-b7a2-4940-a0c8-95b8b3a8c6fa - SELECT airline, AVG(arrival_delay) AS avg_arrival_delay
+FROM flights
+WHERE arrival_delay IS NOT NULL
+GROUP BY airline
+ORDER BY avg_arrival_delay DESC
+LIMIT 1;
+2025-02-23 22:57:03 - INFO - app_logger - 9aede319-96ac-4862-956d-b8568f13252c - Chat Handler Initiated
+2025-02-23 22:57:04 - INFO - app_logger - 9aede319-96ac-4862-956d-b8568f13252c - Intent Finding Success
+2025-02-23 22:57:06 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline FROM flights GROUP BY airline ORDER BY avg(arrival_delay) DESC LIMIT 1;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-bd2c1ff1-c88d-4345-835f-3f8b2b2db555-0' usage_metadata={'input_tokens': 1723, 'output_tokens': 21, 'total_tokens': 1744, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:57:06 - INFO - app_logger - 9aede319-96ac-4862-956d-b8568f13252c - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:57:06 - INFO - app_logger - 9aede319-96ac-4862-956d-b8568f13252c - Database instance created successfully
+2025-02-23 22:57:06 - INFO - app_logger - 9aede319-96ac-4862-956d-b8568f13252c - SQL execution success
+2025-02-23 22:57:06 - INFO - app_logger - 9aede319-96ac-4862-956d-b8568f13252c - SQL Generation Success. Returning Final SQl
+2025-02-23 22:57:06 - INFO - app_logger - 9aede319-96ac-4862-956d-b8568f13252c - SELECT airline FROM flights GROUP BY airline ORDER BY avg(arrival_delay) DESC LIMIT 1;
+2025-02-23 22:57:07 - INFO - app_logger - 65f27d7e-189d-4c25-8faf-a07515e5268e - Chat Handler Initiated
+2025-02-23 22:57:07 - INFO - app_logger - 65f27d7e-189d-4c25-8faf-a07515e5268e - Intent Finding Success
+2025-02-23 22:57:08 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, 100.0 * COUNT(*) / SUM(COUNT(*)) OVER() AS percentage_cancelled\nFROM flights\nWHERE cancelled = 1\nGROUP BY airline;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 49, 'prompt_tokens': 1866, 'total_tokens': 1915, 'completion_time': 0.074226125, 'prompt_time': 0.154452042, 'queue_time': 0.01785468699999998, 'total_time': 0.228678167}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-dcd5d381-1689-4aa1-bb12-4b4e4d0e720a-0' usage_metadata={'input_tokens': 1866, 'output_tokens': 49, 'total_tokens': 1915}
+2025-02-23 22:57:08 - INFO - app_logger - 65f27d7e-189d-4c25-8faf-a07515e5268e - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:57:08 - INFO - app_logger - 65f27d7e-189d-4c25-8faf-a07515e5268e - Database instance created successfully
+2025-02-23 22:57:08 - INFO - app_logger - 65f27d7e-189d-4c25-8faf-a07515e5268e - SQL execution success
+2025-02-23 22:57:08 - INFO - app_logger - 65f27d7e-189d-4c25-8faf-a07515e5268e - SQL Generation Success. Returning Final SQl
+2025-02-23 22:57:08 - INFO - app_logger - 65f27d7e-189d-4c25-8faf-a07515e5268e - SELECT airline, 100.0 * COUNT(*) / SUM(COUNT(*)) OVER() AS percentage_cancelled
+FROM flights
+WHERE cancelled = 1
+GROUP BY airline;
+2025-02-23 22:57:09 - INFO - app_logger - 75924ba6-c0b8-4125-bd6f-e94c0cbc5b0e - Chat Handler Initiated
+2025-02-23 22:57:11 - INFO - app_logger - 75924ba6-c0b8-4125-bd6f-e94c0cbc5b0e - Intent Finding Success
+2025-02-23 22:57:13 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, (SUM(CASE WHEN cancelled = 1 THEN 1 ELSE 0 END) * 100.0 / COUNT(*)) AS cancellation_percentage FROM flights GROUP BY airline;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-f929820a-b5e9-42b1-96e3-9402e3434fa5-0' usage_metadata={'input_tokens': 1718, 'output_tokens': 42, 'total_tokens': 1760, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:57:14 - INFO - app_logger - 75924ba6-c0b8-4125-bd6f-e94c0cbc5b0e - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:57:14 - INFO - app_logger - 75924ba6-c0b8-4125-bd6f-e94c0cbc5b0e - Database instance created successfully
+2025-02-23 22:57:14 - INFO - app_logger - 75924ba6-c0b8-4125-bd6f-e94c0cbc5b0e - SQL execution success
+2025-02-23 22:57:14 - INFO - app_logger - 75924ba6-c0b8-4125-bd6f-e94c0cbc5b0e - SQL Generation Success. Returning Final SQl
+2025-02-23 22:57:14 - INFO - app_logger - 75924ba6-c0b8-4125-bd6f-e94c0cbc5b0e - SELECT airline, (SUM(CASE WHEN cancelled = 1 THEN 1 ELSE 0 END) * 100.0 / COUNT(*)) AS cancellation_percentage FROM flights GROUP BY airline;
+2025-02-23 22:57:15 - INFO - app_logger - 7c315421-42c7-41ab-8147-bb33cd4e4a93 - Chat Handler Initiated
+2025-02-23 22:57:15 - INFO - app_logger - 7c315421-42c7-41ab-8147-bb33cd4e4a93 - Intent Finding Success
+2025-02-23 22:57:16 - INFO - app_logger - 0efce7e3-7877-4c12-9e4f-bf7a44b9325a - Chat Handler Initiated
+2025-02-23 22:57:18 - INFO - app_logger - 0efce7e3-7877-4c12-9e4f-bf7a44b9325a - Intent Finding Success
+2025-02-23 22:57:19 - INFO - app_logger - f9806c67-1d3e-42a9-adf1-12a2fb667445 - Chat Handler Initiated
+2025-02-23 22:57:19 - INFO - app_logger - f9806c67-1d3e-42a9-adf1-12a2fb667445 - Intent Finding Success
+2025-02-23 22:57:34 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT day_of_week, AVG(departure_delay) as avg_delay\nFROM flights\nWHERE departure_delay IS NOT NULL\nGROUP BY day_of_week\nORDER BY avg_delay DESC\nLIMIT 1;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 57, 'prompt_tokens': 1867, 'total_tokens': 1924, 'completion_time': 0.086692061, 'prompt_time': 0.136793534, 'queue_time': 0.018645668000000004, 'total_time': 0.223485595}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-92d93c0c-331b-47f4-b7db-b5a1102f56fb-0' usage_metadata={'input_tokens': 1867, 'output_tokens': 57, 'total_tokens': 1924}
+2025-02-23 22:57:34 - INFO - app_logger - f9806c67-1d3e-42a9-adf1-12a2fb667445 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:57:34 - INFO - app_logger - f9806c67-1d3e-42a9-adf1-12a2fb667445 - Database instance created successfully
+2025-02-23 22:57:34 - INFO - app_logger - f9806c67-1d3e-42a9-adf1-12a2fb667445 - SQL execution success
+2025-02-23 22:57:34 - INFO - app_logger - f9806c67-1d3e-42a9-adf1-12a2fb667445 - SQL Generation Success. Returning Final SQl
+2025-02-23 22:57:34 - INFO - app_logger - f9806c67-1d3e-42a9-adf1-12a2fb667445 - SELECT day_of_week, AVG(departure_delay) as avg_delay
+FROM flights
+WHERE departure_delay IS NOT NULL
+GROUP BY day_of_week
+ORDER BY avg_delay DESC
+LIMIT 1;
+2025-02-23 22:57:35 - INFO - app_logger - 2f84632e-4d3f-4b4b-be9d-16c9c9d60e6d - Chat Handler Initiated
+2025-02-23 22:57:38 - INFO - app_logger - 2f84632e-4d3f-4b4b-be9d-16c9c9d60e6d - Intent Finding Success
+2025-02-23 22:57:39 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT day_of_week FROM flights GROUP BY day_of_week ORDER BY avg(departure_delay) DESC LIMIT 1;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-27a0ec95-b9a1-4655-8521-1b057abdf370-0' usage_metadata={'input_tokens': 1803, 'output_tokens': 29, 'total_tokens': 1832, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:57:39 - INFO - app_logger - 2f84632e-4d3f-4b4b-be9d-16c9c9d60e6d - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:57:39 - INFO - app_logger - 2f84632e-4d3f-4b4b-be9d-16c9c9d60e6d - Database instance created successfully
+2025-02-23 22:57:39 - INFO - app_logger - 2f84632e-4d3f-4b4b-be9d-16c9c9d60e6d - SQL execution success
+2025-02-23 22:57:39 - INFO - app_logger - 2f84632e-4d3f-4b4b-be9d-16c9c9d60e6d - SQL Generation Success. Returning Final SQl
+2025-02-23 22:57:39 - INFO - app_logger - 2f84632e-4d3f-4b4b-be9d-16c9c9d60e6d - SELECT day_of_week FROM flights GROUP BY day_of_week ORDER BY avg(departure_delay) DESC LIMIT 1;
+2025-02-23 22:57:40 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - Chat Handler Initiated
+2025-02-23 22:57:41 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - Intent Finding Success
+2025-02-23 22:58:04 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT origin_airport, COUNT(diverted) AS number\\_of\\_diversions\nFROM flights\nWHERE diverted = 1\nGROUP BY origin_airport\nORDER BY number\\_of\\_diversions DESC\nLIMIT 1;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 58, 'prompt_tokens': 1890, 'total_tokens': 1948, 'completion_time': 0.088127572, 'prompt_time': 0.14904162, 'queue_time': 0.018390904999999985, 'total_time': 0.237169192}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-22803a30-0d19-427b-b9ed-98b904bba975-0' usage_metadata={'input_tokens': 1890, 'output_tokens': 58, 'total_tokens': 1948}
+2025-02-23 22:58:04 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:58:04 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - Database instance created successfully
+2025-02-23 22:58:04 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - SQL execution unsuccess (psycopg2.errors.SyntaxError) syntax error at or near "\"
+LINE 1: SELECT origin_airport, COUNT(diverted) AS number\_of\_divers...
+                                                        ^
+
+[SQL: SELECT origin_airport, COUNT(diverted) AS number\_of\_diversions
+FROM flights
+WHERE diverted = 1
+GROUP BY origin_airport
+ORDER BY number\_of\_diversions DESC
+2025-02-23 22:58:30 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT origin_airport, COUNT(diverted) AS number\\_of\\_diversions\nFROM flights\nGROUP BY origin\\_airport\nORDER BY number\\_of\\_diversions DESC\nLIMIT 1;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 50, 'prompt_tokens': 2088, 'total_tokens': 2138, 'completion_time': 0.076571337, 'prompt_time': 0.163072565, 'queue_time': 0.020575378000000005, 'total_time': 0.239643902}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-35aa7739-d780-4f15-8ba1-51ca88b5004b-0' usage_metadata={'input_tokens': 2088, 'output_tokens': 50, 'total_tokens': 2138}
+2025-02-23 22:58:30 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - SQL Generation Successful: Attempting Execution: Attempt1
+2025-02-23 22:58:30 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - Database instance created successfully
+2025-02-23 22:58:30 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - SQL execution unsuccess (psycopg2.errors.SyntaxError) syntax error at or near "\"
+LINE 1: SELECT origin_airport, COUNT(diverted) AS number\_of\_divers...
+                                                        ^
+
+[SQL: SELECT origin_airport, COUNT(diverted) AS number\_of\_diversions
+FROM flights
+GROUP BY origin\_airport
+ORDER BY number\_of\_diversions DESC
+2025-02-23 22:58:58 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT origin_airport, COUNT(diverted) AS number\\_of\\_diversions\nFROM flights\nWHERE diverted IS NOT NULL\nGROUP BY origin\\_airport\nORDER BY number\\_of\\_diversions DESC\nLIMIT 1;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 58, 'prompt_tokens': 2290, 'total_tokens': 2348, 'completion_time': 0.088160085, 'prompt_time': 0.151637314, 'queue_time': 0.020743275000000005, 'total_time': 0.239797399}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-3b1b5b1c-33f1-4e57-9b54-afa8a82f86bf-0' usage_metadata={'input_tokens': 2290, 'output_tokens': 58, 'total_tokens': 2348}
+2025-02-23 22:58:58 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - SQL Generation Successful: Attempting Execution: Attempt2
+2025-02-23 22:58:58 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - Database instance created successfully
+2025-02-23 22:58:58 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - SQL execution unsuccess (psycopg2.errors.SyntaxError) syntax error at or near "\"
+LINE 1: SELECT origin_airport, COUNT(diverted) AS number\_of\_divers...
+                                                        ^
+
+[SQL: SELECT origin_airport, COUNT(diverted) AS number\_of\_diversions
+FROM flights
+WHERE diverted IS NOT NULL
+GROUP BY origin\_airport
+ORDER BY number\_of\_diversions DESC
+2025-02-23 22:58:58 - INFO - app_logger - b9fc23dc-9917-4ea6-b0db-d7697a337574 - SQL Generation Unsuccessful: Maximum Retries Acheived
+2025-02-23 22:58:59 - INFO - app_logger - aea3df4d-7dd9-4b56-93b1-cd1ae0c0991a - Chat Handler Initiated
+2025-02-23 22:59:00 - INFO - app_logger - aea3df4d-7dd9-4b56-93b1-cd1ae0c0991a - Intent Finding Success
+2025-02-23 22:59:03 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT destination_airport FROM flights WHERE diverted = 1 GROUP BY destination_airport ORDER BY count(*) DESC LIMIT 1;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-2b2bdd69-a581-4090-a2dd-0aefe1a9050d-0' usage_metadata={'input_tokens': 1745, 'output_tokens': 26, 'total_tokens': 1771, 'input_token_details': {'cache_read': 0}}
+2025-02-23 22:59:03 - INFO - app_logger - aea3df4d-7dd9-4b56-93b1-cd1ae0c0991a - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 22:59:03 - INFO - app_logger - aea3df4d-7dd9-4b56-93b1-cd1ae0c0991a - Database instance created successfully
+2025-02-23 22:59:03 - INFO - app_logger - aea3df4d-7dd9-4b56-93b1-cd1ae0c0991a - SQL execution success
+2025-02-23 22:59:03 - INFO - app_logger - aea3df4d-7dd9-4b56-93b1-cd1ae0c0991a - SQL Generation Success. Returning Final SQl
+2025-02-23 22:59:03 - INFO - app_logger - aea3df4d-7dd9-4b56-93b1-cd1ae0c0991a - SELECT destination_airport FROM flights WHERE diverted = 1 GROUP BY destination_airport ORDER BY count(*) DESC LIMIT 1;
+2025-02-23 23:01:59 - INFO - app_logger - d8f8d263-f91f-4b78-81b5-091481374b8a - Chat Handler Initiated
+2025-02-23 23:01:59 - INFO - app_logger - d8f8d263-f91f-4b78-81b5-091481374b8a - Intent Finding Success
+2025-02-23 23:02:00 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT * FROM flights WHERE airline ILIKE 'AA';" additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 1938, 'total_tokens': 1953, 'completion_time': 0.021559251, 'prompt_time': 0.217543535, 'queue_time': 0.02091099399999999, 'total_time': 0.239102786}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-8ea70f6b-304e-4c94-ad05-962b64b6f1e4-0' usage_metadata={'input_tokens': 1938, 'output_tokens': 15, 'total_tokens': 1953}
+2025-02-23 23:02:00 - INFO - app_logger - d8f8d263-f91f-4b78-81b5-091481374b8a - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 23:02:00 - INFO - app_logger - d8f8d263-f91f-4b78-81b5-091481374b8a - Database instance created successfully
+2025-02-23 23:02:00 - INFO - app_logger - d8f8d263-f91f-4b78-81b5-091481374b8a - SQL execution success
+2025-02-23 23:02:00 - INFO - app_logger - d8f8d263-f91f-4b78-81b5-091481374b8a - SQL Generation Success. Returning Final SQl
+2025-02-23 23:02:00 - INFO - app_logger - d8f8d263-f91f-4b78-81b5-091481374b8a - SELECT * FROM flights WHERE airline ILIKE 'AA';
+2025-02-23 23:02:01 - INFO - app_logger - 6783d145-b508-47f6-87a9-64023f024ec6 - Chat Handler Initiated
+2025-02-23 23:02:03 - INFO - app_logger - 6783d145-b508-47f6-87a9-64023f024ec6 - Intent Finding Success
+2025-02-23 23:02:05 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT * FROM flights WHERE airline = 'AA';" additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-51f42cad-2882-4a63-a806-a67d063c1d9a-0' usage_metadata={'input_tokens': 1770, 'output_tokens': 11, 'total_tokens': 1781, 'input_token_details': {'cache_read': 0}}
+2025-02-23 23:02:05 - INFO - app_logger - 6783d145-b508-47f6-87a9-64023f024ec6 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 23:02:05 - INFO - app_logger - 6783d145-b508-47f6-87a9-64023f024ec6 - Database instance created successfully
+2025-02-23 23:02:05 - INFO - app_logger - 6783d145-b508-47f6-87a9-64023f024ec6 - SQL execution success
+2025-02-23 23:02:05 - INFO - app_logger - 6783d145-b508-47f6-87a9-64023f024ec6 - SQL Generation Success. Returning Final SQl
+2025-02-23 23:02:05 - INFO - app_logger - 6783d145-b508-47f6-87a9-64023f024ec6 - SELECT * FROM flights WHERE airline = 'AA';
+2025-02-23 23:02:06 - INFO - app_logger - 78bc82a8-18b9-4b8e-8ee2-df913531699a - Chat Handler Initiated
+2025-02-23 23:02:07 - INFO - app_logger - 78bc82a8-18b9-4b8e-8ee2-df913531699a - Intent Finding Success
+2025-02-23 23:02:08 - INFO - app_logger - 0789d52a-30dd-4db1-b2cc-d176578125dc - Chat Handler Initiated
+2025-02-23 23:02:11 - INFO - app_logger - 0789d52a-30dd-4db1-b2cc-d176578125dc - Intent Finding Success
+2025-02-23 23:02:13 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, AVG(distance) AS average_distance FROM flights GROUP BY airline ORDER BY average_distance DESC LIMIT 1;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-e62813f8-e7a8-4af7-99cb-52d18a6287d7-0' usage_metadata={'input_tokens': 1723, 'output_tokens': 27, 'total_tokens': 1750, 'input_token_details': {'cache_read': 0}}
+2025-02-23 23:02:13 - INFO - app_logger - 0789d52a-30dd-4db1-b2cc-d176578125dc - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 23:02:13 - INFO - app_logger - 0789d52a-30dd-4db1-b2cc-d176578125dc - Database instance created successfully
+2025-02-23 23:02:13 - INFO - app_logger - 0789d52a-30dd-4db1-b2cc-d176578125dc - SQL execution success
+2025-02-23 23:02:13 - INFO - app_logger - 0789d52a-30dd-4db1-b2cc-d176578125dc - SQL Generation Success. Returning Final SQl
+2025-02-23 23:02:13 - INFO - app_logger - 0789d52a-30dd-4db1-b2cc-d176578125dc - SELECT airline, AVG(distance) AS average_distance FROM flights GROUP BY airline ORDER BY average_distance DESC LIMIT 1;
+2025-02-23 23:10:57 - INFO - app_logger - 76271600-80d2-4f67-8f44-ddcb0eeaff64 - Chat Handler Initiated
+2025-02-23 23:10:58 - INFO - app_logger - 76271600-80d2-4f67-8f44-ddcb0eeaff64 - Intent Finding Success
+2025-02-23 23:10:59 - INFO - app_logger - 7a34c645-9cda-4bab-8041-1aea8745a890 - Chat Handler Initiated
+2025-02-23 23:11:02 - INFO - app_logger - 7a34c645-9cda-4bab-8041-1aea8745a890 - Intent Finding Success
+2025-02-23 23:11:05 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline FROM flights GROUP BY airline ORDER BY count(*) DESC LIMIT 5;' additional_kwargs={} response_metadata={'prompt_feedback': {'block_reason': 0, 'safety_ratings': []}, 'finish_reason': 'STOP', 'safety_ratings': []} id='run-a48ae29c-8f1c-42fd-81c8-1ec2e4424d1c-0' usage_metadata={'input_tokens': 1692, 'output_tokens': 17, 'total_tokens': 1709, 'input_token_details': {'cache_read': 0}}
+2025-02-23 23:11:05 - INFO - app_logger - 7a34c645-9cda-4bab-8041-1aea8745a890 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 23:11:05 - INFO - app_logger - 7a34c645-9cda-4bab-8041-1aea8745a890 - Database instance created successfully
+2025-02-23 23:11:05 - INFO - app_logger - 7a34c645-9cda-4bab-8041-1aea8745a890 - SQL execution success
+2025-02-23 23:11:05 - INFO - app_logger - 7a34c645-9cda-4bab-8041-1aea8745a890 - SQL Generation Success. Returning Final SQl
+2025-02-23 23:11:05 - INFO - app_logger - 7a34c645-9cda-4bab-8041-1aea8745a890 - SELECT airline FROM flights GROUP BY airline ORDER BY count(*) DESC LIMIT 5;
+2025-02-23 23:28:58 - INFO - app_logger - 750ed9be-24a2-4657-a4e2-adbd22fb2058 - hello
+2025-02-23 23:28:58 - INFO - app_logger - 750ed9be-24a2-4657-a4e2-adbd22fb2058 - Chat Handler Initiated
+2025-02-23 23:28:59 - INFO - app_logger - 750ed9be-24a2-4657-a4e2-adbd22fb2058 - Intent Finding Success
+2025-02-23 23:29:16 - INFO - app_logger - bef217e2-0a98-4eed-bfa0-811af00c15fe - who is Ramlal?
+2025-02-23 23:29:16 - INFO - app_logger - bef217e2-0a98-4eed-bfa0-811af00c15fe - Chat Handler Initiated
+2025-02-23 23:29:17 - INFO - app_logger - bef217e2-0a98-4eed-bfa0-811af00c15fe - Intent Finding Success
+2025-02-23 23:29:55 - INFO - app_logger - a3462b91-e945-46c3-9030-28eda226a072 - Find the top 5 airlines with the most flights.
+2025-02-23 23:29:55 - INFO - app_logger - a3462b91-e945-46c3-9030-28eda226a072 - Chat Handler Initiated
+2025-02-23 23:29:56 - INFO - app_logger - a3462b91-e945-46c3-9030-28eda226a072 - Intent Finding Success
+2025-02-23 23:30:48 - INFO - app_logger - 4416bc1f-ed6a-49ab-a1e1-4ad077a4c462 - Count the number of flights departing from a specific airport (e.g., 'JFK')
+2025-02-23 23:30:48 - INFO - app_logger - 4416bc1f-ed6a-49ab-a1e1-4ad077a4c462 - Chat Handler Initiated
+2025-02-23 23:30:49 - INFO - app_logger - 4416bc1f-ed6a-49ab-a1e1-4ad077a4c462 - Intent Finding Success
+2025-02-23 23:30:49 - INFO - app_logger -  - Successfully Invoked llmcontent="SELECT COUNT(*) AS number_of_flights\nFROM flights\nWHERE origin_airport = 'JFK';" additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 30, 'prompt_tokens': 1814, 'total_tokens': 1844, 'completion_time': 0.044789473, 'prompt_time': 0.095349847, 'queue_time': 0.022550510999999995, 'total_time': 0.14013932}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-95cc939d-f4bf-4328-9c4a-8e5b5a17d8a7-0' usage_metadata={'input_tokens': 1814, 'output_tokens': 30, 'total_tokens': 1844}
+2025-02-23 23:30:49 - INFO - app_logger - 4416bc1f-ed6a-49ab-a1e1-4ad077a4c462 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 23:30:49 - INFO - app_logger - 4416bc1f-ed6a-49ab-a1e1-4ad077a4c462 - Database instance created successfully
+2025-02-23 23:30:50 - INFO - app_logger - 4416bc1f-ed6a-49ab-a1e1-4ad077a4c462 - SQL execution success
+2025-02-23 23:30:50 - INFO - app_logger - 4416bc1f-ed6a-49ab-a1e1-4ad077a4c462 - SQL Generation Success. Returning Final SQl
+2025-02-23 23:30:50 - INFO - app_logger - 4416bc1f-ed6a-49ab-a1e1-4ad077a4c462 - SELECT COUNT(*) AS number_of_flights
+FROM flights
+WHERE origin_airport = 'JFK';
+2025-02-23 23:31:17 - INFO - app_logger - bea19990-67ec-4ccf-8756-9f21c2ac5398 - Find the average departure delay for each airline.
+2025-02-23 23:31:17 - INFO - app_logger - bea19990-67ec-4ccf-8756-9f21c2ac5398 - Chat Handler Initiated
+2025-02-23 23:31:17 - INFO - app_logger - bea19990-67ec-4ccf-8756-9f21c2ac5398 - Intent Finding Success
+2025-02-23 23:31:18 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, AVG(departure_delay) as avg_departure_delay\nFROM flights\nWHERE departure_delay IS NOT NULL\nGROUP BY airline;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 42, 'prompt_tokens': 1864, 'total_tokens': 1906, 'completion_time': 0.063476864, 'prompt_time': 0.25255516, 'queue_time': 0.061689625000000026, 'total_time': 0.316032024}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-c9562161-1bd7-4b21-bdba-b9de1b8254db-0' usage_metadata={'input_tokens': 1864, 'output_tokens': 42, 'total_tokens': 1906}
+2025-02-23 23:31:18 - INFO - app_logger - bea19990-67ec-4ccf-8756-9f21c2ac5398 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 23:31:18 - INFO - app_logger - bea19990-67ec-4ccf-8756-9f21c2ac5398 - Database instance created successfully
+2025-02-23 23:31:18 - INFO - app_logger - bea19990-67ec-4ccf-8756-9f21c2ac5398 - SQL execution success
+2025-02-23 23:31:18 - INFO - app_logger - bea19990-67ec-4ccf-8756-9f21c2ac5398 - SQL Generation Success. Returning Final SQl
+2025-02-23 23:31:18 - INFO - app_logger - bea19990-67ec-4ccf-8756-9f21c2ac5398 - SELECT airline, AVG(departure_delay) as avg_departure_delay
+FROM flights
+WHERE departure_delay IS NOT NULL
+GROUP BY airline;
+2025-02-23 23:47:11 - INFO - app_logger - 7a741399-4db0-4219-8d74-62a7c71b8264 - Hello!
+2025-02-23 23:47:11 - INFO - app_logger - 7a741399-4db0-4219-8d74-62a7c71b8264 - Chat Handler Initiated
+2025-02-23 23:47:12 - INFO - app_logger - 7a741399-4db0-4219-8d74-62a7c71b8264 - Intent Finding Success
+2025-02-23 23:48:08 - INFO - app_logger - 6334deff-1cc0-4924-81ca-516ea11dc921 - Get the total number of canceled flights per airline.
+2025-02-23 23:48:08 - INFO - app_logger - 6334deff-1cc0-4924-81ca-516ea11dc921 - Chat Handler Initiated
+2025-02-23 23:48:08 - INFO - app_logger - 6334deff-1cc0-4924-81ca-516ea11dc921 - Intent Finding Success
+2025-02-23 23:48:09 - INFO - app_logger -  - Successfully Invoked llmcontent='SELECT airline, COUNT(*) AS total_canceled_flights\nFROM flights\nWHERE cancelled = 1\nGROUP BY airline;' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 34, 'prompt_tokens': 1845, 'total_tokens': 1879, 'completion_time': 0.051124763, 'prompt_time': 0.154725897, 'queue_time': 0.019047890000000012, 'total_time': 0.20585066}, 'model_name': 'mixtral-8x7b-32768', 'system_fingerprint': 'fp_c5f20b5bb1', 'finish_reason': 'stop', 'logprobs': None} id='run-856a16c6-dc01-450e-a3d1-ee2d3f587d4b-0' usage_metadata={'input_tokens': 1845, 'output_tokens': 34, 'total_tokens': 1879}
+2025-02-23 23:48:09 - INFO - app_logger - 6334deff-1cc0-4924-81ca-516ea11dc921 - SQL Generation Successful: Attempting Execution: Attempt0
+2025-02-23 23:48:09 - INFO - app_logger - 6334deff-1cc0-4924-81ca-516ea11dc921 - Database instance created successfully
+2025-02-23 23:48:09 - INFO - app_logger - 6334deff-1cc0-4924-81ca-516ea11dc921 - SQL execution success
+2025-02-23 23:48:09 - INFO - app_logger - 6334deff-1cc0-4924-81ca-516ea11dc921 - SQL Generation Success. Returning Final SQl
+2025-02-23 23:48:09 - INFO - app_logger - 6334deff-1cc0-4924-81ca-516ea11dc921 - SELECT airline, COUNT(*) AS total_canceled_flights
+FROM flights
+WHERE cancelled = 1
+GROUP BY airline;
+2025-02-23 23:49:15 - INFO - app_logger - 4d00000b-77e7-4990-b872-a18cecd8766e - Where is Mount Everest present?
+2025-02-23 23:49:15 - INFO - app_logger - 4d00000b-77e7-4990-b872-a18cecd8766e - Chat Handler Initiated
+2025-02-23 23:49:15 - INFO - app_logger - 4d00000b-77e7-4990-b872-a18cecd8766e - Intent Finding Success

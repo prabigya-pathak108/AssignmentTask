@@ -36,7 +36,7 @@ class SQLGenAndRetry(SQLBaseClass):
         extracted_sql= self.extract_sql_from_llm_response(generated_sql)
         if self.validating_sql_and_select_only(extracted_sql)=="Not allowed":
             log_message(str(unique_id),f"SQL method Not Allowed",level="warning")
-            return {"success":False,"retry":False,"data":"Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...","error_msg":None}
+            return {"success":False,"retry":False,"data":"Kindly you cannot perform database changing operations. You can only retrieve records. Thank you for consideration...","error_msg":"SQL method Not Allowed"}
         
         try:
             db_s = next(db.get_db())  # Get DB session
@@ -46,7 +46,7 @@ class SQLGenAndRetry(SQLBaseClass):
             log_message(str(unique_id),f"SQL execution success")
 
             if data:  # If data is retrieved, exit loop
-                return {"success":True,"retry":False,"data":data}
+                return {"success":True,"retry":False,"data":"SQL Execution Success","error_msg":None}
             else:
                 return {"success":True,"retry":False,"data":"The database currently doesnot have any infomation regarding your question. Thank you for convenience","error_msg":None}
 
@@ -96,7 +96,12 @@ class SQLGenAndRetry(SQLBaseClass):
         return self._generate_sql_prompt(llm, "error_handle_prompt", list_of_errors=list_of_errors, **kwargs)
 
     def sql_generation_and_execution(self, **kwargs):
-        llm = initialize_llm_from_factory(provider=kwargs.get("kwargs",{}).get("provider", "gemini"))
+        llm = initialize_llm_from_factory(provider=kwargs.get("kwargs",{}).get("provider", "gemini"),api_key=kwargs.get("kwargs",{}).get("api_key", None),model=kwargs.get("kwargs",{}).get("model", None),temperature=kwargs.get("kwargs",{}).get("temperature", None))
+        try:
+            llm = initialize_llm_from_factory(provider=kwargs.get("kwargs",{}).get("provider", "gemini"),api_key=kwargs.get("kwargs",{}).get("api_key", None),model=kwargs.get("kwargs",{}).get("model", None),temperature=kwargs.get("kwargs",{}).get("temperature", None))
+        except ValueError as e:
+            raise ValueError(f"{e}")
+        
         unique_id=kwargs.get("kwargs",{}).get("unique_id", "")
         max_retries = 3
         list_of_errors = []  # Store errors for retry mechanism
@@ -109,23 +114,30 @@ class SQLGenAndRetry(SQLBaseClass):
 
             print("SQL Gen: ",generated_sql["sql_generated"])
             if not generated_sql["success"]:
-                return {"data": generated_sql["error"]}
+                log_message(str(unique_id),f"SQL Generation UnSuccessful: Attempting Execution: Attempt{attempt}")
+                list_of_errors.append(str(generated_sql["error"]))
+                continue
             
             log_message(str(unique_id),f"SQL Generation Successful: Attempting Execution: Attempt{attempt}")
             execution_result = self.sql_execution(generated_sql["sql_generated"],unique_id)
-
+            
+            # Check if SQL execution was successful, and if it is successful then return the SQL, invalid SQL will not executed
             if execution_result["success"]:
                 # return {"data": execution_result["data"],"generated_sql":generated_sql["sql_generated"]}
                 log_message(str(unique_id),f"SQL Generation Success. Returning Final SQl")
                 log_message(str(unique_id),str(generated_sql["sql_generated"]))
-                return {"data":generated_sql["sql_generated"],"is_sql":True}
+                return {"success": True,"data":generated_sql["sql_generated"],"is_sql":True}
+            
+            # If the SQL query asked by user is not allowed, then return the error message
+            if not execution_result["retry"]:
+                return execution_result
 
             # Store error for retry prompt
             list_of_errors.append(str(generated_sql["sql_generated"]+"\n"+str(execution_result["error_msg"])+"\n\n"))
             # print(f"Retrying SQL execution... Attempt {attempt + 1}/{max_retries}")
             
         log_message(str(unique_id),f"SQL Generation Unsuccessful: Maximum Retries Acheived")
-        return {"success": False, "retry": False, "data": "Sorry The data could not be retrieved", "error_msg": "Max retries reached."}
+        return {"success": False,  "data": "Sorry The data could not be retrieved", "error_msg": "Max retries reached.","is_sql":False}
 
 
 

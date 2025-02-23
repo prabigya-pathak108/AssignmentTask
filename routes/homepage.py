@@ -29,7 +29,7 @@ async def home(request: Request):
 #         <div class="message user">👤 You: {message}</div>
 #         <div class="message bot">{bot_response}</div>
 #     """
-
+# @router.post("/get_table_data", response_class=HTMLResponse)
 def get_table_data() -> List[Dict]:
     # Example of CSV data reading, replace with your actual SQL query logic
     data = pd.DataFrame({
@@ -40,7 +40,7 @@ def get_table_data() -> List[Dict]:
     # Convert to a list of dictionaries for API response
     return data.to_dict(orient="records")
 
-@router.post("/send_message_n", response_class=HTMLResponse)
+# @router.post("/send_message_n", response_class=HTMLResponse)
 async def send_message(message: str = Form(...)):
     """Simulated chatbot response with explanation and table"""
     print("Message is:",message)

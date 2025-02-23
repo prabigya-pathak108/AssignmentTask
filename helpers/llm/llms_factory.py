@@ -25,7 +25,7 @@ class GroqLLM(BaseLLM):
         try:
             return self.llm.invoke(prompt)
         except:
-            print("Error")
+           raise ValueError("Error in Invoking LLM. Check your API and model.")
 
 class GeminiLLM(BaseLLM):
     def __init__(self, api_key, temperature, model_name):
@@ -41,7 +41,7 @@ class GeminiLLM(BaseLLM):
         try:
             return self.llm.invoke(prompt)
         except Exception as e:
-            print("Error: ",e)
+            raise ValueError("Error in Invoking LLM. Check your API and model.")
 class HuggingFaceLLM(BaseLLM):
     def __init__(self, api_key, temperature, model_name):
         self.__api_key = api_key
@@ -57,7 +57,7 @@ class HuggingFaceLLM(BaseLLM):
         try:
             return self.llm.invoke(prompt)
         except:
-            print("Error")
+            raise ValueError("Error in Invoking LLM. Check your API and model.")
 
 class OpenAILLM(BaseLLM):
     def __init__(self, api_key, temperature, model_name):
@@ -73,7 +73,7 @@ class OpenAILLM(BaseLLM):
         try:
             return self.llm.invoke(prompt)
         except:
-            print("Error")
+            raise ValueError("Error in Invoking LLM. Check your API and model.")
 
 
 
@@ -86,6 +86,9 @@ def initialize_llm_from_factory(provider, temperature=None, api_key=None, model=
     print("--------Provider hererererererere:",provider)
     if temperature is None:
         temperature = 0.1
+    else:
+        if not isinstance(temperature, (int, float)) or not (0 <= temperature <= 1):
+            raise ValueError("Temperature must be a number between 0 and 1.")
 
     if model is None:
         model = secret_manager.get_from_env(f"{provider.upper()}_MODEL")
