@@ -1,4 +1,8 @@
 # Flight Database Query System Documentation
+
+## Overview
+This system allows users to query flight and cancellation data through natural language. LLM of choice can be used. Prompt can be easily changed. Users can interact with the database using simple English queries, and the system handles everything from understanding the intent to generating and executing safe SQL queries.
+
 ## Core Architecture
 - **FastAPI Framework**: Handles HTTP requests and API routing
 - **Asynchronous Processing**: Celery for background task management

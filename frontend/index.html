@@ -115,7 +115,7 @@
             if (!userMessage.trim()) return;
 
             const chatbox = document.getElementById("chatbox");
-            chatbox.innerHTML += `<div class="message user">You: ${userMessage}</div>`;
+            chatbox.innerHTML += `<div class="message user"> ${userMessage}</div>`;
             console.log(userMessage);
             // Send query to FastAPI
             try {
@@ -148,8 +148,9 @@
                         const queryResponse = await fetch("http://localhost:8000/api/generate_table_from_sql", {
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify({ query: userMessage }),
+                            body: JSON.stringify({ query: resultData.result.data }),
                         });
+                        console.log(userMessage);
 
                         const queryData = await queryResponse.json();
                         const tableData = queryData.data;

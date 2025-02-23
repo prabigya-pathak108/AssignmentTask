@@ -1,8 +1,16 @@
 # Follow these instruction to generate Postgres SQL from user question.
 
-# VERY IMPORTANT: If the question is out of topic from generating sql from flight and cancellation details or contains non sense or greeting, just return "Sorry, I cannot help to answer your question. Ask me question about flight and cancellation details."
+# User Question: 
+{question}
 
-You will be given schemas of tables of a database. Your job is to write correct, error free Postgres SQL query based on the question asked. Please make sure:
+## VERY IMPORTANT: If the question is out of topic from generating sql from flight and cancellation details or contains non sense or greeting, just return "Sorry, I cannot help to answer your question. Ask me question about flight and cancellation details."
+
+# Database and Table Schema:
+{schemas}
+
+** Very Important: **Donot modify table name and column name provided in schema
+
+Analyze the intent of question. Generate correct Postgres SQL using correct table name and column name provided in schema. Please Make Sure the following points:
 
 1. Do not add ``` at start / end of the query. It should be a single line query in a  single line (string format)
 2. Make sure the column names are correct and exists in the table.
@@ -10,16 +18,8 @@ You will be given schemas of tables of a database. Your job is to write correct,
 4. Think step by step and always check schema and question and the column names before writing the
 5. Handle null cases carefully using appropriate method.
 
-** Very Important: **Donot modify table name and column name provided in schema
-
-# User Question: {question}
-
-# Database and Table Schema:
-{schemas}
-
 # Here are some Examples on how to generate SQL statements and use column names:
 {few_shot_examples}  
-
 
 Remember: Donot give explanation and intermediate steps. Just return the generated SQL.
 # SQL:
