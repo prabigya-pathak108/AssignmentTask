@@ -12,6 +12,19 @@ class ChatResponse:
         self.provider=provider
 
     def intent_finder(self,kwargs : dict):
+        """
+        This function is used to identify the intent of the user's query, wheather the question is related to flight delay canellation or not.
+
+        Args:
+            kwargs (dict): A dictionary containing the user's query and other
+                required parameters.
+
+        Returns:
+            dict: A dictionary containing the following keys:
+                - success (bool): Whether the intent finding was successful
+                - json_data (dict): The intent data in JSON format
+        """
+        
         try:
             unique_id=kwargs.get("unique_id","")
             res=self.util_func.identify_sql_or_normal_text(kwargs=kwargs)
@@ -31,6 +44,22 @@ class ChatResponse:
 
 
     def handle_chat(self,question : str,unique_id:str,api_key: str=None,temperature:float=None,model:str=None):
+        """
+        This function is the main entry point for chat functionality.
+        
+        Parameters:
+        question (str): The user's question
+        unique_id (str): A unique identifier for the user
+        api_key (str): The API key for the AI model (optional)
+        temperature (float): The temperature for the AI model (optional)
+        model (str): The model name for the AI model (optional)
+
+        Returns:
+        dict: A dictionary with the following keys:
+            - success (bool): Whether the chat was successful
+            - data (str): The response message
+            - is_sql (bool): Whether the response is a SQL result
+        """
         log_message(str(unique_id),"Chat Handler Initiated")
         kwargs={
                         "user_question":question,

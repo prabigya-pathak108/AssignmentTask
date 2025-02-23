@@ -17,6 +17,19 @@ if not logger.handlers:
     logger.addHandler(file_handler)
 
 def log_message(id: str, message: str, level="info"):
+    """
+    Log a message with a specified log level.
+
+    Parameters:
+    id (str): A unique identifier for the message, such as a request ID or session ID or uuid.
+    message (str): The message to log.
+    level (str, optional): The log level for the message. Default is "info". 
+                           Can be one of "info", "warning", "error", "debug".
+
+    Logs the message at the specified log level. If an unrecognized log level is provided,
+    logs the message at the "info" level by default.
+    """
+
     formatted_message = f"{id} - {message}"
     
     if level.lower() == "info":

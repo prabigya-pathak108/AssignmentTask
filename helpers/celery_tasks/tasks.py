@@ -9,6 +9,15 @@ manager=SecretManager()
 
 @celery_app.task
 def process_user_query(natural_language_query: str,provider:str=None):
+    """
+    Process a user query with a specific model, and return the result.
+
+    Params:
+    natural_language_query: The user's query to process
+    provider: The model to use.
+
+    Returns the result of processing the query.
+    """
     if provider is None:
         provider = manager.get_from_env("MODEL_TO_USE", "gemini")
     inst=ChatResponse(provider=provider)

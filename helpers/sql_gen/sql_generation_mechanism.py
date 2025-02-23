@@ -20,12 +20,15 @@ class SQLGenAndRetry(SQLBaseClass):
         self.schema=self.__read_schema_file()
 
     def __read_json_file(self):
-         __prompt_path = os.path.join(self.current_dir,"assets" ,"question_sql.json")
-         with open(__prompt_path, "r") as file:
+        """Reads question_sql.json file from assets directory and returns list of questions and sql pair."""
+        __prompt_path = os.path.join(self.current_dir,"assets" ,"question_sql.json")
+        with open(__prompt_path, "r") as file:
             qa_list = json.load(file)
-         return qa_list
+        return qa_list
     
     def __read_schema_file(self):
+        """Reads schema.yaml file from assets directory and returns schema data.
+        Schema contains information about the tables and their respective columns in the database."""
         __schema_path = os.path.join(self.current_dir,"assets" ,"schema.yaml")
         with open(__schema_path, "r") as file:
             schema_data = yaml.safe_load(file)
@@ -33,6 +36,24 @@ class SQLGenAndRetry(SQLBaseClass):
 
     
     def sql_execution(self, generated_sql,unique_id):
+        """
+    Executes the provided SQL query after validating it to ensure it is a safe sql statement.
+
+    Args:
+        generated_sql (str): The generated SQL query to be executed.
+        unique_id (str): A unique identifier for logging purposes.
+
+    Returns:
+        dict: A dictionary containing the result of the SQL execution, including success status, retry indication,
+              data or error message. If the SQL method is not allowed, returns an appropriate message with retry as False.
+              If successful, returns a success message and data if available. In case of execution errors, returns the 
+              error message and sets retry to True.
+
+    Logs:
+        Logs various stages of SQL execution, including successful database connection, execution success, and errors 
+        encountered during execution.
+    """
+
         extracted_sql= self.extract_sql_from_llm_response(generated_sql)
         if self.validating_sql_and_select_only(extracted_sql)=="Not allowed":
             log_message(str(unique_id),f"SQL method Not Allowed",level="warning")
@@ -64,9 +85,9 @@ class SQLGenAndRetry(SQLBaseClass):
         prompt_template = self.prompt_factory.get_prompt(prompt_type)
         question = str(kwargs.get("kwargs",{}).get("user_question", ""))
         few_shots_questions = random.choices(self.__questions_pair, k=2)
-        print("I am herer")
-        print(kwargs)
-        print("Now: ",question)
+        #print("I am herer")
+        #print(kwargs)
+        #print("Now: ",question)
         query = {
             "question": question,
             "schemas": str(self.schema),
@@ -78,8 +99,8 @@ class SQLGenAndRetry(SQLBaseClass):
             query["errors_encountered"] = str(kwargs.get("list_of_errors", []))
 
         formatted_prompt = self.prompt_factory.set_var(prompt_template, query)
-        print("formatted_prompt",str(formatted_prompt))
-        print("type: ",type(formatted_prompt))
+        # #print("formatted_prompt",str(formatted_prompt))
+        # #print("type: ",type(formatted_prompt))
 
         try:
             response = llm.invoke_llm(formatted_prompt)
@@ -96,6 +117,34 @@ class SQLGenAndRetry(SQLBaseClass):
         return self._generate_sql_prompt(llm, "error_handle_prompt", list_of_errors=list_of_errors, **kwargs)
 
     def sql_generation_and_execution(self, **kwargs):
+        """
+    Generates and executes SQL queries using a language learning model (LLM) with retry mechanisms.
+
+    This method initializes an LLM instance based on the provided parameters, generates SQL queries,
+    and attempts to execute them. If the SQL query generation or execution fails, it retries up to a
+    maximum number of attempts. Successful SQL execution returns the generated SQL and data, while
+    failures and non-retryable errors are logged and returned.
+
+    Args:
+        **kwargs: Arbitrary keyword arguments including:
+            - provider (str): The LLM provider name (e.g., "gemini").
+            - api_key (str): The API key for the LLM provider.
+            - model (str): The model name to be used with the LLM.
+            - temperature (float): The temperature setting for LLM query generation.
+            - unique_id (str): A unique identifier for logging purposes.
+
+    Returns:
+        dict: A dictionary with the following keys:
+            - success (bool): Indicates if the SQL generation and execution were successful.
+            - data (str): The generated SQL query or error message.
+            - is_sql (bool): Indicates if the returned data is a valid SQL query.
+            - error_msg (str, optional): Error message if the operation fails.
+
+    Logs:
+        Logs various stages of SQL generation and execution, including success, failure, and retry
+        attempts.
+    """
+
         llm = initialize_llm_from_factory(provider=kwargs.get("kwargs",{}).get("provider", "gemini"),api_key=kwargs.get("kwargs",{}).get("api_key", None),model=kwargs.get("kwargs",{}).get("model", None),temperature=kwargs.get("kwargs",{}).get("temperature", None))
         try:
             llm = initialize_llm_from_factory(provider=kwargs.get("kwargs",{}).get("provider", "gemini"),api_key=kwargs.get("kwargs",{}).get("api_key", None),model=kwargs.get("kwargs",{}).get("model", None),temperature=kwargs.get("kwargs",{}).get("temperature", None))
@@ -112,7 +161,7 @@ class SQLGenAndRetry(SQLBaseClass):
             else:
                 generated_sql = self.retry_mechanism(llm, list_of_errors, last_failed_sql=generated_sql["sql_generated"], **kwargs)
 
-            print("SQL Gen: ",generated_sql["sql_generated"])
+            #print("SQL Gen: ",generated_sql["sql_generated"])
             if not generated_sql["success"]:
                 log_message(str(unique_id),f"SQL Generation UnSuccessful: Attempting Execution: Attempt{attempt}")
                 list_of_errors.append(str(generated_sql["error"]))
@@ -134,7 +183,7 @@ class SQLGenAndRetry(SQLBaseClass):
 
             # Store error for retry prompt
             list_of_errors.append(str(generated_sql["sql_generated"]+"\n"+str(execution_result["error_msg"])+"\n\n"))
-            # print(f"Retrying SQL execution... Attempt {attempt + 1}/{max_retries}")
+            # #print(f"Retrying SQL execution... Attempt {attempt + 1}/{max_retries}")
             
         log_message(str(unique_id),f"SQL Generation Unsuccessful: Maximum Retries Acheived")
         return {"success": False,  "data": "Sorry The data could not be retrieved", "error_msg": "Max retries reached.","is_sql":False}

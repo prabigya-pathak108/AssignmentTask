@@ -19,11 +19,23 @@ class UtilFunctionalities:
         self.prompt_factory = PromptGenerationClass()
     
     def identify_sql_or_normal_text(self,**kwargs):
+        """
+    This function takes in a user query and determines if the query is related to flight delay and cancellation dataset or not.
+    
+    Parameters:
+    **kwargs (dict): A dictionary containing the user query and other required parameters like provider, api key, model name, temperature etc.
+    
+    Returns:
+    dict: A dictionary containing the following keys:
+        - success (bool): Whether the intent identification was successful
+        - json_data (dict): The response of llm for intent identification
+    """
+    
         prompt_template = self.prompt_factory.get_prompt("identify_sql_or_normal_text")
         provider= str(kwargs.get("kwargs",{}).get("provider", "gemini"))
         question = str(kwargs.get("kwargs",{}).get("user_question", ""))
-        print("provider is: ",provider)
-        print("kwargs: ",kwargs)
+        #print("provider is: ",provider)
+        #print("kwargs: ",kwargs)
         try:
             llm = initialize_llm_from_factory(provider=provider,api_key=kwargs.get("kwargs",{}).get("api_key", None),model=kwargs.get("kwargs",{}).get("model", None),temperature=kwargs.get("kwargs",{}).get("temperature", None))
         except ValueError as e:
@@ -36,10 +48,10 @@ class UtilFunctionalities:
             "format_instructions":intent_generation_parser.get_format_instructions()
         }
         formatted_prompt = self.prompt_factory.set_var(prompt_template, query)
-        print("********************************************************")
+        #print("********************************************************")
         try:
             response = llm.invoke_llm(formatted_prompt)
-            print(response)
+            #print(response)
             return response
         except ValueError as e:
             raise ValueError(f"Invalid API key or model name. Please check and retry.")  

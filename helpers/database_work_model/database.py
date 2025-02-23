@@ -15,6 +15,15 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Dependency for DB session
 def get_db():
+    """
+    Dependency function that provides a SQLAlchemy database session.
+
+    Yields:
+        Session: A SQLAlchemy database session.
+
+    Ensures that the session is properly closed after use.
+    """
+
     db = SessionLocal()
     try:
         yield db

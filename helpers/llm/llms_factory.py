@@ -13,15 +13,43 @@ secret_manager = SecretManager()
 # Import LLM classes
 class GroqLLM(BaseLLM):
     def __init__(self, api_key, temperature, model_name):
+        """
+        Constructor for GroqLLM.
+
+        Args:
+            api_key (str): The api key for the Groq model.
+            temperature (float): The temperature for the Groq model.
+            model_name (str): The name of the Groq model.
+        """
         self.__api_key = api_key
         self.temperature = temperature
         self.model_name = model_name
         self.llm = self.get_llm()
     
     def get_llm(self):
+        """
+        Initializes and returns a ChatGroq instance configured with the provided API key,
+        temperature, and model name.
+
+        Returns:
+            ChatGroq: An instance of the ChatGroq class configured with the specified parameters.
+        """
+
         return ChatGroq(api_key=self.__api_key,temperature=self.temperature, model_name=self.model_name)
 
     def invoke_llm(self, prompt):
+        """
+        Invokes the Groq LLM with the given prompt.
+
+        Args:
+            prompt (str): The prompt to send to the LLM.
+
+        Returns:
+            str: The response from the LLM.
+
+        Raises:
+            ValueError: If there is an error invoking the LLM.
+        """
         try:
             return self.llm.invoke(prompt)
         except:
@@ -29,12 +57,21 @@ class GroqLLM(BaseLLM):
 
 class GeminiLLM(BaseLLM):
     def __init__(self, api_key, temperature, model_name):
+        """
+        Constructor for GeminiLLM.
+
+        Args:
+            api_key (str): The api key for the Gemini model.
+            temperature (float): The temperature for the Gemini model.
+            model_name (str): The name of the Gemini model.
+        """
         self.__api_key = api_key
         self.temperature = temperature
         self.model_name = model_name
         self.llm = self.get_llm()
     
     def get_llm(self):
+        
         return ChatGoogleGenerativeAI(api_key=self.__api_key,temperature=self.temperature, model=self.model_name)
 
     def invoke_llm(self, prompt):
@@ -83,7 +120,6 @@ def initialize_llm_from_factory(provider, temperature=None, api_key=None, model=
         api_key = secret_manager.get_from_env(f"{provider.upper()}_API_KEY")
         if api_key is None:
             raise ValueError(f"API key for {provider} is required but not provided or found in .env")
-    print("--------Provider hererererererere:",provider)
     if temperature is None:
         temperature = 0.1
     else:

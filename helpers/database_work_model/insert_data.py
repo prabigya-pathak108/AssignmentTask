@@ -4,6 +4,8 @@ from database import SessionLocal, engine
 from models import Airport, Airline, Flight
 from sqlalchemy.engine import Engine
 import io
+import pandas as pd
+from sqlalchemy.orm import sessionmaker
 
 # Create session
 def get_session():
@@ -62,76 +64,7 @@ def copy_from_flights(engine: Engine, df: pd.DataFrame, table_name: str = "fligh
         conn.commit()
 
 
-# def insert_flights():
-#     df = pd.read_csv("../kaggle_dataset/flights_demo.csv")  # Insert first 10,000 rows for testing
-#     df.dropna(subset=['AIRLINE'], inplace=True)
 
-#     for col in df.columns:
-#         if df[col].dtype != 'object':  # Skip columns that are already numeric
-#             df[col] = pd.to_numeric(df[col], errors='coerce')
-#     print(df.shape)
-    
-#     df.replace("NaN", None, inplace=True)  # Ensures "NaN" (as a string) is not passed
-    
-#     session = get_session()
-#     print(df.shape)
-#     try:
-#         for _, row in df.iterrows():
-#             try:
-#                 flight = Flight(
-#                     year=row["YEAR"],
-#                     month=row["MONTH"],
-#                     day=row["DAY"],
-#                     day_of_week=row["DAY_OF_WEEK"],
-#                     airline=row["AIRLINE"],
-#                     flight_number=row["FLIGHT_NUMBER"],
-#                     tail_number=row["TAIL_NUMBER"],
-#                     origin_airport=row["ORIGIN_AIRPORT"],
-#                     destination_airport=row["DESTINATION_AIRPORT"],
-#                     scheduled_departure=row["SCHEDULED_DEPARTURE"],
-#                     departure_time=row["DEPARTURE_TIME"],
-#                     departure_delay=row["DEPARTURE_DELAY"],
-#                     taxi_out=row["TAXI_OUT"],
-#                     wheels_off=row["WHEELS_OFF"],
-#                     scheduled_time=row["SCHEDULED_TIME"],
-#                     elapsed_time=row["ELAPSED_TIME"],
-#                     air_time=row["AIR_TIME"],
-#                     distance=row["DISTANCE"],
-#                     wheels_on=row["WHEELS_ON"],
-#                     taxi_in=row["TAXI_IN"],
-#                     scheduled_arrival=row["SCHEDULED_ARRIVAL"],
-#                     arrival_time=row["ARRIVAL_TIME"],
-#                     arrival_delay=row["ARRIVAL_DELAY"],
-#                     diverted=row["DIVERTED"],
-#                     cancelled=row["CANCELLED"],
-#                     cancellation_reason=row["CANCELLATION_REASON"],
-#                     air_system_delay=row["AIR_SYSTEM_DELAY"],
-#                     security_delay=row["SECURITY_DELAY"],
-#                     airline_delay=row["AIRLINE_DELAY"],
-#                     late_aircraft_delay=row["LATE_AIRCRAFT_DELAY"],
-#                     weather_delay=row["WEATHER_DELAY"]
-#                 )
-#                 session.add(flight)
-#             except:
-#                 print("Error")
-            
-#         session.commit()
-#         print("✅ Flights data inserted successfully!")
-#     except Exception as e:
-#         session.rollback()
-#         print("❌ Error inserting flights:", e)
-#     finally:
-#         session.close()
-
-
-import pandas as pd
-from sqlalchemy.orm import sessionmaker
-
-import pandas as pd
-from sqlalchemy.orm import sessionmaker
-
-import pandas as pd
-from sqlalchemy.orm import sessionmaker
 
 def insert_flights():
     num_of_errors=1

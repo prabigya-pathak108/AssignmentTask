@@ -19,6 +19,20 @@ class TestSQLGenerator(unittest.TestCase):
         self.sql_validator = SQLGenAndRetry()
 
     def test_valid_sql_generation(self, **kwargs):
+        """
+        A test function to generate valid SQL using a language learning model (LLM).
+
+        Args:
+            **kwargs (dict): A dictionary containing the following parameters:
+                - provider (str): The LLM provider name (e.g., "gemini").
+                - user_question (str): The user's question.
+                - api_key (str): The API key for the LLM provider.
+                - temperature (float): The temperature setting for LLM query generation.
+                - model (str): The model name to be used with the LLM.
+
+        Returns:
+            dict: A dictionary containing the response message, success status, and retry indication.
+        """
         inst=ChatResponse(provider=kwargs.get("provider","gemini"))
         question= kwargs.get("user_question")
         api_key=kwargs.get("api_key")
@@ -29,6 +43,20 @@ class TestSQLGenerator(unittest.TestCase):
         return res
     
     def tet_sql_generation_from_file(self):
+        
+        """
+        A test function to generate SQL from a list of questions stored in a JSON file.
+
+        This function reads a JSON file containing a list of questions and their expected responses.
+        It then uses the test_valid_sql_generation function to generate SQL for each question using
+        a language learning model (LLM). The generated SQL is then added to the JSON file.
+
+        Args:
+            None
+
+        Returns:
+            None
+        """
         file_path = os.path.join("test", "questions.json")
         with open(file_path, "r") as file:
             json_data = json.load(file)
@@ -61,6 +89,19 @@ class TestSQLGenerator(unittest.TestCase):
                         json.dump(json_data,f,indent=2)
         
     def test_sql_execution_from_file(self):
+        """
+        A test function to execute a list of SQLs from a JSON file and log the results.
+
+        This function reads a JSON file containing a list of SQLs and their expected execution status.
+        It then executes each SQL using the sql_execution method of the SQLValidator class.
+        The execution status and report are logged to a file.
+
+        Args:
+            None
+
+        Returns:
+            None
+        """
         file_path = os.path.join("test", "sqls_execution.json")
         with open(file_path, "r") as file:
             data = json.load(file)
