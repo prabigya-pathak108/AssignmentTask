@@ -14,41 +14,46 @@ This system allows users to query flight and cancellation data through natural l
 ## System Flow Diagram
 ```mermaid
 graph TD
-    A[User Question] --> B[Celery Beat Task Creation]
-    B --> C[LLM Instance Initialization]
-    C --> D{Intent Classification}
+    A[User Question] --> B1[Prompt Creation]
+    B2[Table Schema] --> B1
+    B3[Base Prompt] --> B1
+    B4[Few Shot Examples] --> B1
     
-    D -->|Greeting Intent| E[Generate Greeting]
-    E --> F[Ask about Flight/Cancel DB Help]
+    B1 --> B5[Final Prompt Passed to LLM]
+    B5 --> C[Celery Beat Task Creation]
+    C --> D[LLM Instance Initialization]
+    D --> E{Intent Classification}
     
-    D -->|Database Query Intent| G[SQL Generation]
-    G --> H{SQL Safety Check}
-    H -->|Invalid SQL| I[Error Description]
-    I --> G
+    E -->|Greeting Intent| F[Generate Greeting]
+    F --> G[Ask about Flight/Cancel DB Help]
     
-    H -->|Valid SQL| J[Database Execution]
-    J -->|Error| K{Retry Counter}
-    K -->|Count < 2| L[Add Error Context]
-    L --> G
+    E -->|Database Query Intent| H[SQL Generation]
+    H --> I{SQL Safety Check}
+    I -->|Invalid SQL| J[Error Description]
+    J --> H
     
-    K -->|Count >= 2| O[Store in Redis Cache]
+    I -->|Valid SQL| K[Database Execution]
+    K -->|Error| L{Retry Counter}
+    L -->|Count < 2| M[Add Error Context]
+    M --> H
     
-    J -->|Success| N[Query Results]
-    N --> O[Store in Redis Cache]
+    L -->|Count >= 2| P[Store in Redis Cache]
     
-    O --> P[Final Response]
-   
+    K -->|Success| O[Query Results]
+    O --> P[Store in Redis Cache]
     
-    P --> Q[Frontend Polling]
-    Q -->|Every 5s, Max 6 Times| R[Check Redis]
-    R --> S[Return Results/Error]
+    P --> Q[Final Response]
+    
+    Q --> R[Frontend Polling]
+    R -->|Every 5s, Max 6 Times| S[Check Redis]
+    S --> T[Return Results/Error]
     
     style A fill:#f11,stroke:#333,stroke-width:2px
-    style D fill:#d11,stroke:#333,stroke-width:2px
-    style H fill:#f11,stroke:#000,stroke-width:2px
-    style K fill:#a11,stroke:#333,stroke-width:2px
-    style O fill:#a1d,stroke:#333,stroke-width:2px
-    style Q fill:#f11,stroke:#333,stroke-width:2px
+    style E fill:#d11,stroke:#333,stroke-width:2px
+    style I fill:#f11,stroke:#000,stroke-width:2px
+    style L fill:#a11,stroke:#333,stroke-width:2px
+    style P fill:#a1d,stroke:#333,stroke-width:2px
+    style R fill:#f11,stroke:#333,stroke-width:2px
 ```
 
 
