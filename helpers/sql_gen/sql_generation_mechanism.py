@@ -145,7 +145,7 @@ class SQLGenAndRetry(SQLBaseClass):
         attempts.
     """
 
-        llm = initialize_llm_from_factory(provider=kwargs.get("kwargs",{}).get("provider", "gemini"),api_key=kwargs.get("kwargs",{}).get("api_key", None),model=kwargs.get("kwargs",{}).get("model", None),temperature=kwargs.get("kwargs",{}).get("temperature", None))
+        #llm = initialize_llm_from_factory(provider=kwargs.get("kwargs",{}).get("provider", "gemini"),api_key=kwargs.get("kwargs",{}).get("api_key", None),model=kwargs.get("kwargs",{}).get("model", None),temperature=kwargs.get("kwargs",{}).get("temperature", None))
         try:
             llm = initialize_llm_from_factory(provider=kwargs.get("kwargs",{}).get("provider", "gemini"),api_key=kwargs.get("kwargs",{}).get("api_key", None),model=kwargs.get("kwargs",{}).get("model", None),temperature=kwargs.get("kwargs",{}).get("temperature", None))
         except ValueError as e:
