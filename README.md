@@ -26,21 +26,23 @@ graph TD
     
     E -->|Greeting Intent| F[Generate Greeting]
     F --> G[Ask about Flight/Cancel DB Help]
+    G --> P[Store in Redis Cache]
     
-    E -->|Database Query Intent| H[SQL Generation]
+    E -->|Database Query Intent| N[Add Schema DDL]
+    N --> H[SQL Generation]
     H --> I{SQL Safety Check}
-    I -->|Invalid SQL| J[Error Description]
-    J --> H
+    I -->|Invalid SQL| J[Error Description, SQL cannot be executed.]
+    J --> P
     
     I -->|Valid SQL| K[Database Execution]
     K -->|Error| L{Retry Counter}
     L -->|Count < 2| M[Add Error Context]
     M --> H
     
-    L -->|Count >= 2| P[Store in Redis Cache]
+    L -->|Count >= 2| P
     
     K -->|Success| O[Query Results]
-    O --> P[Store in Redis Cache]
+    O --> P
     
     P --> Q[Final Response]
     
@@ -50,6 +52,7 @@ graph TD
     
     style A fill:#f11,stroke:#333,stroke-width:2px
     style E fill:#d11,stroke:#333,stroke-width:2px
+    style N fill:#1a9,stroke:#333,stroke-width:2px
     style I fill:#f11,stroke:#000,stroke-width:2px
     style L fill:#a11,stroke:#333,stroke-width:2px
     style P fill:#a1d,stroke:#333,stroke-width:2px
